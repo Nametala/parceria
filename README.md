@@ -7,9 +7,18 @@ O site é single-page. Ele é o produto e o portfólio ao mesmo tempo.
 
 ## No ar
 
-https://id-estudio.vercel.app — deploy de produção no Vercel (projeto `id-estudio`,
-conta Nametala). Está com `noindex` no `index.html` enquanto houver placeholder;
-apagar aquela linha é o que libera a indexação no lançamento.
+https://id-site-nametala-s-projects.vercel.app
+
+Projeto `id-site` no Vercel, ligado a este repositório na branch `main`: **todo
+push vira deploy**, sem passo manual.
+
+Está com `noindex` no `index.html` enquanto houver placeholder no
+`src/config/site.ts`. Apagar aquela linha é o que libera a indexação no
+lançamento.
+
+Cuidado com os subdomínios `.vercel.app`: são globais. `id-site.vercel.app`,
+`id-estudio.vercel.app` e `parceria.vercel.app` são de outras pessoas ou de
+projetos velhos — o link acima é o certo.
 
 ## Rodar
 
