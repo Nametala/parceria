@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-import { contato, linkZap, planos, temPlaceholder } from "../config/site";
-import { gsap, T, E, deveAnimar } from "../lib/motion";
-import { Marca } from "./Marca";
+import { useEffect, useRef, useState } from 'react';
+import { contato, linkZap, planos, temPlaceholder } from '../config/site';
+import { gsap, T, E, deveAnimar } from '../lib/motion';
+import { Marca } from './Marca';
 
 type Etapa = 0 | 1 | 2 | 3;
 
@@ -9,19 +9,19 @@ type Pergunta = { id: string; label: string; dica: string };
 
 const perguntas: Pergunta[] = [
   {
-    id: "negocio",
-    label: "O que o seu negócio faz?",
-    dica: "Ex.: barbearia, personal, manicure, escritório de advocacia.",
+    id: 'negocio',
+    label: 'O que o seu negócio faz?',
+    dica: 'Ex.: barbearia, personal, manicure, escritório de advocacia.',
   },
   {
-    id: "precisa",
-    label: "O que você precisa?",
-    dica: "Pode mudar depois. É só pra eu já chegar com o preço certo.",
+    id: 'precisa',
+    label: 'O que você precisa?',
+    dica: 'Pode mudar depois. É só pra eu já chegar com o preço certo.',
   },
   {
-    id: "nome",
-    label: "Como eu te chamo?",
-    dica: "Só o primeiro nome já serve.",
+    id: 'nome',
+    label: 'Como eu te chamo?',
+    dica: 'Só o primeiro nome já serve.',
   },
 ];
 
@@ -35,16 +35,16 @@ const perguntas: Pergunta[] = [
  */
 export function Contato() {
   const [etapa, setEtapa] = useState<Etapa>(0);
-  const [negocio, setNegocio] = useState("");
-  const [precisa, setPrecisa] = useState("");
-  const [nome, setNome] = useState("");
+  const [negocio, setNegocio] = useState('');
+  const [precisa, setPrecisa] = useState('');
+  const [nome, setNome] = useState('');
   const palcoRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const zapPendente = temPlaceholder(contato.whatsapp);
   const mensagem =
-    `Oi! Vim pelo site. Sou ${nome || "ainda sem nome"} e tenho ${negocio || "um negócio"}. ` +
-    `Preciso de: ${precisa || "ainda não sei"}.`;
+    `Oi! Vim pelo site. Sou ${nome || 'ainda sem nome'} e tenho ${negocio || 'um negócio'}. ` +
+    `Preciso de: ${precisa || 'ainda não sei'}.`;
   const zap = zapPendente ? null : linkZap(contato.whatsapp, mensagem);
 
   // cada troca de etapa e uma transicao, nao um salto
@@ -57,13 +57,27 @@ export function Contato() {
     );
   }, [etapa]);
 
+  // Foca a pergunta so quando e o proprio usuario que troca de etapa.
+  // Focar na montagem fazia o navegador rolar ate o input, e este formulario
+  // e a penultima secao do documento: a pagina abria no fim.
+  //
+  // O guard e "o usuario pediu", nao "ja montou" — em dev o StrictMode monta
+  // duas vezes, entao um ref de primeira montagem deixa a segunda passar e o
+  // bug volta so no ambiente de desenvolvimento.
+  const focarAoTrocar = useRef(false);
+  const irPara = (n: Etapa) => {
+    focarAoTrocar.current = true;
+    setEtapa(n);
+  };
+
   useEffect(() => {
+    if (!focarAoTrocar.current) return;
+    focarAoTrocar.current = false;
     if (etapa < 3) inputRef.current?.focus();
   }, [etapa]);
 
-  const avancar = () => setEtapa((e) => Math.min(3, e + 1) as Etapa);
-  const podeAvancar =
-    etapa === 0 ? negocio.trim() : etapa === 1 ? precisa : nome.trim();
+  const avancar = () => irPara(Math.min(3, etapa + 1) as Etapa);
+  const podeAvancar = etapa === 0 ? negocio.trim() : etapa === 1 ? precisa : nome.trim();
 
   return (
     <section id="contato" className="chapa-tinta scroll-mt-20 py-28 md:py-40">
@@ -83,8 +97,7 @@ export function Contato() {
               key={i}
               className="h-[3px] flex-1 transition-colors duration-500"
               style={{
-                background:
-                  i <= etapa ? "var(--vermelho-vivo)" : "var(--linha)",
+                background: i <= etapa ? 'var(--vermelho-vivo)' : 'var(--linha)',
               }}
             />
           ))}
@@ -107,10 +120,7 @@ export function Contato() {
                 {perguntas[etapa].label}
               </label>
 
-              <p
-                id={`dica-${perguntas[etapa].id}`}
-                className="mt-4 text-[var(--tinta-media)]"
-              >
+              <p id={`dica-${perguntas[etapa].id}`} className="mt-4 text-[var(--tinta-media)]">
                 {perguntas[etapa].dica}
               </p>
 
@@ -120,7 +130,7 @@ export function Contato() {
                   aria-labelledby="precisa"
                   className="mt-8 flex flex-wrap gap-3"
                 >
-                  {[...planos.map((p) => p.nome), "Ainda não sei"].map((op) => (
+                  {[...planos.map((p) => p.nome), 'Ainda não sei'].map((op) => (
                     <button
                       key={op}
                       type="button"
@@ -129,15 +139,9 @@ export function Contato() {
                       onClick={() => setPrecisa(op)}
                       className="min-h-[56px] border-2 px-6 text-[1.0625rem] transition-colors"
                       style={{
-                        borderColor:
-                          precisa === op
-                            ? "var(--vermelho-vivo)"
-                            : "var(--linha-forte)",
-                        background:
-                          precisa === op
-                            ? "var(--vermelho-vivo)"
-                            : "transparent",
-                        color: precisa === op ? "#14130F" : "inherit",
+                        borderColor: precisa === op ? 'var(--vermelho-vivo)' : 'var(--linha-forte)',
+                        background: precisa === op ? 'var(--vermelho-vivo)' : 'transparent',
+                        color: precisa === op ? '#14130F' : 'inherit',
                       }}
                     >
                       {op}
@@ -151,10 +155,8 @@ export function Contato() {
                   name={perguntas[etapa].id}
                   aria-describedby={`dica-${perguntas[etapa].id}`}
                   value={etapa === 0 ? negocio : nome}
-                  onChange={(e) =>
-                    (etapa === 0 ? setNegocio : setNome)(e.target.value)
-                  }
-                  autoComplete={etapa === 2 ? "given-name" : "off"}
+                  onChange={(e) => (etapa === 0 ? setNegocio : setNome)(e.target.value)}
+                  autoComplete={etapa === 2 ? 'given-name' : 'off'}
                   className="display mt-8 w-full max-w-[22ch] border-b-4 border-[var(--linha-forte)] bg-transparent pb-3 text-[clamp(1.5rem,4vw,2.75rem)] outline-none focus:border-[var(--vermelho-vivo)]"
                 />
               )}
@@ -165,12 +167,12 @@ export function Contato() {
                   disabled={!podeAvancar}
                   className="min-h-[56px] bg-[var(--vermelho-vivo)] px-8 font-semibold text-[#14130F] transition-opacity disabled:cursor-not-allowed disabled:opacity-35"
                 >
-                  {etapa === 2 ? "Montar minha mensagem" : "Continuar"}
+                  {etapa === 2 ? 'Montar minha mensagem' : 'Continuar'}
                 </button>
                 {etapa > 0 && (
                   <button
                     type="button"
-                    onClick={() => setEtapa((e) => (e - 1) as Etapa)}
+                    onClick={() => irPara((etapa - 1) as Etapa)}
                     className="min-h-[48px] font-mono text-[0.75rem] tracking-[0.14em] uppercase underline underline-offset-4"
                   >
                     Voltar
@@ -206,7 +208,7 @@ export function Contato() {
                 )}
                 <button
                   type="button"
-                  onClick={() => setEtapa(0)}
+                  onClick={() => irPara(0)}
                   className="min-h-[48px] font-mono text-[0.75rem] tracking-[0.14em] uppercase underline underline-offset-4"
                 >
                   Recomeçar
@@ -216,9 +218,7 @@ export function Contato() {
           )}
         </div>
 
-        <p className="rotulo mt-16 border-t border-[var(--linha)] pt-8">
-          {contato.atendimento}
-        </p>
+        <p className="rotulo mt-16 border-t border-[var(--linha)] pt-8">{contato.atendimento}</p>
       </div>
     </section>
   );
