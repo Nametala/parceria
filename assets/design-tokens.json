@@ -1,0 +1,133 @@
+{
+  "brand": "iD",
+  "primitive": {
+    "color": {
+      "primary": {
+        "50": {
+          "$value": "#FFFFFF",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#E7FFFF",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#B4D4FF",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#81A1FF",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#4E6EFF",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#1B3BFF",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#1330C7",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#0000B3",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#00008C",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#000066",
+          "$type": "color"
+        }
+      },
+      "secondary": {
+        "50": {
+          "$value": "#57544A",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#57544A",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#ADACA8",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#7A7975",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#474642",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#14130F",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#000000",
+          "$type": "color"
+        }
+      },
+      "accent": {
+        "50": {
+          "$value": "#FF3B14",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#FF3B14",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#FFC1A2",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#FF8E6F",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#FF5B3C",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#CE2809",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#A80200",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#820000",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#5B0000",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#350000",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

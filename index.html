@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>iD — Seu negócio existe. Falta o mundo saber.</title>
+    <meta name="description" content="Somos dois desenvolvedores. Fazemos o site do seu negócio com preço fechado, dito antes de começar, e colocamos no ar em dias. Sem burocracia e sem reunião de duas horas." />
+    <!-- ============================================================
+         REMOVER AO LANCAR. Enquanto src/config/site.ts tiver placeholder
+         ([INSERIR PRECO], [INSERIR WHATSAPP]), o site nao pode ser indexado:
+         seria pessimo o Google guardar "[INSERIR PRECO]" para a iD.
+         ============================================================ -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- tema unico: o site nao segue prefers-color-scheme, por decisao de direcao -->
+    <meta name="theme-color" content="#F2EFE7" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- TODO [INSERIR DOMINIO]: trocar a URL canonica e a og:url quando o dominio for registrado -->
+    <link rel="canonical" href="https://SEU-DOMINIO.com.br/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="iD" />
+    <meta property="og:title" content="iD — Seu negócio existe. Falta o mundo saber." />
+    <meta property="og:description" content="Dois desenvolvedores. Preço fechado, dito antes de começar. Seu site no ar em dias." />
+    <meta property="og:url" content="https://SEU-DOMINIO.com.br/" />
+    <!-- TODO [INSERIR OG.PNG]: exportar 1200x630 a partir de assets/logo/logo-avatar.svg e
+         descomentar as duas linhas abaixo. Tag omitida de proposito: og:image apontando para
+         arquivo inexistente quebra o preview no WhatsApp, que e o canal de venda. -->
+    <!-- <meta property="og:image" content="https://SEU-DOMINIO.com.br/og.png" /> -->
+    <!-- <meta property="og:image:alt" content="iD — estudio de sites para pequenos negocios" /> -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="iD — Seu negócio existe. Falta o mundo saber." />
+    <meta name="twitter:description" content="Dois desenvolvedores. Preço fechado, dito antes de começar. Seu site no ar em dias." />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "iD",
+        "description": "Estúdio de criação de sites para pequenos empreendedores, autônomos e negócios locais.",
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Belo Horizonte",
+          "addressRegion": "MG",
+          "addressCountry": "BR"
+        },
+        "founder": [
+          { "@type": "Person", "name": "Arthur Nametala" },
+          { "@type": "Person", "name": "Gustavo Vieira" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

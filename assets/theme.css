@@ -1,0 +1,24 @@
+/* iD — tokens de marca v2.
+   Tema unico e claro, de proposito: o site NAO segue prefers-color-scheme.
+   Direcao de arte e uma escolha, nao preferencia do sistema operacional.
+   Valores conferidos por: node scripts/check-contrast.mjs (12/12) */
+
+:root {
+  /* superficies */
+  --papel:        #F2EFE7;
+  --papel-fundo:  #E8E4D9;
+  --tinta:        #14130F;
+
+  /* texto */
+  --tinta-media:  #57544A;
+  --linha:        #D6D1C2;
+  --linha-forte:  #8B8677;
+
+  /* o "i" da marca, links, acao primaria */
+  --azul:         #1B3BFF;
+  --azul-escuro:  #1330C7;
+
+  /* a energia. -vivo so em display grande e em chapa; o outro passa como texto */
+  --vermelho:      #CE2809;
+  --vermelho-vivo: #FF3B14;
+}

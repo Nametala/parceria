@@ -1,0 +1,7 @@
+# O bloqueio de indexacao esta na meta robots do index.html, nao aqui.
+# Bloquear o crawl aqui impediria o robo de LER aquele noindex.
+# Ao lancar: remova a meta noindex do index.html e ajuste a URL abaixo.
+User-agent: *
+Allow: /
+
+Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml

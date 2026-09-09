@@ -1,0 +1,166 @@
+@import "../assets/theme.css";
+@import "tailwindcss";
+@import "@fontsource-variable/archivo/wdth.css";
+@import "@fontsource-variable/instrument-sans";
+@import "@fontsource-variable/jetbrains-mono";
+
+@theme {
+  --color-papel: var(--papel);
+  --color-papel-fundo: var(--papel-fundo);
+  --color-tinta: var(--tinta);
+  --color-tinta-media: var(--tinta-media);
+  --color-linha: var(--linha);
+  --color-linha-forte: var(--linha-forte);
+  --color-azul: var(--azul);
+  --color-azul-escuro: var(--azul-escuro);
+  --color-vermelho: var(--vermelho);
+  --color-vermelho-vivo: var(--vermelho-vivo);
+
+  --font-display: 'Archivo Variable', 'Arial Black', sans-serif;
+  --font-sans: 'Instrument Sans Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+@layer base {
+  /* Direcao de arte: tudo reto. Nenhum radius em lugar nenhum.
+     As unicas curvas do site sao o pingo do i e o bojo do D. */
+  *, *::before, *::after { border-radius: 0; box-sizing: border-box; }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--vermelho-vivo); color: var(--tinta); }
+
+  :focus-visible {
+    outline: 3px solid var(--azul);
+    outline-offset: 2px;
+  }
+
+  a, button { cursor: pointer; }
+
+  /* O sistema inteiro de motion desliga aqui. Nada de conteudo depende
+     de animacao para existir: tudo ja esta no HTML em estado final. */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+    }
+  }
+}
+
+/* ── tipografia ──────────────────────────────────────────────────────────
+   Display = Archivo em largura expandida. Editorial e pesada, nao a
+   condensada que todo site usa. Interface = Instrument Sans. Dados = mono. */
+@utility display {
+  font-family: var(--font-display);
+  font-variation-settings: 'wdth' 118, 'wght' 800;
+  letter-spacing: -0.045em;
+  line-height: 0.86;
+  text-wrap: balance;
+}
+
+@utility rotulo {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tinta-media);
+}
+
+@layer components {
+  /* grid editorial de 12 colunas, com margens grandes e assimetria */
+  .grade {
+    width: 100%;
+    max-width: 1560px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 6rem);
+  }
+
+  .pendente {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--vermelho);
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 1px;
+    white-space: nowrap;
+  }
+
+  /* Chapa escura pontual — usada em 2 momentos, nunca no site inteiro.
+     background e color usam literal de proposito: se usassem var(--tinta),
+     pegariam o valor REDEFINIDO logo abaixo (custom property resolve depois
+     do bloco inteiro) e a chapa sairia clara. */
+  .chapa-tinta {
+    background: #14130F;
+    color: #F2EFE7;
+    --papel: #14130F;
+    --papel-fundo: #1D1B16;
+    --tinta: #F2EFE7;
+    --tinta-media: #A5A196;
+    --linha: #33302A;
+    --linha-forte: #6B6659;
+    --azul: #7B90FF;
+  }
+}
+
+/* ── sistema de motion ───────────────────────────────────────────────────
+   Tres velocidades, e so. RAPIDO responde ao dedo, MEDIO move blocos,
+   CINEMA e reservado para as transformacoes de secao. */
+:root {
+  --rapido: 180ms;
+  --medio: 520ms;
+  --cinema: 1100ms;
+  --saida: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes pulso {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(0.7); opacity: 0.55; }
+}
+
+/* cursor proprio — criado por src/lib/cursor.ts, so em ponteiro fino */
+.cursor-id {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 90;
+  width: 14px; height: 14px;
+  margin: -7px 0 0 -7px;
+  background: var(--vermelho-vivo);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: difference;
+  transition: width var(--rapido), height var(--rapido), margin var(--rapido),
+              background var(--rapido), border-radius var(--rapido);
+}
+.cursor-id--rotulado {
+  width: auto; height: auto;
+  margin: -18px 0 0 -18px;
+  padding: 10px 16px;
+  border-radius: 0;
+  mix-blend-mode: normal;
+  background: var(--azul);
+}
+.cursor-id__rotulo {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+.cursor-id:not(.cursor-id--rotulado) .cursor-id__rotulo { display: none; }
