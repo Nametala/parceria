@@ -52,8 +52,8 @@ export function Provas() {
     <section ref={ref} id="provas" className="relative scroll-mt-20 overflow-hidden">
       <div className="flex min-h-[100svh] flex-col justify-center py-24">
         <div className="grade">
-          <p className="rotulo">03 — Trabalhos</p>
-          <h2 className="display mt-6 max-w-[18ch] text-[clamp(2.25rem,6.5vw,5rem)]">
+          <p className="rotulo">Trabalhos</p>
+          <h2 className="display mt-6 max-w-[18ch] text-[clamp(2rem,5.2vw,4.25rem)]">
             Negócios que hoje aparecem quando alguém procura.
           </h2>
         </div>
@@ -62,7 +62,6 @@ export function Provas() {
           {cases.map((c, i) => (
             <article
               key={c.id}
-              data-cursor="case"
               className="p-painel grade shrink-0 border-t-2 border-[var(--tinta)] pt-8 md:w-[min(76vw,860px)] md:border-t-0 md:border-l-2 md:pt-0"
             >
               <div className="flex items-baseline gap-4">
@@ -74,7 +73,7 @@ export function Provas() {
                 </span>
               </div>
 
-              <h3 className="display mt-4 text-[clamp(2.25rem,7vw,5.5rem)]">{c.cliente}</h3>
+              <h3 className="display mt-4 text-[clamp(2rem,5.2vw,4.25rem)]">{c.cliente}</h3>
 
               <p className="mt-3 font-mono text-[0.8125rem] text-[var(--tinta-media)]">
                 <Valor>{c.local}</Valor>
@@ -98,7 +97,7 @@ export function Provas() {
           ))}
 
           <div className="p-painel grade flex shrink-0 items-center md:w-[min(58vw,600px)] md:border-l-2 md:border-[var(--tinta)]">
-            <p className="display max-w-[15ch] text-[clamp(1.75rem,4.5vw,3.25rem)] text-[var(--vermelho)]">
+            <p className="display max-w-[15ch] text-[clamp(1.5rem,3.6vw,2.5rem)] text-[var(--vermelho)]">
               O site que você está lendo também é nosso.
             </p>
           </div>

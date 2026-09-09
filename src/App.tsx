@@ -9,15 +9,12 @@ import { Preco } from './components/Preco';
 import { Dupla } from './components/Dupla';
 import { Contato } from './components/Contato';
 import { Rodape } from './components/Rodape';
-import { iniciarCursor } from './lib/cursor';
 import { ScrollTrigger } from './lib/motion';
 
 export default function App() {
   useEffect(() => {
-    const limpar = iniciarCursor();
     // as fontes mudam a altura do conteudo: sem isso os pins ficam no lugar errado
     document.fonts?.ready.then(() => ScrollTrigger.refresh());
-    return limpar;
   }, []);
 
   return (

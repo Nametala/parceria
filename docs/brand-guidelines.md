@@ -261,6 +261,15 @@ Orçamento no WhatsApp ↓
 
 ## 7. Pendente
 
-**Faixa de preço.** "Preço fechado, dito antes" é a mensagem mais forte do guia e a
-única que ainda não tem número. Ela precisa estar no site, pública, antes do
-lançamento — senão a promessa vira só mais uma frase.
+Os preços foram definidos: **Página única R$ 300** e **Página + identidade
+R$ 500**, ambos visíveis no site. Continuam pendentes:
+
+- **Prazo de entrega** de cada pacote (`[INSERIR PRAZO]` em `src/config/site.ts`).
+- **WhatsApp, Instagram e e-mail.**
+- **`public/og.png`** (1200×600) — sem ele o link compartilhado no WhatsApp
+  aparece sem imagem.
+- **Campos não confirmados dos cases** (resultado, cidade, segmento do Studio
+  Rondas).
+
+O nome textual da empresa é **iD Soluções**. No logotipo continua sendo só
+**iD** — "Soluções" nunca entra no símbolo, e nunca em caixa alta como "ID".

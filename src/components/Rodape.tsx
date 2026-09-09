@@ -23,7 +23,7 @@ export function Rodape() {
           <span>
             {contato.cidade} · MG
           </span>
-          <span>© {new Date().getFullYear()} iD</span>
+          <span>© {new Date().getFullYear()} iD Soluções</span>
         </div>
       </div>
     </footer>

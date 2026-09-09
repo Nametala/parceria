@@ -67,10 +67,10 @@ export function Contato() {
       <div className="grade">
         <div className="flex items-center gap-5">
           <Marca altura={34} tom="claro" viva />
-          <p className="rotulo">05 — Falar com a gente</p>
+          <p className="rotulo">Falar com a gente</p>
         </div>
 
-        <h2 className="display mt-8 max-w-[14ch] text-[clamp(2.5rem,8vw,6.5rem)]">
+        <h2 className="display mt-8 max-w-[14ch] text-[clamp(2.25rem,6vw,4.75rem)]">
           Vamos colocar seu negócio no ar.
         </h2>
 
@@ -96,7 +96,7 @@ export function Contato() {
 
               <label
                 htmlFor={perguntas[etapa].id}
-                className="display mt-4 block max-w-[18ch] text-[clamp(1.75rem,4.5vw,3.25rem)]"
+                className="display mt-4 block max-w-[18ch] text-[clamp(1.5rem,3.6vw,2.5rem)]"
               >
                 {perguntas[etapa].label}
               </label>
@@ -138,7 +138,7 @@ export function Contato() {
                   value={etapa === 0 ? negocio : nome}
                   onChange={(e) => (etapa === 0 ? setNegocio : setNome)(e.target.value)}
                   autoComplete={etapa === 2 ? 'given-name' : 'off'}
-                  className="display mt-8 w-full max-w-[22ch] border-b-4 border-[var(--linha-forte)] bg-transparent pb-3 text-[clamp(1.75rem,5vw,3.5rem)] outline-none focus:border-[var(--vermelho-vivo)]"
+                  className="display mt-8 w-full max-w-[22ch] border-b-4 border-[var(--linha-forte)] bg-transparent pb-3 text-[clamp(1.5rem,4vw,2.75rem)] outline-none focus:border-[var(--vermelho-vivo)]"
                 />
               )}
 
@@ -178,7 +178,6 @@ export function Contato() {
                     href={linkZap}
                     target="_blank"
                     rel="noopener noreferrer"
-                    data-cursor="enviar"
                     className="inline-flex min-h-[56px] items-center bg-[var(--vermelho-vivo)] px-8 font-semibold text-[#14130F]"
                   >
                     Enviar no WhatsApp

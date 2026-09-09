@@ -102,12 +102,15 @@ export function Cabecalho() {
       </div>
 
       <header
-        className={`fixed inset-x-0 top-0 z-[60] transition-colors duration-300 ${
-          rolou && !aberto ? 'border-b border-[var(--linha)] bg-[var(--papel)]' : ''
-        }`}
+        // com o menu aberto o header sobe ACIMA do overlay: o botao vive
+        // dentro do contexto de empilhamento do header, entao um z-index alto
+        // so nele nao adianta — quem precisa subir e o header.
+        className={`fixed inset-x-0 top-0 transition-colors duration-300 ${
+          aberto ? 'z-[90]' : 'z-[60]'
+        } ${rolou && !aberto ? 'border-b border-[var(--linha)] bg-[var(--papel)]' : ''}`}
       >
         <div className="grade flex h-20 items-center justify-between gap-4">
-          <a href="#topo" aria-label="iD — início" className="py-2" data-cursor="topo">
+          <a href="#topo" aria-label="iD Soluções — início" className="py-2">
             <Marca altura={30} viva />
           </a>
 
@@ -116,7 +119,11 @@ export function Cabecalho() {
             onClick={() => setAberto((v) => !v)}
             aria-expanded={aberto}
             aria-controls="menu-id"
-            className="relative z-[81] flex min-h-[48px] items-center gap-3 font-mono text-[0.6875rem] tracking-[0.16em] uppercase"
+            // sobre a chapa escura do menu o texto precisa clarear, senao
+            // fica tinta escura sobre fundo escuro e o X some
+            className={`relative flex min-h-[48px] items-center gap-3 font-mono text-[0.6875rem] tracking-[0.16em] uppercase ${
+              aberto ? 'text-[#F2EFE7]' : ''
+            }`}
           >
             <span className="flex flex-col gap-[5px]" aria-hidden="true">
               <span
@@ -144,18 +151,14 @@ export function Cabecalho() {
       >
         <nav aria-label="Seções" className="grade w-full">
           <ul className="flex flex-col">
-            {secoes.map((s, i) => (
+            {secoes.map((s) => (
               <li key={s.href} className="overflow-hidden border-b border-[var(--linha)]">
                 <a
                   href={s.href}
                   onClick={() => setAberto(false)}
-                  data-cursor="ir"
-                  className="menu-link flex items-baseline gap-6 py-4 md:gap-10"
+                  className="menu-link block py-4"
                 >
-                  <span className="font-mono text-[0.6875rem] text-[var(--vermelho-vivo)]">
-                    0{i + 1}
-                  </span>
-                  <span className="display text-[clamp(1.75rem,6vw,4.5rem)] transition-colors hover:text-[var(--vermelho-vivo)]">
+                  <span className="display text-[clamp(1.5rem,4.4vw,3.25rem)] transition-colors hover:text-[var(--vermelho-vivo)]">
                     {s.label}
                   </span>
                 </a>

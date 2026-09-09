@@ -42,7 +42,7 @@ export function Dupla() {
   return (
     <section ref={ref} id="dupla" className="scroll-mt-20 py-28 md:py-40">
       <div className="grade">
-        <p className="rotulo">05 — Quem faz</p>
+        <p className="rotulo">Quem faz</p>
         {/* o titulo visual desta secao e a contagem 2 / 1 / 0 logo abaixo;
             este H2 existe para leitor de tela e para a hierarquia nao pular */}
         <h2 className="sr-only">Somos dois. Você fala com quem escreve o código.</h2>
@@ -51,7 +51,7 @@ export function Dupla() {
           {contagem.map((c) => (
             <li key={c.o} className="overflow-hidden">
               <span className="d-num flex items-baseline gap-3">
-                <span className="display text-[clamp(3.5rem,11vw,9rem)] text-[var(--azul)]">
+                <span className="display text-[clamp(3rem,7.5vw,6.5rem)] text-[var(--azul)]">
                   {c.n}
                 </span>
                 <span className="display text-[clamp(1.25rem,3vw,2.5rem)]">{c.o}</span>
@@ -69,20 +69,20 @@ export function Dupla() {
         <div className="mt-14 grid gap-14 md:grid-cols-2 md:gap-24">
           {dupla.map((p) => (
             <article key={p.nome} className="d-pessoa">
-              <h3 className="display text-[clamp(2.5rem,7vw,4.5rem)]">
+              <h3 className="display text-[clamp(1.75rem,4.2vw,3rem)]">
                 {p.nome}
                 <span className="block text-[var(--tinta-media)]">{p.sobrenome}</span>
               </h3>
-              <p className="rotulo mt-5 text-[var(--vermelho)]">{p.papel}</p>
-              <p className="mt-5 max-w-[40ch] leading-[1.55]">{p.faz}</p>
+              {/* so nome e GitHub: cargo nao diz nada que o trabalho ja nao diga */}
               <a
                 href={p.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                data-cursor="github"
-                className="mt-6 inline-flex min-h-[48px] items-center border-b-2 border-[var(--tinta)] font-mono text-[0.8125rem] tracking-[0.1em] uppercase transition-colors hover:border-[var(--vermelho)] hover:text-[var(--vermelho)]"
+                className="mt-6 inline-flex min-h-[48px] items-center gap-2 border-b-2 border-[var(--linha-forte)] font-mono text-[0.8125rem] tracking-[0.1em] uppercase transition-colors hover:border-[var(--vermelho)] hover:text-[var(--vermelho)]"
               >
-                GitHub de {p.nome}
+                GitHub
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only">de {p.nome}</span>
               </a>
             </article>
           ))}

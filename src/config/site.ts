@@ -62,8 +62,8 @@ export const planos: readonly Plano[] = [
   {
     id: 'pagina',
     nome: 'Página única',
-    para: 'Quem precisa existir no Google e ter para onde mandar o cliente.',
-    preco: '[INSERIR PREÇO]',
+    para: 'Para existir no Google e ter para onde mandar o cliente.',
+    preco: 'R$ 300',
     prazo: '[INSERIR PRAZO]',
     inclui: [
       'Uma página com tudo que importa',
@@ -74,28 +74,14 @@ export const planos: readonly Plano[] = [
     ],
   },
   {
-    id: 'completo',
-    nome: 'Site completo',
-    para: 'Quem tem serviços, catálogo ou portfólio para mostrar.',
-    preco: '[INSERIR PREÇO]',
+    id: 'identidade',
+    nome: 'Página + identidade',
+    para: 'Para quem ainda não tem marca — ou tem uma que não representa mais o negócio.',
+    preco: 'R$ 500',
     prazo: '[INSERIR PRAZO]',
+    destaque: true,
     inclui: [
       'Tudo da página única',
-      'Várias seções',
-      'Catálogo ou lista de serviços',
-      'Galeria de fotos',
-      'Textos escritos por nós',
-    ],
-    destaque: true,
-  },
-  {
-    id: 'identidade',
-    nome: 'Site + identidade',
-    para: 'Quem ainda não tem marca — ou tem uma que não representa mais o negócio.',
-    preco: '[INSERIR PREÇO]',
-    prazo: '[INSERIR PRAZO]',
-    inclui: [
-      'Tudo do site completo',
       'Logotipo',
       'Paleta e tipografia',
       'Arquivos para redes e impressão',
@@ -149,22 +135,11 @@ export const dupla = [
   {
     nome: 'Arthur',
     sobrenome: 'Nametala',
-    papel: 'Front-end e produto',
-    faz: 'Desenha a interface, escreve o front e cuida de como o site conversa com quem chega.',
     github: 'https://github.com/Nametala',
   },
   {
     nome: 'Gustavo',
     sobrenome: 'Vieira',
-    papel: 'Back-end e tecnologia',
-    faz: 'Cuida das integrações, dos formulários, do que roda por trás e de garantir que nada quebre.',
     github: 'https://github.com/vGustav1',
   },
-] as const;
-
-export const nao = [
-  'Aplicativo de celular',
-  'Sistema interno de gestão',
-  'Loja virtual com estoque grande',
-  'Tráfego pago e gestão de anúncios',
 ] as const;

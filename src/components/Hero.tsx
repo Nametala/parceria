@@ -6,11 +6,18 @@ import { Botao } from './Botao';
 import { Elo } from './Elo';
 import { ESPERA_ABERTURA, vaiTerAbertura } from './Abertura';
 
-/** Linha de titulo com mascara: o interior sobe de baixo no reveal. */
+/**
+ * Linha de titulo com mascara: o interior sobe de baixo no reveal.
+ *
+ * O padding-bottom nao e estetico. `overflow: hidden` corta na borda da caixa
+ * de padding, e a descendente do "g" desce ~0.2em abaixo da linha de base —
+ * sem essa folga ela e decapitada. O reveal continua funcionando porque o
+ * interior sobe 105% da propria altura, muito alem da folga.
+ */
 function Mascara({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   return (
-    <span className={`block overflow-hidden ${className}`}>
-      <span className="mask-in block pb-[0.06em]">{children}</span>
+    <span className={`block overflow-hidden pb-[0.16em] ${className}`}>
+      <span className="mask-in block">{children}</span>
     </span>
   );
 }
@@ -122,7 +129,7 @@ export function Hero() {
           </span>
 
           <span aria-hidden="true" className="block">
-            <Mascara className="h-l1 display text-[clamp(3rem,13vw,13rem)]">Seu negócio</Mascara>
+            <Mascara className="h-l1 display text-[clamp(2.5rem,10vw,10rem)]">Seu negócio</Mascara>
 
             {/* o vao: a linha e a marca em cima dela */}
             <span className="relative my-5 flex h-16 items-center md:my-7 md:h-24">
@@ -135,7 +142,7 @@ export function Hero() {
               </span>
             </span>
 
-            <Mascara className="h-l2 display text-right text-[clamp(3rem,13vw,13rem)]">
+            <Mascara className="h-l2 display text-right text-[clamp(2.5rem,10vw,10rem)]">
               o mundo
             </Mascara>
           </span>

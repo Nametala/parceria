@@ -73,8 +73,8 @@ Tudo entre colchetes em `src/config/site.ts` é placeholder explícito. Nada foi
 inventado. Em desenvolvimento o console lista todos eles no boot, e na página eles
 aparecem com marcação visível (`.pendente`) para ninguém publicar sem ver.
 
-Hoje faltam: WhatsApp, @ do Instagram, e-mail, os três preços, os três prazos, e os
-campos não confirmados dos cases.
+Hoje faltam: WhatsApp, @ do Instagram, e-mail, os prazos dos dois pacotes, e os
+campos não confirmados dos cases. Os preços já estão definidos (R$ 300 e R$ 500).
 
 Fora do `site.ts` faltam ainda:
 

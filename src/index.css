@@ -68,9 +68,13 @@
 @utility display {
   font-family: var(--font-display);
   font-variation-settings: 'wdth' 118, 'wght' 800;
-  letter-spacing: -0.045em;
-  line-height: 0.86;
+  letter-spacing: -0.035em;
+  /* 0.95 e nao 0.86: abaixo disso a descendente do "g" encosta na linha
+     seguinte e as mascaras de overflow cortam o rabo da letra. */
+  line-height: 0.95;
   text-wrap: balance;
+  /* espaco para a descendente viver dentro de qualquer mascara */
+  padding-bottom: 0.06em;
 }
 
 @utility rotulo {
@@ -130,37 +134,3 @@
   0%, 100% { transform: scale(1); opacity: 1; }
   50%      { transform: scale(0.7); opacity: 0.55; }
 }
-
-/* cursor proprio — criado por src/lib/cursor.ts, so em ponteiro fino */
-.cursor-id {
-  position: fixed;
-  top: 0; left: 0;
-  z-index: 90;
-  width: 14px; height: 14px;
-  margin: -7px 0 0 -7px;
-  background: var(--vermelho-vivo);
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0;
-  mix-blend-mode: difference;
-  transition: width var(--rapido), height var(--rapido), margin var(--rapido),
-              background var(--rapido), border-radius var(--rapido);
-}
-.cursor-id--rotulado {
-  width: auto; height: auto;
-  margin: -18px 0 0 -18px;
-  padding: 10px 16px;
-  border-radius: 0;
-  mix-blend-mode: normal;
-  background: var(--azul);
-}
-.cursor-id__rotulo {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #fff;
-  white-space: nowrap;
-}
-.cursor-id:not(.cursor-id--rotulado) .cursor-id__rotulo { display: none; }

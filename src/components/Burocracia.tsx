@@ -76,8 +76,8 @@ export function Burocracia() {
       className="chapa-tinta relative flex min-h-[100svh] scroll-mt-20 items-center overflow-hidden py-24"
     >
       <div className="grade w-full">
-        <p className="rotulo">01 — O que a gente cortou</p>
-        <h2 className="display mt-6 max-w-[16ch] text-[clamp(2.25rem,6.5vw,5.5rem)]">
+        <p className="rotulo">O que a gente cortou</p>
+        <h2 className="display mt-6 max-w-[16ch] text-[clamp(2rem,5.2vw,4.25rem)]">
           A parte chata já foi removida.
         </h2>
 
@@ -105,7 +105,7 @@ export function Burocracia() {
                   <span className="font-mono text-[0.75rem] text-[var(--vermelho-vivo)]">
                     0{i + 1}
                   </span>
-                  <span className="display text-[clamp(1.5rem,3.4vw,2.75rem)]">{etapa}</span>
+                  <span className="display text-[clamp(1.25rem,2.6vw,2rem)]">{etapa}</span>
                 </li>
               ))}
             </ol>
