@@ -5,6 +5,7 @@ import { Marca } from './Marca';
 import { Botao } from './Botao';
 import { Elo } from './Elo';
 import { ESPERA_ABERTURA, vaiTerAbertura } from './Abertura';
+import { planos, prazo } from '../config/site';
 
 /**
  * Linha de titulo com mascara: o interior sobe de baixo no reveal.
@@ -25,10 +26,10 @@ function Mascara({ children, className = '' }: { children: React.ReactNode; clas
 /**
  * Hero: o vao.
  *
- * A composicao e a ideia da marca em escala de pagina — duas coisas separadas
- * (o negocio e o mundo) e a iD como a linha entre elas. A entrada e uma
- * sequencia unica, nao elementos animados soltos; a saida transforma a propria
- * linha na secao seguinte, entao nao existe "fim da hero", existe passagem.
+ * A frase e uma so — "Seu site em 5 dias" — partida no meio pela marca: e a
+ * iD que fecha o vao entre as duas metades. A entrada e uma sequencia unica,
+ * nao elementos animados soltos; a saida transforma a propria linha na secao
+ * seguinte, entao nao existe "fim da hero", existe passagem.
  */
 export function Hero() {
   const marcaRef = useRef<HTMLDivElement>(null);
@@ -124,12 +125,10 @@ export function Hero() {
         <p className="h-entra rotulo">Estúdio de identidade digital · Belo Horizonte</p>
 
         <h1 className="mt-8 md:mt-10">
-          <span className="sr-only">
-            iD: a ponte entre o seu negócio e o mundo. Seu negócio existe, falta o mundo saber.
-          </span>
+          <span className="sr-only">iD Soluções: o site do seu negócio no ar em 5 dias.</span>
 
           <span aria-hidden="true" className="block">
-            <Mascara className="h-l1 display text-[clamp(2.5rem,10vw,10rem)]">Seu negócio</Mascara>
+            <Mascara className="h-l1 display text-[clamp(2.5rem,10vw,10rem)]">Seu site</Mascara>
 
             {/* o vao: a linha e a marca em cima dela */}
             <span className="relative my-5 flex h-16 items-center md:my-7 md:h-24">
@@ -143,15 +142,16 @@ export function Hero() {
             </span>
 
             <Mascara className="h-l2 display text-right text-[clamp(2.5rem,10vw,10rem)]">
-              o mundo
+              em {prazo}
             </Mascara>
           </span>
         </h1>
 
         <div className="mt-14 flex flex-col gap-8 md:mt-20 md:flex-row md:items-end md:justify-between">
           <p className="h-entra max-w-[42ch] text-[clamp(1.0625rem,1.6vw,1.375rem)] leading-[1.45]">
-            Seu negócio já existe. Falta o mundo saber. Somos dois desenvolvedores e fazemos essa
-            ponte com <strong className="font-semibold">preço fechado, dito antes de começar</strong>.
+            Somos dois desenvolvedores em Belo Horizonte. Fazemos o site do seu negócio a partir de{' '}
+            <strong className="font-semibold">{planos[0].preco}</strong>, com preço fechado, dito
+            antes de começar.
           </p>
 
           <div className="h-entra flex shrink-0 flex-wrap gap-3">

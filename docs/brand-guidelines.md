@@ -1,7 +1,7 @@
 # iD — Guia de Marca v2.0
 
-> Atualizado: 2026-09-09 · v2.0 — logotipo redesenhado e paleta trocada
-> Status: aprovado (símbolo e arquitetura) · pendente (faixa de preço)
+> Atualizado: 2026-09-09 · v2.1 — mensagem principal, preço, prazo e contato
+> Status: aprovado (símbolo, arquitetura, preço e prazo) · pendente (domínio e Instagram)
 
 A tabela Quick Reference é lida por `scripts/sync-brand-to-tokens.cjs`, por isso os
 rótulos `Primary Color`, `Secondary Color` e `Accent Color` ficam em inglês. Todo o
@@ -47,6 +47,10 @@ Dois desenvolvedores em Belo Horizonte: Arthur Nametala (front-end, produto e
 interface) e Gustavo Vieira (back-end, integrações e qualidade). O cliente fala
 direto com quem escreve o código — não existe camada de atendimento, e essa
 ausência é argumento de venda, não limitação.
+
+Atendemos **só Belo Horizonte**. É uma escolha, não uma fase: é a cidade onde a
+gente consegue aparecer se precisar, e vender proximidade que não se cumpre é o
+mesmo que não vender nada.
 
 ---
 
@@ -179,19 +183,23 @@ Três papéis, três famílias — cada uma faz o que as outras não fazem.
 
 **Archivo em largura expandida** é a voz alta da marca. Expandida e não
 condensada de propósito: condensada é o default de todo site de agência. Só em
-título, com `letter-spacing: -0,045em` e entrelinha 0,86 — a utilidade `.display`
+título, com `letter-spacing: -0,035em` e entrelinha 0,95 — a utilidade `.display`
 no CSS já traz tudo isso junto.
+
+A entrelinha não desce de 0,95. Abaixo disso a descendente do "g" encosta na
+linha seguinte, e onde há máscara de reveal (`overflow: hidden`) ela é cortada.
 
 | Papel | Fonte | Tamanho |
 |-------|-------|---------|
-| Hero | Archivo Expanded | clamp(3rem, 13vw, 13rem) |
+| Hero | Archivo Expanded | clamp(2,5rem, 10vw, 10rem) |
 | H2 de seção | Archivo Expanded | clamp(2,25rem, 6,5vw, 5,5rem) |
 | Lead | Instrument Sans | clamp(1,0625rem, 1,6vw, 1,375rem) |
-| Texto | Instrument Sans | 17 px, entrelinha 1,55, máx. 46ch |
+| Texto | Instrument Sans | 16 px, entrelinha 1,6, máx. 46ch |
 | Rótulo | JetBrains Mono | 11 px, caixa alta, tracking 0,16em |
 
-Rótulo de seção é sempre mono em caixa alta com o número da etapa: `01 — O que a
-gente cortou`. É o que dá ao scroll a sensação de capítulo.
+Rótulo de seção é sempre mono em caixa alta e curto: `O QUE A GENTE ENTREGA`.
+Sem número — a numeração ficou só onde conta alguma coisa (as etapas do processo
+e os cases), e não como enfeite em toda seção.
 
 ## 5. Voz
 
@@ -199,7 +207,7 @@ gente cortou`. É o que dá ao scroll a sensação de capítulo.
 
 | Traço | Quer dizer | Soa assim | Nunca assim |
 |-------|-----------|-----------|-------------|
-| Direto | Resposta antes de contexto | "R$ X, pronto em 5 dias úteis." | "Depende de alguns fatores, vamos conversar?" |
+| Direto | Resposta antes de contexto | "R$ 300, pronto em 5 dias." | "Depende de alguns fatores, vamos conversar?" |
 | Chão | Fala de venda, não de stack | "O cliente vê seu horário e chama no zap." | "Arquitetura headless com SSR." |
 | Franco | Diz o que não faz | "Isso a gente não faz. Indico quem faz." | "Conseguimos atender qualquer demanda." |
 | Presente | Dois nomes, não uma fachada | "Sou o Arthur, quem cuida do back é o Gustavo." | "Nossa equipe entrará em contato." |
@@ -219,7 +227,7 @@ categoria; ele não é permissão para escrever como folheto de 2009.
 oferecendo sites de alta performance sob medida para alavancar o seu negócio.
 
 **Depois:** Somos dois desenvolvedores. Fazemos o site do seu negócio com preço
-fechado, dito antes de começar, e colocamos no ar em dias. Sem contrato e sem
+fechado, dito antes de começar, e colocamos no ar em 5 dias. Sem contrato e sem
 reunião de duas horas.
 
 ---
@@ -227,12 +235,12 @@ reunião de duas horas.
 ## 6. Mensagem
 
 **Missão.** Damos identidade digital a quem toca o próprio negócio, com site pronto
-em dias e preço fechado, pra que o cliente encontre e confie antes mesmo de mandar
+em 5 dias e preço fechado, pra que o cliente encontre e confie antes mesmo de mandar
 a primeira mensagem.
 
 **Proposta de valor.** Para o autônomo ou dono de pequeno negócio que perde cliente
 por não ter onde ser encontrado, a iD é um estúdio de sites que coloca o negócio no
-ar em dias, com preço fechado e sem contrato. Diferente de agência, aqui você fala
+ar em 5 dias, com preço fechado e sem contrato. Diferente de agência, aqui você fala
 direto com os dois desenvolvedores que escrevem o código.
 
 **Posicionamento.** iD é o estúdio de sites para quem toca o próprio negócio e quer
@@ -243,17 +251,23 @@ presença — no prazo e no preço de quem ainda está começando.
 
 | Mensagem | Dor que resolve | Prova |
 |----------|-----------------|-------|
-| Seu negócio existe. Falta o mundo saber. | Só é achado por indicação | Bella Rocca, BL4CK GYM e Studio Rondas no ar |
-| Preço fechado, dito antes de começar. | Medo de conta que só cresce | Tabela de preços pública no site |
-| Você fala com quem escreve o código. | Cansaço de atendimento que não resolve | São dois devs, sem camada no meio |
-| No ar em dias, não em meses. | Orçamento que some e nunca volta | Base própria já pronta e reaproveitada |
+| Seu site no ar em 5 dias. | Orçamento que some e nunca volta | VIA Drones, BL4CK GYM e Studio Rondas, com link |
+| Preço fechado, dito antes de começar. | Medo de conta que só cresce | R$ 300 e R$ 500 impressos no site |
+| Você fala com quem escreve o código. | Cansaço de atendimento que não resolve | Os dois WhatsApps na página, sem intermediário |
+| Só Belo Horizonte. | Medo de contratar alguém que some | Mesma cidade: dá pra cobrar de perto |
+
+A primeira linha é a mensagem principal, e é ela que vira o título da página.
+Ela mudou: a versão anterior ("Seu negócio existe, falta o mundo saber") era uma
+ideia, não uma oferta — quem lia tinha que traduzir sozinho o que a gente vende.
+A regra que vale para a marca vale para o texto: **conceito que precisa de
+legenda não serve.**
 
 ### Bio do Instagram
 
 ```
 Sites para quem toca o próprio negócio
-Sem burocracia, sem mensalidade surpresa
-Belo Horizonte · atendemos o Brasil todo
+A partir de R$ 300 · no ar em 5 dias
+Belo Horizonte — e só BH
 Orçamento no WhatsApp ↓
 ```
 
@@ -261,15 +275,16 @@ Orçamento no WhatsApp ↓
 
 ## 7. Pendente
 
-Os preços foram definidos: **Página única R$ 300** e **Página + identidade
-R$ 500**, ambos visíveis no site. Continuam pendentes:
+Preço (**R$ 300** e **R$ 500**), prazo (**5 dias**), os dois WhatsApps e o
+e-mail já estão em `src/config/site.ts`. Continua pendente:
 
-- **Prazo de entrega** de cada pacote (`[INSERIR PRAZO]` em `src/config/site.ts`).
-- **WhatsApp, Instagram e e-mail.**
-- **`public/og.png`** (1200×600) — sem ele o link compartilhado no WhatsApp
-  aparece sem imagem.
-- **Campos não confirmados dos cases** (resultado, cidade, segmento do Studio
-  Rondas).
+- **Domínio próprio.** Enquanto a URL canônica for `SEU-DOMINIO`, o `index.html`
+  mantém `noindex`: indexar um endereço que não existe é pior que não aparecer.
+  Tirar essa linha é a última tarefa antes de lançar.
+- **@ do Instagram.**
+- **`public/og.png`** (1200×630) — sem ele o link compartilhado no WhatsApp
+  aparece sem imagem, e o WhatsApp é o canal de venda.
+- **Cidade da BL4CK GYM** — único campo de case ainda em placeholder.
 
 O nome textual da empresa é **iD Soluções**. No logotipo continua sendo só
 **iD** — "Soluções" nunca entra no símbolo, e nunca em caixa alta como "ID".

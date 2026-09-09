@@ -1,7 +1,7 @@
-import { cases } from '../config/site';
-import { gsap, eMobile, T, E } from '../lib/motion';
-import { usarContexto } from '../lib/usarContexto';
-import { Valor } from './Texto';
+import { cases } from "../config/site";
+import { gsap, eMobile, T, E } from "../lib/motion";
+import { usarContexto } from "../lib/usarContexto";
+import { Valor } from "./Texto";
 
 /**
  * WOW 03 — o portfolio como exposicao, nao como grade.
@@ -13,12 +13,12 @@ import { Valor } from './Texto';
 export function Provas() {
   const ref = usarContexto<HTMLElement>((raiz) => {
     const q = gsap.utils.selector(raiz);
-    const trilho = q<HTMLDivElement>('.p-trilho')[0];
+    const trilho = q<HTMLDivElement>(".p-trilho")[0];
     if (!trilho) return;
 
     if (eMobile()) {
       gsap.fromTo(
-        q('.p-painel'),
+        q(".p-painel"),
         { opacity: 0, y: 28 },
         {
           opacity: 1,
@@ -26,8 +26,8 @@ export function Provas() {
           duration: T.medio,
           stagger: 0.1,
           ease: E.saida,
-          scrollTrigger: { trigger: raiz, start: 'top 70%', once: true },
-        }
+          scrollTrigger: { trigger: raiz, start: "top 70%", once: true },
+        },
       );
       return;
     }
@@ -35,10 +35,10 @@ export function Provas() {
     const distancia = () => Math.max(0, trilho.scrollWidth - window.innerWidth);
     gsap.to(trilho, {
       x: () => -distancia(),
-      ease: 'none',
+      ease: "none",
       scrollTrigger: {
         trigger: raiz,
-        start: 'top top',
+        start: "top top",
         end: () => `+=${distancia()}`,
         pin: true,
         scrub: 0.6,
@@ -49,7 +49,11 @@ export function Provas() {
   });
 
   return (
-    <section ref={ref} id="provas" className="relative scroll-mt-20 overflow-hidden">
+    <section
+      ref={ref}
+      id="provas"
+      className="relative scroll-mt-20 overflow-hidden"
+    >
       <div className="flex min-h-[100svh] flex-col justify-center py-24">
         <div className="grade">
           <p className="rotulo">Trabalhos</p>
@@ -73,26 +77,32 @@ export function Provas() {
                 </span>
               </div>
 
-              <h3 className="display mt-4 text-[clamp(2rem,5.2vw,4.25rem)]">{c.cliente}</h3>
+              <h3 className="display mt-4 text-[clamp(2rem,5.2vw,4.25rem)]">
+                {c.cliente}
+              </h3>
 
               <p className="mt-3 font-mono text-[0.8125rem] text-[var(--tinta-media)]">
                 <Valor>{c.local}</Valor>
               </p>
-
-              <dl className="mt-10 grid max-w-[52ch] gap-6 sm:grid-cols-2">
-                <div>
-                  <dt className="rotulo">O que fizemos</dt>
-                  <dd className="mt-2 leading-[1.5]">
-                    <Valor>{c.oQueFizemos}</Valor>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="rotulo">Resultado</dt>
-                  <dd className="mt-2 leading-[1.5]">
-                    <Valor>{c.resultado}</Valor>
-                  </dd>
-                </div>
+              <dl className="mt-10 max-w-[46ch]">
+                <dt className="rotulo">O que fizemos</dt>
+                <dd className="mt-2 leading-[1.5]">
+                  <Valor>{c.oQueFizemos}</Valor>
+                </dd>
               </dl>
+
+              {/* a prova de um estudio de site e o site no ar, nao um numero
+                  de conversao que ninguem consegue conferir */}
+              <a
+                href={c.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-9 inline-flex min-h-[48px] items-center gap-2 border-b-2 border-[var(--linha-forte)] font-mono text-[0.8125rem] tracking-[0.1em] uppercase transition-colors hover:border-[var(--vermelho)] hover:text-[var(--vermelho)]"
+              >
+                Ver o site no ar
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only">de {c.cliente}</span>
+              </a>
             </article>
           ))}
 

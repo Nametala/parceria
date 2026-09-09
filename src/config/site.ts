@@ -9,12 +9,16 @@ export const PLACEHOLDER = /^\[.*\]$/;
 export const temPlaceholder = (v: string) => PLACEHOLDER.test(v.trim());
 
 export const contato = {
-  whatsapp: '[INSERIR WHATSAPP]',
+  /** Numero principal do site. O individual de cada um fica em `dupla`. */
+  whatsapp: '+55 31 98311-2211',
   instagram: '[INSERIR @INSTAGRAM]',
-  email: '[INSERIR E-MAIL]',
+  email: 'idsolucoessites@gmail.com',
   cidade: 'Belo Horizonte',
-  atendimento: 'Atendemos o Brasil todo',
+  atendimento: 'Atendemos só Belo Horizonte',
 } as const;
+
+/** Prazo unico dos dois pacotes. Um numero so, para nao virar tabela. */
+export const prazo = '5 dias';
 
 export const dores = [
   'Só tenho Instagram.',
@@ -39,12 +43,13 @@ export const processo = [
   {
     n: '03',
     titulo: 'Você aprova',
-    texto: 'Vê no ar, num link, antes de qualquer coisa ficar definitiva. Ajuste é conversa, não retrabalho cobrado.',
+    texto:
+      'Vê no ar, num link, antes de qualquer coisa ficar definitiva. Ajuste é conversa, não retrabalho cobrado.',
   },
   {
     n: '04',
     titulo: 'Seu site entra no ar',
-    texto: 'Domínio configurado, no Google, com botão de WhatsApp funcionando. Em dias.',
+    texto: 'Domínio configurado, no Google, com botão de WhatsApp funcionando. Em 5 dias.',
   },
 ] as const;
 
@@ -64,7 +69,7 @@ export const planos: readonly Plano[] = [
     nome: 'Página única',
     para: 'Para existir no Google e ter para onde mandar o cliente.',
     preco: 'R$ 300',
-    prazo: '[INSERIR PRAZO]',
+    prazo,
     inclui: [
       'Uma página com tudo que importa',
       'Botão de WhatsApp',
@@ -78,7 +83,7 @@ export const planos: readonly Plano[] = [
     nome: 'Página + identidade',
     para: 'Para quem ainda não tem marca — ou tem uma que não representa mais o negócio.',
     preco: 'R$ 500',
-    prazo: '[INSERIR PRAZO]',
+    prazo,
     destaque: true,
     inclui: [
       'Tudo da página única',
@@ -96,38 +101,37 @@ export type Case = {
   segmento: string;
   local: string;
   oQueFizemos: string;
-  resultado: string;
+  /** Site no ar. Para um estudio de sites, o link e a prova — nao um numero. */
   link: string;
 };
 
-/** Projetos reais do estudio. Campos nao confirmados ficam como placeholder. */
 export const cases: readonly Case[] = [
   {
-    id: 'bella-rocca',
-    cliente: 'Bella Rocca',
-    segmento: 'Moda feminina',
-    local: 'Savassi, Belo Horizonte',
-    oQueFizemos: 'Site institucional da loja.',
-    resultado: '[INSERIR RESULTADO]',
-    link: '[INSERIR LINK]',
+    id: 'via-drones',
+    cliente: 'VIA Drones',
+    segmento: 'Pulverização agrícola',
+    local: 'Medeiros, MG',
+    oQueFizemos:
+      'Site inteiro: a operação explicada passo a passo, a ficha técnica do drone e o orçamento caindo direto no WhatsApp.',
+    link: 'https://viadronesmarcel.vercel.app',
   },
   {
     id: 'bl4ck-gym',
-    cliente: 'BL4CK GYM',
+    cliente: 'THE BL4CK GYM',
     segmento: 'Academia',
     local: '[INSERIR CIDADE]',
-    oQueFizemos: 'Site institucional construído sobre a nossa base própria, em React e Tailwind.',
-    resultado: '[INSERIR RESULTADO]',
-    link: '[INSERIR LINK]',
+    oQueFizemos:
+      'Site institucional com as modalidades da academia e a aula experimental como chamada principal.',
+    link: 'https://bl4ck-gym.vercel.app',
   },
   {
     id: 'studio-rondas',
     cliente: 'Studio Rondas',
-    segmento: '[INSERIR SEGMENTO]',
-    local: '[INSERIR CIDADE]',
-    oQueFizemos: '[INSERIR O QUE FOI FEITO]',
-    resultado: '[INSERIR RESULTADO]',
-    link: '[INSERIR LINK]',
+    segmento: 'Saúde integrada',
+    local: 'Funcionários, Belo Horizonte',
+    oQueFizemos:
+      'Site com as quatro modalidades, o endereço e a aula experimental marcada pelo WhatsApp.',
+    link: 'https://studio-rondas.vercel.app',
   },
 ] as const;
 
@@ -136,10 +140,17 @@ export const dupla = [
     nome: 'Arthur',
     sobrenome: 'Nametala',
     github: 'https://github.com/Nametala',
+    whatsapp: '+55 31 98311-2211',
   },
   {
     nome: 'Gustavo',
     sobrenome: 'Vieira',
     github: 'https://github.com/vGustav1',
+    whatsapp: '+55 31 98957-5955',
   },
 ] as const;
+
+/** wa.me exige so digitos: +55 31 98311-2211 -> 5531983112211 */
+export const linkZap = (numero: string, mensagem?: string) =>
+  `https://wa.me/${numero.replace(/\D/g, '')}` +
+  (mensagem ? `?text=${encodeURIComponent(mensagem)}` : '');
