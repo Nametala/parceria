@@ -13,19 +13,15 @@
       name="description"
       content="Somos dois desenvolvedores em Belo Horizonte. Fazemos o site do seu negócio a partir de R$ 300, no ar em 5 dias. Preço fechado, dito antes de começar."
     />
-    <!-- ============================================================
-         REMOVER AO LANCAR. Enquanto a URL canonica for SEU-DOMINIO, indexar
-         mandaria o Google guardar um endereco que nao existe. Tirar esta linha
-         e a ultima coisa a fazer, depois do dominio registrado.
-         ============================================================ -->
-    <meta name="robots" content="noindex, nofollow" />
-
     <!-- tema unico: o site nao segue prefers-color-scheme, por decisao de direcao -->
     <meta name="theme-color" content="#F2EFE7" />
     <meta name="color-scheme" content="light" />
 
-    <!-- TODO [INSERIR DOMINIO]: trocar a URL canonica e a og:url quando o dominio for registrado -->
-    <link rel="canonical" href="https://SEU-DOMINIO.com.br/" />
+    <!-- Enquanto nao houver dominio proprio, o endereco oficial e o da Vercel.
+         Existem dois outros projetos servindo este mesmo site; a canonica e
+         quem diz ao Google qual deles e o original. Trocar aqui, em
+         robots.txt e em sitemap.xml no dia do dominio. -->
+    <link rel="canonical" href="https://id-site-nametala-s-projects.vercel.app/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
@@ -38,14 +34,15 @@
       property="og:description"
       content="Dois desenvolvedores em Belo Horizonte. A partir de R$ 300, no ar em 5 dias. Preço fechado, dito antes de começar."
     />
-    <meta property="og:url" content="https://SEU-DOMINIO.com.br/" />
-    <!-- TODO [INSERIR OG.PNG]: exportar 1200x630 a partir de assets/logo/logo-avatar.svg e
-         descomentar as duas linhas abaixo. Tag omitida de proposito: og:image apontando para
-         arquivo inexistente quebra o preview no WhatsApp, que e o canal de venda. -->
-    <!-- <meta property="og:image" content="https://SEU-DOMINIO.com.br/og.png" /> -->
-    <!-- <meta property="og:image:alt" content="iD — estudio de sites para pequenos negocios" /> -->
+    <meta property="og:url" content="https://id-site-nametala-s-projects.vercel.app/" />
+    <!-- gerado por scripts/marca.mjs. URL absoluta: o WhatsApp nao resolve caminho relativo -->
+    <meta property="og:image" content="https://id-site-nametala-s-projects.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="iD — estúdio de sites para pequenos negócios" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://id-site-nametala-s-projects.vercel.app/og.png" />
     <meta
       name="twitter:title"
       content="iD Soluções — Site do seu negócio no ar em 5 dias"
@@ -60,6 +57,8 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "iD Soluções",
+        "url": "https://id-site-nametala-s-projects.vercel.app/",
+        "image": "https://id-site-nametala-s-projects.vercel.app/og.png",
         "description": "Estúdio de criação de sites para pequenos empreendedores, autônomos e negócios locais.",
         "areaServed": { "@type": "City", "name": "Belo Horizonte" },
         "telephone": "+5531983112211",

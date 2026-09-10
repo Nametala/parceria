@@ -286,12 +286,11 @@ Orçamento no WhatsApp ↓
 Preço (**R$ 300** e **R$ 500**), prazo (**5 dias**), os dois WhatsApps e o
 e-mail já estão em `src/config/site.ts`. Continua pendente:
 
-- **Domínio próprio.** Enquanto a URL canônica for `SEU-DOMINIO`, o `index.html`
-  mantém `noindex`: indexar um endereço que não existe é pior que não aparecer.
-  Tirar essa linha é a última tarefa antes de lançar.
-- **@ do Instagram.**
-- **`public/og.png`** (1200×630) — sem ele o link compartilhado no WhatsApp
-  aparece sem imagem, e o WhatsApp é o canal de venda.
+- **@ do Instagram.** Único placeholder que resta em `src/config/site.ts`.
+- **Domínio próprio.** Não é bloqueio: até ele existir, o endereço oficial é o
+  da Vercel, e é ele que está na canonical, no `robots.txt` e no `sitemap.xml`.
+  O site está aberto para indexação — um estúdio que vende "apareça no Google"
+  não pode ser invisível nele.
 
 Os cases não têm mais nenhum campo em placeholder.
 

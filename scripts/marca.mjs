@@ -154,3 +154,7 @@ desenhar({ arquivo: 'marca-id-mono.png', w: 2010, h: 1500, larguraMarca: 2010, c
 // perfil de rede social: quadrado, marca a 62% da largura
 desenhar({ arquivo: 'marca-id-perfil.png', w: 1024, h: 1024, larguraMarca: 635, corI: AZUL, corD: TINTA, fundo: PAPEL });
 desenhar({ arquivo: 'marca-id-perfil-escuro.png', w: 1024, h: 1024, larguraMarca: 635, corI: AZUL_CLARO, corD: PAPEL, fundo: TINTA });
+
+// cartao de preview (og:image). Chapa escura de proposito: no meio dos
+// previews brancos do WhatsApp — que e o canal de venda — o card claro some.
+desenhar({ arquivo: '../og.png', w: 1200, h: 630, larguraMarca: 420, corI: AZUL_CLARO, corD: PAPEL, fundo: TINTA });

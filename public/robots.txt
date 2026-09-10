@@ -1,7 +1,6 @@
-# O bloqueio de indexacao esta na meta robots do index.html, nao aqui.
-# Bloquear o crawl aqui impediria o robo de LER aquele noindex.
-# Ao lancar: remova a meta noindex do index.html e ajuste a URL abaixo.
+# Site aberto para indexacao. A URL abaixo e a canonica do index.html:
+# as duas precisam mudar juntas no dia do dominio proprio.
 User-agent: *
 Allow: /
 
-Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
+Sitemap: https://id-site-nametala-s-projects.vercel.app/sitemap.xml

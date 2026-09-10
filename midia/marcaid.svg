@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 100" role="img" aria-label="iD">
+  <title>iD</title>
+  <circle cx="11" cy="11" r="11" fill="#1B3BFF"/>
+  <path d="M11 32V100" stroke="#1B3BFF" stroke-width="22" fill="none"/>
+  <g fill="none" stroke="#14130F" stroke-width="22">
+    <path d="M55 0V100"/>
+    <path d="M55 11H83A39 39 0 0 1 83 89H55"/>
+  </g>
+</svg>

@@ -78,11 +78,12 @@ campos não confirmados dos cases. Os preços já estão definidos (R$ 300 e R$ 
 
 Fora do `site.ts` faltam ainda:
 
-- `public/og.png` (1200×630) — exportar de `assets/logo/logo-avatar.svg` e
-  descomentar as duas linhas `og:image` no `index.html`. Sem isso o link
-  compartilhado no WhatsApp aparece sem imagem.
-- O domínio real, que aparece em `index.html` (canonical e `og:url`),
-  `public/robots.txt` e `public/sitemap.xml` como `SEU-DOMINIO.com.br`.
+- O **@ do Instagram**, em `contato.instagram`.
+
+Enquanto não houver domínio próprio, o endereço oficial é o da Vercel
+(`https://id-site-nametala-s-projects.vercel.app`). Ele aparece em três lugares
+que precisam mudar juntos: a canonical e a `og:url` do `index.html`,
+`public/robots.txt` e `public/sitemap.xml`.
 
 ## Decisões de direção que valem preservar
 
