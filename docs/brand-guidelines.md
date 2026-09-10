@@ -198,8 +198,8 @@ linha seguinte, e onde há máscara de reveal (`overflow: hidden`) ela é cortad
 | Rótulo | JetBrains Mono | 11 px, caixa alta, tracking 0,16em |
 
 Rótulo de seção é sempre mono em caixa alta e curto: `O QUE A GENTE ENTREGA`.
-Sem número — a numeração ficou só onde conta alguma coisa (as etapas do processo
-e os cases), e não como enfeite em toda seção.
+Sem número — a numeração ficou só nas etapas do processo, onde ela diz uma
+ordem real, e não como enfeite em toda seção.
 
 ## 5. Voz
 
@@ -284,7 +284,8 @@ e-mail já estão em `src/config/site.ts`. Continua pendente:
 - **@ do Instagram.**
 - **`public/og.png`** (1200×630) — sem ele o link compartilhado no WhatsApp
   aparece sem imagem, e o WhatsApp é o canal de venda.
-- **Cidade da BL4CK GYM** — único campo de case ainda em placeholder.
+
+Os cases não têm mais nenhum campo em placeholder.
 
 O nome textual da empresa é **iD Soluções**. No logotipo continua sendo só
 **iD** — "Soluções" nunca entra no símbolo, e nunca em caixa alta como "ID".

@@ -218,7 +218,6 @@ export function Contato() {
           )}
         </div>
 
-        <p className="rotulo mt-16 border-t border-[var(--linha)] pt-8">{contato.atendimento}</p>
       </div>
     </section>
   );

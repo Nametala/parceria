@@ -14,7 +14,6 @@ export const contato = {
   instagram: '[INSERIR @INSTAGRAM]',
   email: 'idsolucoessites@gmail.com',
   cidade: 'Belo Horizonte',
-  atendimento: 'Atendemos só Belo Horizonte',
 } as const;
 
 /** Prazo unico dos dois pacotes. Um numero so, para nao virar tabela. */
@@ -119,7 +118,7 @@ export const cases: readonly Case[] = [
     id: 'bl4ck-gym',
     cliente: 'THE BL4CK GYM',
     segmento: 'Academia',
-    local: '[INSERIR CIDADE]',
+    local: 'Belo Horizonte',
     oQueFizemos:
       'Site institucional com as modalidades da academia e a aula experimental como chamada principal.',
     link: 'https://bl4ck-gym.vercel.app',
