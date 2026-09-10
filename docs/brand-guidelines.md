@@ -100,13 +100,21 @@ diferença de altura ajuda a leitura instantânea.
 
 ### Variantes
 
+Exportadas em `public/marca/` — SVG para qualquer uso vetorial, PNG para
+onde não se aceita SVG (WhatsApp, Instagram, Word, gráfica).
+
 | Arquivo | Uso |
 |---------|-----|
-| `logo.svg` | Padrão: i azul, D tinta, sobre papel |
-| `logo-reversed.svg` | Sobre chapa escura |
-| `logo-mono.svg` | Uma cor; herda `currentColor` |
-| `logo-avatar.svg` | Instagram, WhatsApp Business — 512 × 512 |
+| `marca-id.svg` · `.png` | Padrão: i azul, D tinta. Fundo transparente |
+| `marca-id-claro.svg` · `.png` | Sobre chapa escura |
+| `marca-id-mono.svg` · `.png` | Uma cor só, tinta. Carimbo, bordado, impressão em uma cor |
+| `marca-id-perfil.png` | Avatar sobre papel — 1024 × 1024 |
+| `marca-id-perfil-escuro.png` | Avatar sobre tinta — 1024 × 1024 |
 | `favicon.svg` | Aba do navegador |
+
+Os PNG têm 2010 × 1500 e fundo transparente. Para refazer todos depois de mexer
+na marca: `node scripts/marca.mjs` — o script parte da mesma geometria do
+componente, então arquivo e site nunca divergem.
 
 No código, use sempre `<Marca />` de `src/components/Marca.tsx`. Nunca redesenhe
 a geometria à mão.
