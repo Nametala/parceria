@@ -20,6 +20,18 @@ export function Rodape() {
               {contato.email}
             </a>
           )}
+          {temPlaceholder(contato.instagram) ? (
+            <span className="pendente">{contato.instagram}</span>
+          ) : (
+            <a
+              href={`https://instagram.com/${contato.instagram.replace('@', '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-h-[44px] py-2"
+            >
+              {contato.instagram}
+            </a>
+          )}
           <span>
             {contato.cidade} · MG
           </span>

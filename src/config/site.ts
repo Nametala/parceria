@@ -11,7 +11,7 @@ export const temPlaceholder = (v: string) => PLACEHOLDER.test(v.trim());
 export const contato = {
   /** Numero principal do site. O individual de cada um fica em `dupla`. */
   whatsapp: '+55 31 98311-2211',
-  instagram: '[INSERIR @INSTAGRAM]',
+  instagram: '@idsolucoes.bh',
   email: 'idsolucoessites@gmail.com',
   cidade: 'Belo Horizonte',
 } as const;

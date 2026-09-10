@@ -58,6 +58,8 @@ piora em toque e atrapalha acessibilidade. O ScrollTrigger funciona bem sem ele.
 | Quero mudar | Arquivo |
 |-------------|---------|
 | Textos, preços, cases, contato | `src/config/site.ts` |
+| Instagram: @, bio, posts, legendas | `docs/instagram.md` |
+| As artes do Instagram | `midia/instagram/posts.html` |
 | Cores | `docs/brand-guidelines.md` → sync → `assets/theme.css` |
 | Escala tipográfica, espinha, base | `src/index.css` |
 | O logotipo | `src/components/Marca.tsx` (geometria em `docs/brand-guidelines.md` §2) |
@@ -73,12 +75,12 @@ Tudo entre colchetes em `src/config/site.ts` é placeholder explícito. Nada foi
 inventado. Em desenvolvimento o console lista todos eles no boot, e na página eles
 aparecem com marcação visível (`.pendente`) para ninguém publicar sem ver.
 
-Hoje faltam: WhatsApp, @ do Instagram, e-mail, os prazos dos dois pacotes, e os
-campos não confirmados dos cases. Os preços já estão definidos (R$ 300 e R$ 500).
+Hoje **não falta nenhum**: WhatsApp, @ do Instagram, e-mail, preços, prazo e os
+campos dos cases estão todos preenchidos.
 
-Fora do `site.ts` faltam ainda:
-
-- O **@ do Instagram**, em `contato.instagram`.
+Fora do `site.ts`, o que falta é criar a conta `@idsolucoes.bh` no Instagram — o
+@ já aparece no rodapé do site, mas o perfil ainda não existe. Perfil, bio,
+links, destaques, grade de lançamento e legendas estão em `docs/instagram.md`.
 
 Enquanto não houver domínio próprio, o endereço oficial é o da Vercel
 (`https://id-site-nametala-s-projects.vercel.app`). Ele aparece em três lugares

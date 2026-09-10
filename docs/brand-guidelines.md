@@ -1,7 +1,7 @@
 # iD — Guia de Marca v2.0
 
 > Atualizado: 2026-09-09 · v2.1 — mensagem principal, preço, prazo e contato
-> Status: aprovado (símbolo, arquitetura, preço e prazo) · pendente (domínio e Instagram)
+> Status: aprovado (símbolo, arquitetura, preço, prazo e @ do Instagram) · pendente (domínio)
 
 A tabela Quick Reference é lida por `scripts/sync-brand-to-tokens.cjs`, por isso os
 rótulos `Primary Color`, `Secondary Color` e `Accent Color` ficam em inglês. Todo o
@@ -276,17 +276,23 @@ legenda não serve.**
 Sites para quem toca o próprio negócio
 A partir de R$ 300 · no ar em 5 dias
 Belo Horizonte — e só BH
-Orçamento no WhatsApp ↓
+Veja o site e chame no zap ↓
 ```
+
+O perfil é **@idsolucoes.bh**. Tudo o que envolve o Instagram — @, bio, links,
+destaques, grade de lançamento, legendas e cadência — vive em
+`docs/instagram.md`, e as artes saem de `midia/instagram/posts.html`.
 
 ---
 
 ## 7. Pendente
 
-Preço (**R$ 300** e **R$ 500**), prazo (**5 dias**), os dois WhatsApps e o
-e-mail já estão em `src/config/site.ts`. Continua pendente:
+Preço (**R$ 300** e **R$ 500**), prazo (**5 dias**), os dois WhatsApps, o e-mail
+e o **@ do Instagram** já estão em `src/config/site.ts` — não resta placeholder
+nenhum. Continua pendente:
 
-- **@ do Instagram.** Único placeholder que resta em `src/config/site.ts`.
+- **Criar a conta** `@idsolucoes.bh`. O @ já está escrito no rodapé do site, mas
+  o perfil ainda não existe. Passo a passo em `docs/instagram.md`.
 - **Domínio próprio.** Não é bloqueio: até ele existir, o endereço oficial é o
   da Vercel, e é ele que está na canonical, no `robots.txt` e no `sitemap.xml`.
   O site está aberto para indexação — um estúdio que vende "apareça no Google"
