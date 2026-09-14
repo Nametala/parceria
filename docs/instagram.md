@@ -18,9 +18,15 @@ serve.** Se um post só funciona depois que alguém explica, ele está errado.
 |-------|-------|
 | @ (usuário) | `idsolucoes.bh` |
 | Nome (campo de busca) | `iD Soluções · Sites em BH` |
-| Categoria | Web designer |
+| Categoria | Web designer — busque "web" ou "site" no campo |
 | Foto | `public/marca/marca-id-perfil.png` |
 | Tipo de conta | Comercial (libera link, estatística e botão de contato) |
+
+A categoria aparece embaixo do nome no perfil — deixe visível. Se "Web
+designer" não estiver na busca, use "Designer gráfico" e depois "Empresa de
+design". Nunca "Agência de publicidade/marketing" (a marca se posiciona contra
+agência) nem "Empresa de tecnologia/software" (registro corporativo; quem
+precisa de site não pesquisa "software").
 
 ### Por que `idsolucoes.bh` e não `idsolucoes`
 
