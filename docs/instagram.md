@@ -86,6 +86,11 @@ Cinco, nesta ordem. As capas estão em `midia/instagram/artes/`.
 | A dupla | `destaque-dupla.png` | Quem é Arthur, quem é Gustavo |
 | Como pedir | `destaque-pedir.png` | O que mandar na primeira mensagem |
 
+Histórias de cada destaque (1080 × 1920, em `midia/instagram/stories/`):
+`s-preco-1..2`, `s-prazo-1..4`, `s-trabalhos-1..3`, `s-dupla-1`, `s-pedir-1..2`.
+Foram publicadas nessa ordem, porque dentro de um destaque a ordem é a
+cronológica de publicação.
+
 A capa aparece com cerca de 60 px de diâmetro. Nesse tamanho nenhuma palavra
 sobrevive — e o app já escreve o nome do destaque embaixo do círculo. Por isso
 cada capa carrega um sinal só, enorme: `R$`, `5d`, `↗`, `2`, `→`.
@@ -316,7 +321,16 @@ Se quiser, posso indicar alguém que atenda na sua cidade.
 
 ---
 
-## 5. Refazer as artes
+## 5. Postar story pelo navegador
+
+O instagram.com não cria story. O **Meta Business Suite**
+(business.facebook.com → Create story) cria, com até 10 imagens por vez, e a
+conta entra lá por "Continuar com o Instagram" (SSO, sem senha nova). Um
+detalhe técnico: o botão "Add photo/video" cria o `<input type=file>` só na
+hora do clique; para automatizar, interceptar `HTMLInputElement.prototype.click`
+e manter o input no DOM antes de enviar os arquivos.
+
+## 6. Refazer as artes
 
 As artes não foram desenhadas fora do projeto. Elas saem de
 `midia/instagram/posts.html`, que usa **as mesmas fontes e os mesmos tokens do
@@ -344,13 +358,18 @@ conferir tudo de uma vez.
 
 ---
 
-## 6. Pendente
+## 7. Pendente
 
 A conta existe desde 2026-09-14, com foto, nome, categoria, bio e os dois
 links. Os nove posts de lançamento subiram de uma vez, por decisão do Arthur —
 o ritmo de dois por semana da seção 2 vale a partir daqui.
 
-- **Destaques.** As cinco capas estão prontas, mas destaque nasce de story e a
-  web não posta story: é feito no celular.
+- **Destaques.** As 12 histórias subiram em 2026-09-14 (~23h) pelo Meta
+  Business Suite — é a porta pelo navegador para story; o instagram.com não
+  tem. Falta só agrupar em destaque e pôr as capas. Pela web isso só é possível
+  depois que as histórias expiram e caem no arquivo (~23h de 2026-09-15); pelo
+  celular é imediato: abrir a própria história → "Destacar" → nome → capa.
+  Artes das histórias em `midia/instagram/stories/`, capas em
+  `midia/instagram/artes/destaque-*.png`.
 - **Domínio próprio.** Quando existir, muda o link 1 da bio junto com os três
   lugares listados no `README.md`.
