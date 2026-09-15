@@ -31,6 +31,13 @@
   }
   .capa1x1 { width: 1080px; height: 1080px; }
 
+  /* Story: 9:16. O app cobre ~200px no topo (nome, barra de progresso) e
+     ~260px no pe (caixa de resposta), entao o conteudo vive no miolo e a
+     assinatura sobe para fora da area coberta. Sem corte de grade aqui,
+     por isso o bloco centraliza em vez de ancorar embaixo. */
+  .story { width: 1080px; height: 1920px; padding: 220px 84px 300px; }
+  .story .bloco { margin-top: auto; margin-bottom: auto; }
+
   /* Rotulo e conteudo formam um bloco so, ancorado embaixo — do mesmo jeito
      que o site pareia rotulo + H2. O ar todo fica em cima, de proposito. */
   /* 200 e nao 96: a miniatura da grade corta o 4:5 num 1:1 pelo centro.
@@ -408,6 +415,102 @@ const slides = [
       <p class="mono azul">Link na bio · ${ARROBA}</p>
     </div>` },
 
+/* ══ STORIES — o conteudo de cada destaque, 1080x1920 ═══════════════ */
+
+/* Preço */
+{ id: 's-preco-1', historia: true, rotulo: 'Preço · Pacote 1', corpo: `
+    <div class="pilha">
+      <div class="display m">Página única</div>
+      <div class="display xl">R$ 300</div>
+      <div class="regua" style="width:280px"></div>
+      <p class="corpo">Para existir no Google e ter para onde mandar o cliente.</p>
+      <ul class="inclui">
+        <li>Uma página com tudo que importa</li>
+        <li>Botão de WhatsApp</li>
+        <li>Aparece no Google</li>
+        <li>Funciona no celular</li>
+        <li>Domínio configurado</li>
+      </ul>
+      <p class="mono azul">No ar em 5 dias.</p>
+    </div>` },
+
+{ id: 's-preco-2', historia: true, escuro: true, rotulo: 'Preço · Pacote 2', corpo: `
+    <div class="pilha">
+      <div class="display m">Página + identidade</div>
+      <div class="display xl">R$ 500</div>
+      <div class="regua" style="width:280px"></div>
+      <p class="corpo">Para quem ainda não tem marca — ou tem uma que não representa mais o negócio.</p>
+      <ul class="inclui">
+        <li>Tudo da página única</li>
+        <li>Logotipo</li>
+        <li>Paleta e tipografia</li>
+        <li>Arquivos para redes e impressão</li>
+        <li>Guia de uso da marca</li>
+      </ul>
+      <p class="mono azul">No ar em 5 dias.</p>
+    </div>` },
+
+/* Prazo — um passo por story */
+...[
+  ['01', 'Você conta o que faz', 'Uma conversa no WhatsApp. Sem briefing de vinte páginas, sem reunião de duas horas.'],
+  ['02', 'Transformamos isso em identidade', 'Marca, texto, estrutura e o site inteiro. Você não precisa trazer nada pronto.'],
+  ['03', 'Você aprova', 'Vê no ar, em um link, antes de qualquer coisa ficar definitiva. Ajuste é conversa, não retrabalho cobrado.'],
+  ['04', 'O seu site entra no ar', 'Domínio configurado, no Google, com botão de WhatsApp funcionando. Em 5 dias.'],
+].map(([n, t, x], i) => ({
+  id: 's-prazo-' + (i + 1), historia: true, escuro: i % 2 === 1,
+  rotulo: 'Prazo · 4 passos, 5 dias', corpo: `
+    <div class="pilha">
+      <span class="display xl vermelho">${n}</span>
+      <div class="display l">${t}</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">${x}</p>
+    </div>` })),
+
+/* Trabalhos — um case por story, com o link */
+...[
+  ['bl4ck', 'THE BL4CK GYM', 'Academia · Belo Horizonte', 'bl4ck-gym.vercel.app'],
+  ['rondas', 'Studio Rondas', 'Saúde integrada · Funcionários, BH', 'studio-rondas.vercel.app'],
+  ['viadrones', 'VIA Drones', 'Pulverização agrícola · Medeiros, MG', 'viadronesmarcel.vercel.app'],
+].map(([f, nome, seg, url], i) => ({
+  id: 's-trabalhos-' + (i + 1), historia: true, rotulo: 'Trabalho · ' + seg, corpo: `
+    <div class="pilha">
+      <div class="print"><img src="prints/case-${f}.png" alt=""></div>
+      <div class="display m">${nome}</div>
+      <div class="regua" style="width:220px"></div>
+      <p class="mono azul">${url}</p>
+      <p class="corpo media">No ar. Basta abrir e ver.</p>
+    </div>` })),
+
+/* A dupla — sem cargo: a divisão de funções foi retirada de proposito */
+{ id: 's-dupla-1', historia: true, escuro: true, rotulo: 'Quem está do outro lado', corpo: `
+    <div class="pilha">
+      <div class="display l">Somos dois.</div>
+      <div class="regua" style="width:280px"></div>
+      <div class="display m">Você fala com quem escreve o código.</div>
+      <p class="corpo media">Sem camada de atendimento. O WhatsApp que você chama é o nosso.</p>
+    </div>` },
+
+/* Como pedir */
+{ id: 's-pedir-1', historia: true, rotulo: 'Como pedir', corpo: `
+    <div class="pilha">
+      <div class="display l">Envie uma mensagem contando o que você faz.</div>
+      <div class="regua" style="width:340px"></div>
+      <p class="corpo">Respondemos com o preço e a data em que o seu site entra no ar. Sem reunião.</p>
+      <p class="mono azul">Link na bio · WhatsApp</p>
+    </div>` },
+
+{ id: 's-pedir-2', historia: true, escuro: true, rotulo: 'Como pedir · O que dizer na primeira mensagem', corpo: `
+    <div class="pilha">
+      <div class="display m">Três coisas bastam.</div>
+      <div class="regua" style="width:240px"></div>
+      <div class="pilha" style="gap:20px;margin-top:12px">
+        <div class="etapa"><span class="n">01</span><span class="display s">O que o seu negócio faz</span></div>
+        <div class="etapa"><span class="n">02</span><span class="display s">Onde ele fica</span></div>
+        <div class="etapa"><span class="n">03</span><span class="display s">Se já tem logotipo ou precisa de um</span></div>
+      </div>
+      <p class="corpo media">O resto a gente pergunta na conversa.</p>
+    </div>` },
+
 /* ══ capas de destaque — 1080x1080, cortadas em círculo pelo app ═════
    O circulo aparece com ~60px de diametro no perfil: palavra nenhuma
    sobrevive nesse tamanho, e o app ja escreve o nome embaixo. Entao a capa
@@ -437,7 +540,7 @@ document.write(slides.map((s) => {
 
   return `<div class="quadro">
       <span class="etiqueta">${s.id}</span>
-      <div class="slide ${s.escuro ? 'tinta' : ''} ${s.quadrado ? 'capa1x1' : ''}"
+      <div class="slide ${s.escuro ? 'tinta' : ''} ${s.quadrado ? 'capa1x1' : ''} ${s.historia ? 'story' : ''}"
            id="${s.id}" ${s.capa ? 'style="padding:0"' : ''}>${dentro}</div>
     </div>`;
 }).join(''));
