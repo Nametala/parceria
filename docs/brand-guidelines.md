@@ -43,8 +43,10 @@ campanha, mas nunca substituem a leitura principal.
 
 ### Quem somos
 
-Dois desenvolvedores em Belo Horizonte: Arthur Nametala (front-end, produto e
-interface) e Gustavo Vieira (back-end, integrações e qualidade). O cliente fala
+Dois desenvolvedores em Belo Horizonte: Arthur Nametala e Gustavo Vieira. Não
+há divisão de funções declarada entre os dois — uma versão anterior deste guia
+atribuía front-end a um e back-end ao outro, estava errada e foi retirada. Em
+texto público, os dois são "dois desenvolvedores", sem cargo. O cliente fala
 direto com quem escreve o código — não existe camada de atendimento, e essa
 ausência é argumento de venda, não limitação.
 

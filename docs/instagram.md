@@ -109,7 +109,7 @@ quem chegar depois lê a grade de baixo para cima, e ela termina no manifesto.
 | 5 | THE BL4CK GYM | `p5-1` `p5-2` | Carrossel |
 | 6 | Studio Rondas | `p6-1` `p6-2` | Carrossel |
 | 7 | VIA Drones | `p7-1` `p7-2` | Carrossel |
-| 8 | A dupla | `p8-1` `p8-2` | Carrossel |
+| ~~8~~ | ~~A dupla~~ | — | Retirado do ar em 2026-09-14. Não repor. |
 | 9 | Como funciona | `p9-1` `p9-2` `p9-3` `p9-4` | Carrossel |
 
 Tudo é carrossel de propósito: carrossel é o único formato estático em que a
@@ -231,18 +231,12 @@ O site explica a operação passo a passo, traz a ficha técnica do drone e faz 
 No ar em viadronesmarcel.vercel.app — abra e veja.
 ```
 
-### Post 8 — A dupla
+### Post 8 — A dupla (retirado)
 
-```
-Somos dois.
-
-Arthur Nametala — front-end, produto e interface.
-Gustavo Vieira — back-end, integrações e qualidade.
-
-Não há gerente de conta nem "nossa equipe entrará em contato". Você envia uma mensagem e quem responde é um de nós dois — o mesmo que vai escrever o código do seu site.
-
-É também por isso que atendemos somente Belo Horizonte: em dois, dá para fazer bem feito o que cabe. Prometer o Brasil inteiro seria uma promessa que não cumpriríamos.
-```
+Foi publicado e apagado no mesmo dia. A legenda e a arte `p8-2` atribuíam
+funções a cada um ("front-end" para o Arthur, "back-end" para o Gustavo), e a
+divisão não está correta. Arthur pediu para não repor. Se um dia voltar, é sem
+cargo: "somos dois desenvolvedores, você fala com quem escreve o código".
 
 ### Post 9 — Como funciona
 
