@@ -1,7 +1,7 @@
 # iD — Instagram
 
-> Atualizado: 2026-09-10 · v1.0 — perfil, grade de lançamento e cadência
-> Status: pronto para publicar · pendente (criar a conta e subir)
+> Atualizado: 2026-09-14 · v1.1 — legendas em registro escrito; conta criada
+> Status: no ar · pendente (destaques e domínio)
 
 O Instagram da iD tem uma função só: levar quem tem um negócio em BH até o
 WhatsApp. Ele não é vitrine de portfólio nem diário de bastidores — é a porta de
@@ -105,7 +105,7 @@ quem chegar depois lê a grade de baixo para cima, e ela termina no manifesto.
 | 1 | Abertura | `p1-1` `p1-2` `p1-3` | Carrossel |
 | 2 | "Só tenho Instagram." | `p2-1` `p2-2` `p2-3` | Carrossel |
 | 3 | Preço | `p3-1` `p3-2` `p3-3` | Carrossel |
-| 4 | O que a gente cortou | `p4-1` `p4-2` `p4-3` | Carrossel |
+| 4 | O que cortamos | `p4-1` `p4-2` `p4-3` | Carrossel |
 | 5 | THE BL4CK GYM | `p5-1` `p5-2` | Carrossel |
 | 6 | Studio Rondas | `p6-1` `p6-2` | Carrossel |
 | 7 | VIA Drones | `p7-1` `p7-2` | Carrossel |
@@ -114,7 +114,7 @@ quem chegar depois lê a grade de baixo para cima, e ela termina no manifesto.
 
 Tudo é carrossel de propósito: carrossel é o único formato estático em que a
 pessoa **age** — ela arrasta — e é isso que o Instagram lê como interesse. Por
-isso o primeiro quadro de cada carrossel traz "arrasta →" no rodapé.
+isso o primeiro quadro de cada carrossel traz "arraste →" no rodapé.
 
 ### Ritmo
 
@@ -130,18 +130,21 @@ peça a cada um para republicar o post do próprio site nos stories.
 
 ## 3. As legendas
 
-Copie como está. A voz é a do guia de marca §5: direto, chão, franco, presente.
+Copie como está. A voz é a do guia de marca §5 — direto, chão, franco,
+presente — em **registro escrito**: sem "tá", "pra", "zap" nem imperativo de
+conversa ("manda", "arrasta"). Arthur pediu "um pouco mais formal", e a
+palavra que importa é *um pouco*: não é tom de agência, é só tirar a oralidade.
 
 ### Post 1 — Abertura
 
 ```
-A gente abriu esse perfil pra fazer uma coisa só: colocar no ar o site de quem toca o próprio negócio em BH.
+Abrimos este perfil para fazer uma coisa só: colocar no ar o site de quem toca o próprio negócio em Belo Horizonte.
 
-Somos o Arthur e o Gustavo, dois desenvolvedores. Não tem equipe de atendimento no meio — o WhatsApp que você chama é o nosso.
+Somos o Arthur e o Gustavo, dois desenvolvedores. Não existe equipe de atendimento no meio do caminho — o WhatsApp que você chama é o nosso.
 
-Funciona assim: você conta o que faz numa conversa, a gente faz, e em 5 dias seu site tá no ar. Com domínio configurado, aparecendo no Google e com o botão de WhatsApp funcionando.
+Funciona assim: você conta o que faz em uma conversa, nós fazemos, e em 5 dias o seu site está no ar. Com domínio configurado, aparecendo no Google e com o botão de WhatsApp funcionando.
 
-R$ 300 a página única. R$ 500 se você também precisa da marca. Preço fechado, dito antes de começar. Sem contrato.
+R$ 300 pela página única. R$ 500 se você também precisa da marca. Preço fechado, definido antes de começar. Sem contrato.
 
 Link na bio.
 ```
@@ -149,15 +152,15 @@ Link na bio.
 ### Post 2 — "Só tenho Instagram."
 
 ```
-É a frase que a gente mais escuta.
+É a frase que mais ouvimos.
 
-E ela não é um problema em si — o Instagram é ótimo pra ser achado. O problema é o que vem depois: alguém te indica, a pessoa pesquisa seu nome no Google, e não acha nada. Nem endereço, nem horário, nem preço, nem um lugar pra confirmar que você existe de verdade.
+E ela não é um problema em si — o Instagram é ótimo para ser encontrado. O problema é o que vem depois: alguém indica o seu trabalho, a pessoa pesquisa o seu nome no Google e não encontra nada. Nem endereço, nem horário, nem preço, nem um lugar para confirmar que o negócio existe de fato.
 
-Ela não te descarta. Ela só não te encontra.
+Ela não descarta você. Ela apenas não encontra você.
 
-Instagram é onde te acham. Site é onde te contratam — é onde tem o que você faz, quanto custa e como falar com você, sem depender de rolar quarenta posts pra montar o quebra-cabeça.
+No Instagram, você é encontrado. No site, você é contratado: é onde estão o que você faz, quanto custa e como falar com você, sem depender de percorrer quarenta publicações para montar o quebra-cabeça.
 
-R$ 300, no ar em 5 dias, só Belo Horizonte.
+R$ 300, no ar em 5 dias, somente Belo Horizonte.
 
 Link na bio.
 ```
@@ -165,31 +168,31 @@ Link na bio.
 ### Post 3 — Preço
 
 ```
-Preço é a primeira coisa que a gente responde, não a última.
+Preço é a primeira coisa que respondemos, não a última.
 
 PÁGINA ÚNICA — R$ 300
-Uma página com tudo que importa, botão de WhatsApp, aparecendo no Google, funcionando no celular e domínio configurado.
+Uma página com tudo o que importa, botão de WhatsApp, presença no Google, funcionamento no celular e domínio configurado.
 
 PÁGINA + IDENTIDADE — R$ 500
-Tudo da página única, mais logotipo, paleta, tipografia, arquivos pra redes e impressão e um guia de uso da marca.
+Tudo da página única, mais logotipo, paleta, tipografia, arquivos para redes e impressão e um guia de uso da marca.
 
 Os dois ficam prontos em 5 dias.
 
-Preço fechado quer dizer preço fechado: o que a gente combina no começo é o que você paga no fim. Sem "isso ficou fora do escopo", sem mensalidade.
+Preço fechado significa preço fechado: o que combinamos no início é o que você paga no fim. Sem "isso ficou fora do escopo", sem mensalidade.
 
 Link na bio.
 ```
 
-### Post 4 — O que a gente cortou
+### Post 4 — O que cortamos
 
 ```
-Entre pedir um site e o site existir, uma agência coloca dez etapas: formulário de briefing, reunião de alinhamento, proposta comercial, reunião pra revisar a proposta, aprovação de escopo, contrato, kickoff, desenvolvimento e mais duas rodadas de ajuste.
+Entre pedir um site e o site existir, uma agência coloca dez etapas: formulário de briefing, reunião de alinhamento, proposta comercial, reunião para revisar a proposta, aprovação de escopo, contrato, kickoff, desenvolvimento e mais duas rodadas de ajustes.
 
 Nenhuma dessas etapas é o seu site. Todas custam o seu tempo.
 
-Aqui são três: você chama no WhatsApp, a gente faz, seu site entra no ar.
+Aqui são três: você chama no WhatsApp, nós fazemos, o seu site entra no ar.
 
-Ajuste continua existindo — é conversa, não retrabalho cobrado. O que sumiu foi a papelada em volta.
+Ajustes continuam existindo — são conversa, não retrabalho cobrado. O que saiu foi a burocracia em volta.
 
 5 dias. A partir de R$ 300. Link na bio.
 ```
@@ -199,21 +202,21 @@ Ajuste continua existindo — é conversa, não retrabalho cobrado. O que sumiu 
 ```
 THE BL4CK GYM — academia em Belo Horizonte.
 
-Musculação, treino funcional e luta. O site conta as modalidades e coloca a aula experimental como chamada principal, porque é ela que faz a pessoa entrar pela primeira vez.
+Musculação, treino funcional e luta. O site apresenta as modalidades e coloca a aula experimental como chamada principal, porque é ela que faz a pessoa entrar pela primeira vez.
 
-No ar em bl4ck-gym.vercel.app — abre e vê.
+No ar em bl4ck-gym.vercel.app — abra e veja.
 
-Pra um estúdio de sites, a prova é o link. Número inventado não é prova.
+Para um estúdio de sites, a prova é o link. Número inventado não é prova.
 ```
 
 ### Post 6 — Studio Rondas
 
 ```
-Studio Rondas — saúde integrada nos Funcionários, Belo Horizonte.
+Studio Rondas — saúde integrada no bairro Funcionários, Belo Horizonte.
 
-Musculação, pilates, personal e fisioterapia no mesmo lugar. O site mostra as quatro modalidades, o endereço e marca a aula experimental direto pelo WhatsApp.
+Musculação, pilates, personal e fisioterapia no mesmo lugar. O site mostra as quatro modalidades, o endereço e permite marcar a aula experimental direto pelo WhatsApp.
 
-No ar em studio-rondas.vercel.app — abre e vê.
+No ar em studio-rondas.vercel.app — abra e veja.
 ```
 
 ### Post 7 — VIA Drones
@@ -221,11 +224,11 @@ No ar em studio-rondas.vercel.app — abre e vê.
 ```
 VIA Drones — pulverização agrícola com drone, em Medeiros, MG.
 
-Esse é o único fora de BH, e é anterior à decisão de atender só Belo Horizonte. Fica aqui porque é trabalho nosso e a gente não esconde o que fez.
+É o único trabalho fora de Belo Horizonte, anterior à decisão de atender somente a capital. Está aqui porque é trabalho nosso, e não escondemos o que fizemos.
 
-O site explica a operação passo a passo, traz a ficha técnica do drone e faz o pedido de orçamento cair direto no WhatsApp.
+O site explica a operação passo a passo, traz a ficha técnica do drone e faz o pedido de orçamento chegar direto no WhatsApp.
 
-No ar em viadronesmarcel.vercel.app — abre e vê.
+No ar em viadronesmarcel.vercel.app — abra e veja.
 ```
 
 ### Post 8 — A dupla
@@ -236,29 +239,29 @@ Somos dois.
 Arthur Nametala — front-end, produto e interface.
 Gustavo Vieira — back-end, integrações e qualidade.
 
-Não tem gerente de conta e não tem "nossa equipe entrará em contato". Você manda mensagem e quem responde é um de nós dois — o mesmo que vai escrever o código do seu site.
+Não há gerente de conta nem "nossa equipe entrará em contato". Você envia uma mensagem e quem responde é um de nós dois — o mesmo que vai escrever o código do seu site.
 
-É também por isso que a gente atende só Belo Horizonte: em dois, dá pra fazer bem feito o que cabe. Prometer o Brasil inteiro seria promessa que a gente não cumpre.
+É também por isso que atendemos somente Belo Horizonte: em dois, dá para fazer bem feito o que cabe. Prometer o Brasil inteiro seria uma promessa que não cumpriríamos.
 ```
 
 ### Post 9 — Como funciona
 
 ```
-Do primeiro zap ao site no ar, em 4 passos:
+Do primeiro contato ao site no ar, em 4 passos:
 
 01 · VOCÊ CONTA O QUE FAZ
 Uma conversa no WhatsApp. Sem briefing de vinte páginas, sem reunião de duas horas.
 
-02 · A GENTE TRANSFORMA ISSO EM IDENTIDADE
-Marca, texto, estrutura e o site inteiro. Você não precisa trazer nada pronto — nem logo, nem texto, nem foto profissional.
+02 · TRANSFORMAMOS ISSO EM IDENTIDADE
+Marca, texto, estrutura e o site inteiro. Você não precisa trazer nada pronto — nem logotipo, nem texto, nem foto profissional.
 
 03 · VOCÊ APROVA
-Vê no ar, num link, antes de qualquer coisa ficar definitiva. Ajuste é conversa, não retrabalho cobrado.
+Vê no ar, em um link, antes de qualquer coisa ficar definitiva. Ajuste é conversa, não retrabalho cobrado.
 
-04 · SEU SITE ENTRA NO AR
+04 · O SEU SITE ENTRA NO AR
 Domínio configurado, no Google, botão de WhatsApp funcionando. Em 5 dias.
 
-Manda uma mensagem contando o que você faz. A gente responde com o preço e a data que seu site entra no ar. Sem reunião.
+Envie uma mensagem contando o que você faz. Respondemos com o preço e a data em que o seu site entra no ar. Sem reunião.
 
 Link na bio.
 ```
@@ -302,19 +305,19 @@ Primeira resposta, sempre com preço. Sumir com o preço é o comportamento que 
 gente diz combater.
 
 ```
-Oi! Sou o Arthur, um dos dois daqui.
+Olá! Sou o Arthur, um dos dois daqui.
 
-Me conta rapidinho: o que seu negócio faz e onde fica?
+Me conte em poucas palavras: o que o seu negócio faz e onde fica?
 
-Pra adiantar — página única sai R$ 300, e página + identidade (logo, paleta, arquivos) sai R$ 500. Os dois ficam no ar em 5 dias, com preço fechado e sem contrato.
+Para adiantar: a página única custa R$ 300, e página + identidade (logotipo, paleta, arquivos) custa R$ 500. Os dois ficam no ar em 5 dias, com preço fechado e sem contrato.
 ```
 
 Se for de fora de BH:
 
 ```
-Valeu pelo contato! A gente atende só Belo Horizonte — não é fase, é escolha: só prometemos proximidade onde a gente consegue cumprir.
+Obrigado pelo contato! Atendemos somente Belo Horizonte — não é fase, é escolha: só prometemos proximidade onde conseguimos cumprir.
 
-Se quiser, posso indicar alguém que atenda aí.
+Se quiser, posso indicar alguém que atenda na sua cidade.
 ```
 
 ---
@@ -349,8 +352,11 @@ conferir tudo de uma vez.
 
 ## 6. Pendente
 
-- **Criar a conta** `@idsolucoes.bh` e subir foto, bio, links e destaques.
-  Enquanto ela não existir, o `@` no rodapé do site aponta para um perfil que
-  ainda não abre.
+A conta existe desde 2026-09-14, com foto, nome, categoria, bio e os dois
+links. Os nove posts de lançamento subiram de uma vez, por decisão do Arthur —
+o ritmo de dois por semana da seção 2 vale a partir daqui.
+
+- **Destaques.** As cinco capas estão prontas, mas destaque nasce de story e a
+  web não posta story: é feito no celular.
 - **Domínio próprio.** Quando existir, muda o link 1 da bio junto com os três
   lugares listados no `README.md`.
