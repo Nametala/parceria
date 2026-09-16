@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>iD — proposta</title>
+
+<!-- As MESMAS fontes e os MESMOS tokens do site (ver midia/instagram/posts.html).
+     Preço, prazo, pacotes e contatos vêm de src/config/site.ts: mudou lá,
+     muda aqui. Gerar o PDF: node scripts/proposta.mjs (o vite precisa estar no ar). -->
+<link rel="stylesheet" href="../../node_modules/@fontsource-variable/archivo/wdth.css">
+<link rel="stylesheet" href="../../node_modules/@fontsource-variable/instrument-sans/index.css">
+<link rel="stylesheet" href="../../node_modules/@fontsource-variable/jetbrains-mono/index.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+
+<style>
+  @page { size: A4; margin: 0; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    background: #6b6b6b; padding: 24px;
+    font-family: 'Instrument Sans Variable', sans-serif;
+    color: var(--tinta); font-size: 10.5pt; line-height: 1.45;
+  }
+  @media print { body { background: none; padding: 0; } }
+
+  /* uma folha A4 só: proposta de trinta páginas é o que a iD cortou */
+  .folha {
+    width: 210mm; height: 297mm; margin: 0 auto;
+    padding: 13mm 16mm 10mm; background: var(--papel);
+    display: flex; flex-direction: column; gap: 4.5mm;
+  }
+
+  .display {
+    font-family: 'Archivo Variable', 'Arial Black', sans-serif;
+    font-variation-settings: 'wdth' 118, 'wght' 800;
+    letter-spacing: -0.035em; line-height: 0.95;
+  }
+  .rotulo, .mono {
+    font-family: 'JetBrains Mono Variable', monospace;
+    font-size: 7.5pt; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--tinta-media);
+  }
+  .mono { text-transform: none; letter-spacing: 0; font-size: 8.5pt; }
+  .media { color: var(--tinta-media); }
+  .vermelho { color: var(--vermelho); }
+  .regua { height: 3px; background: var(--vermelho-vivo); }
+  ul { list-style: none; }
+
+  /* cabeçalho: marca à esquerda, dados da proposta à direita */
+  .cabeca { display: flex; justify-content: space-between; align-items: flex-end; }
+  .cabeca svg { height: 12mm; display: block; }
+  .cabeca .meta { text-align: right; display: flex; flex-direction: column; gap: 3px; }
+
+  h1 { font-size: 29pt; max-width: 12ch; }
+  .lede { margin-top: 3mm; font-size: 11.5pt; max-width: 46ch; }
+
+  /* pacotes lado a lado, mesma hierarquia do site: nome, preço, para quem, o que inclui */
+  .pacotes { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 3mm; }
+  .pacote { border-top: 2px solid var(--tinta); padding-top: 3mm; }
+  .pacote.proposto { border-top-color: var(--vermelho-vivo); }
+  .pacote .nome { font-size: 12pt; font-weight: 600; display: flex; justify-content: space-between; align-items: baseline; }
+  .pacote .preco { font-size: 23pt; margin-top: 2mm; }
+  .pacote .para { margin-top: 1.5mm; font-size: 9.5pt; }
+  .pacote ul { margin-top: 2.5mm; display: flex; flex-direction: column; gap: 0.5mm; font-size: 9.5pt; }
+  .pacote li { display: flex; gap: 2mm; }
+  .pacote li::before { content: '—'; color: var(--vermelho-vivo); flex: none; }
+
+  /* só os títulos: o detalhe de cada etapa já está nas condições e no site */
+  .etapas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; margin-top: 3mm; font-size: 10pt; font-weight: 600; }
+  .etapas .n { display: block; font-family: 'JetBrains Mono Variable', monospace; color: var(--vermelho); font-size: 8pt; font-weight: 400; margin-bottom: 1mm; }
+
+  .condicoes { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm 6mm; margin-top: 3mm; font-size: 8.5pt; line-height: 1.4; }
+  .condicoes li { display: flex; gap: 2.5mm; }
+  .condicoes .n { font-family: 'JetBrains Mono Variable', monospace; color: var(--vermelho); font-size: 8pt; padding-top: 1px; flex: none; }
+  .condicoes b { font-weight: 600; }
+
+  .fecho { margin-top: auto; font-size: 9pt; }
+  .pe { border-top: 1px solid var(--linha); padding-top: 2.5mm; display: flex; justify-content: space-between; align-items: flex-start; gap: 6mm; font-size: 9pt; }
+  .pe .dupla { display: flex; gap: 8mm; }
+  .pe .dupla b { display: block; font-weight: 600; }
+  .pe .canais { text-align: right; display: flex; flex-direction: column; gap: 1px; }
+</style>
+</head>
+<body>
+<div class="folha" id="folha"></div>
+
+<script type="module">
+import { planos, prazo, contato, dupla } from '/src/config/site.ts';
+
+// Marca iD — mesma geometria de docs/brand-guidelines.md §2. Nunca redesenhar a mão.
+const marca = `
+  <svg viewBox="0 0 134 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="iD">
+    <circle cx="11" cy="11" r="11" fill="#1B3BFF"/>
+    <path d="M11 32V100" stroke="#1B3BFF" stroke-width="22" fill="none"/>
+    <g fill="none" stroke="#14130F" stroke-width="22">
+      <path d="M55 0V100"/><path d="M55 11H83A39 39 0 0 1 83 89H55"/>
+    </g>
+  </svg>`;
+
+// ?cliente=Nome&plano=identidade&data=2026-09-16&validade=15
+const q = new URLSearchParams(location.search);
+const cliente = q.get('cliente') ?? '';
+const plano = q.get('plano') ?? '';
+const validade = Number(q.get('validade') ?? 15);
+const data = q.get('data') ? new Date(q.get('data') + 'T12:00') : new Date();
+const ate = new Date(data); ate.setDate(ate.getDate() + validade);
+const dm = (d) => d.toLocaleDateString('pt-BR');
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const site = 'id-site-nametala-s-projects.vercel.app';
+
+const etapas = ['Você conta o que faz', 'Nós transformamos isso em identidade', 'Você aprova em um link', `O seu site entra no ar em ${prazo}`];
+
+// Não é contrato: é o combinado, escrito antes de começar, para não haver surpresa depois.
+const condicoes = [
+  ['Preço fechado.', 'O valor do pacote é o total. Não há mensalidade, taxa de hospedagem nem cobrança extra depois da entrega.'],
+  ['Pagamento.', 'Metade para começar e metade quando o site entra no ar, por Pix.'],
+  ['Prazo.', `Os ${prazo} contam a partir da primeira parte do pagamento e da conversa inicial. O tempo em que aguardamos retorno seu (material ou aprovação) não entra na conta.`],
+  ['Ajustes.', 'Antes de o site entrar no ar, ajustes fazem parte do trabalho e não são cobrados. Aprovado e no ar, o trabalho está entregue.'],
+  ['Depois da entrega.', 'Erros do site que apareçam em até 7 dias após a entrada no ar, nós corrigimos sem custo. Fora isso, não há manutenção, atualização de conteúdo, alteração de layout nem acompanhamento contínuo incluídos. Se você quiser qualquer um deles, orçamos separadamente.'],
+  ['Domínio e hospedagem.', 'Configuramos os dois. O domínio é registrado em seu nome e a renovação anual (cerca de R$ 40 no Registro.br) é sua. A hospedagem não tem custo.'],
+  ['Conteúdo.', 'Textos e estrutura nós escrevemos. Fotos, logotipo já existente e as informações do negócio (endereço, horários, serviços, preços) você fornece.'],
+  ['Propriedade.', 'Depois do pagamento final, o site, o código e, no pacote com identidade, a marca são seus. Podemos mostrar o trabalho como portfólio.'],
+];
+
+document.getElementById('folha').innerHTML = `
+  <header class="cabeca">
+    ${marca}
+    <div class="meta">
+      <span class="rotulo">Proposta · ${dm(data)}</span>
+      ${cliente ? `<span class="rotulo">Para · ${esc(cliente)}</span>` : ''}
+      <span class="rotulo">${contato.cidade} — e só BH</span>
+    </div>
+  </header>
+  <div class="regua"></div>
+
+  <section>
+    <h1 class="display">Seu site no ar em ${prazo}.</h1>
+    <p class="lede">Preço fechado, dito antes de começar. Você escolhe um dos dois pacotes e responde no WhatsApp. Sem contrato.</p>
+  </section>
+
+  <section>
+    <p class="rotulo">O que entregamos</p>
+    <div class="pacotes">
+      ${planos.map((p) => `
+        <div class="pacote ${p.id === plano ? 'proposto' : ''}">
+          <p class="nome">${p.nome}${p.id === plano ? '<span class="rotulo vermelho">Proposto</span>' : ''}</p>
+          <p class="preco display">${p.preco}</p>
+          <p class="para media">${p.para}</p>
+          <ul>${p.inclui.map((i) => `<li>${i}</li>`).join('')}</ul>
+        </div>`).join('')}
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Como funciona</p>
+    <div class="etapas">
+      ${etapas.map((t, i) => `<div><span class="n">0${i + 1}</span>${t}</div>`).join('')}
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Condições</p>
+    <ul class="condicoes">
+      ${condicoes.map(([t, x], i) => `<li><span class="n">0${i + 1}</span><span><b>${t}</b> ${x}</span></li>`).join('')}
+    </ul>
+  </section>
+
+  <p class="fecho media">Esta proposta não é um contrato. Aceitar é responder no WhatsApp. Vale até ${dm(ate)}.</p>
+  <footer class="pe">
+    <div class="dupla">
+      ${dupla.map((d) => `<div><b>${d.nome} ${d.sobrenome}</b><span class="mono">${d.whatsapp}</span></div>`).join('')}
+    </div>
+    <div class="canais mono media"><span>${contato.email}</span><span>${contato.instagram}</span><span>${site}</span></div>
+  </footer>`;
+</script>
+</body>
+</html>

@@ -60,6 +60,7 @@ piora em toque e atrapalha acessibilidade. O ScrollTrigger funciona bem sem ele.
 | Textos, preços, cases, contato | `src/config/site.ts` |
 | Instagram: @, bio, posts, legendas | `docs/instagram.md` |
 | As artes do Instagram | `midia/instagram/posts.html` |
+| A proposta em PDF (condições, pacotes) | `midia/proposta/proposta.html` → `node scripts/proposta.mjs --cliente "Nome" --plano identidade` com o `npm run dev` no ar |
 | Cores | `docs/brand-guidelines.md` → sync → `assets/theme.css` |
 | Escala tipográfica, espinha, base | `src/index.css` |
 | O logotipo | `src/components/Marca.tsx` (geometria em `docs/brand-guidelines.md` §2) |
