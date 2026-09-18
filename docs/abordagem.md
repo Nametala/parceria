@@ -1,7 +1,7 @@
 # iD — Abordagem de clientes
 
 > Atualizado: 2026-09-18 · v1.1 — primeira leva: 15 clínicas odontológicas
-> Status: lista aprovada · 1–9 enviadas em 2026-09-18 · 10 não aceita DM · 11–15 pendentes
+> Status: 12 entregues em 2026-09-18 (1–9, 11–13) · 10 não aceita DM · 14 conta inexistente · 15 pendente
 
 Mensagens de primeiro contato e as respostas mais comuns depois dele. O canal
 de envio desta leva é a DM do Instagram (`@idsolucoes.bh`); o objetivo da DM é
@@ -41,10 +41,10 @@ avaliações primeiro, Instagram ativo segundo.
 | 8 | Dra. Cristiane Ventura | Santo Antônio | @dra.cristianeventura | 5,0 · 39 | 2026-09-18 |
 | 9 | Clínica Odont | Sion | @clinicaodontbh | 4,6 · 34 | 2026-09-18 |
 | 10 | OdontoJá Floresta | Floresta | @odontojafloresta | 5,0 · 31 | não aceita solicitação de DM |
-| 11 | Núcleo Odontológico Inovar | Nova Suíça | @nucleoinovar | 4,6 · 25 | — |
-| 12 | Dra. Thamiris Castro | Sagrada Família | @drathamiriscastroo | 4,8 · 19 | — |
-| 13 | Instituto Camila Magalhães | Serra | @institutocamilamagalhaes | 4,8 · 18 | — |
-| 14 | Núcleo Odontológico Sagrada Família | Sagrada Família | @nucleodontosf | 5,0 · 13 | — |
+| 11 | Núcleo Odontológico Inovar | Nova Suíça | @nucleoinovar | 4,6 · 25 | 2026-09-18 |
+| 12 | Dra. Thamiris Castro | Sagrada Família | @drathamiriscastroo | 4,8 · 19 | 2026-09-18 |
+| 13 | Instituto Camila Magalhães | Serra | @institutocamilamagalhaes | 4,8 · 18 | 2026-09-18 |
+| 14 | Núcleo Odontológico Sagrada Família | Sagrada Família | @nucleodontosf | 5,0 · 13 | @ não existe mais |
 | 15 | Dr. Danilo Reis | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | — |
 
 Os dados de nota e avaliações são do Google Maps em 2026-09-17. Antes de
@@ -54,6 +54,10 @@ lista original caíram porque o @ encontrado era de outra pessoa.
 A OdontoJá Floresta não aceita solicitação de mensagem de quem não segue
 (o Instagram devolve "não aceita novas solicitações de contato de todos").
 Para essa, o caminho é o WhatsApp da bio ou o telefone (31) 3444-6413.
+
+O @nucleodontosf (Núcleo Odontológico Sagrada Família) não existe mais no
+Instagram e a busca por nome não encontra outro perfil. Resta o telefone do
+Maps, (31) 98031-0525.
 
 ---
 
