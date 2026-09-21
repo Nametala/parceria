@@ -1,11 +1,12 @@
 # iD — Abordagem de clientes
 
-> Atualizado: 2026-09-18 · v1.1 — primeira leva: 15 clínicas odontológicas
-> Status: 12 entregues em 2026-09-18 (1–9, 11–13) · 10 não aceita DM · 14 conta inexistente · 15 pendente
+> Atualizado: 2026-09-21 · v1.2 — leva 1 (15 clínicas) + leva 2 (5 clínicas + 5 manicures)
+> Status leva 1: 12 entregues em 2026-09-18 (1–9, 11–13) · 10 não aceita DM · 14 conta inexistente · 15 pendente
+> Status leva 2: em envio em 2026-09-21, 5 em 5 minutos
 
 Mensagens de primeiro contato e as respostas mais comuns depois dele. O canal
-de envio desta leva é a DM do Instagram (`@idsolucoes.bh`); o objetivo da DM é
-levar a conversa para o WhatsApp, não fechar dentro dela.
+de envio é a DM do Instagram (`@idsolucoes.bh`); o objetivo da DM é levar a
+conversa para o WhatsApp, não fechar dentro dela.
 
 As regras de voz do guia de marca valem sem exceção: preço e prazo ditos de
 cara, uma coisa real do negócio na primeira linha, o que não fazemos dito com a
@@ -13,6 +14,8 @@ mesma clareza. Quem escreve assina com o próprio nome.
 
 Site de referência para clínicas: `https://odonto-base-liart.vercel.app`
 (modelo com clínica fictícia — nunca apresentar como cliente real).
+Site de referência para manicure/esmalteria: `https://manicure-base.vercel.app`
+(mesmo princípio — modelo "Studio Aurora", fictício).
 Site da iD: `https://id-site-nametala-s-projects.vercel.app`.
 
 ---
@@ -271,6 +274,174 @@ Olá, Dr. Danilo. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
 Vi que o consultório atende urgência 24 horas na Cidade Nova e não tem site. Urgência é a busca em que a pessoa mais precisa de um botão de WhatsApp na hora — e o Google hoje só mostra o mapa.
 
 Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. Trocamos nome, tratamentos e colocamos as avaliações na página.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+---
+
+## 2.1 Leva 2 — 5 clínicas + 5 manicures (2026-09-21)
+
+Mesmo critério da leva 1: negócio em BH com avaliações no Google e sem site.
+Para manicure/esmalteria, "site" quase nunca existe nesse segmento — o corte
+real é presença fraca (perfil sem Instagram ativo) vs. forte (avaliações e
+Instagram ativo, só falta a página). Evitados os 5 já contatados em sessão
+anterior fora deste doc: Letícia Amaral, Ana Paula Medina, Esmalteria Meire
+Faria, Bellas Unhas (Dayane Kezia), Rachel Caetano — todos no Barreiro/Centro,
+por isso esta leva foca Buritis e Savassi/Funcionários.
+
+| # | Negócio | Bairro | Instagram | Google | Envio |
+|---|---------|--------|-----------|--------|-------|
+| 16 | Suzana Silveira Odontologia | São Pedro | @dra.suzanasilveira | 5,0 · 59 | — |
+| 17 | LD Odontologia — Dr. Leonardo Diniz | Cruzeiro | @ld.odontologia | 4,7 · 76 | — |
+| 18 | Dra. Danielle Esper Kallás | Belvedere | @danielle_kallas | 5,0 · 61 | — |
+| 19 | Dra. Cláudia Gramiscelli | Funcionários | @claudiagramiscelli | 5,0 · 49 | — |
+| 20 | Dr. Danilo Reis (reenvio do #15) | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | — |
+| 21 | Unique Beauty | Buritis | @uniquebeautybh | 4,7 · 133 | — |
+| 22 | Glamour Nails | Buritis | @glamournails.sac | 4,9 · 137 | — |
+| 23 | Pink Me Up | Buritis | @studio_pinkmeup_ | 4,6 · 130 | — |
+| 24 | Claudinha Studio Nails | Savassi | @claudinhastudionail | 5,0 · 104 | — |
+| 25 | Estúdio Face (cílios e unhas) | Savassi | @estudio.face | 5,0 · 19 | — |
+
+O #20 é o Dr. Danilo Reis da leva 1 (#15): a tentativa anterior travou antes
+de enviar (a mensagem nunca chegou a sair), por isso reentra aqui.
+
+### 16 · Suzana Silveira Odontologia — @dra.suzanasilveira
+
+```
+Olá, Dra. Suzana. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o consultório tem 59 avaliações com nota 5,0 no Google e nenhum site. Quem pesquisa dentista em São Pedro encontra vocês no mapa e não tem para onde ir depois.
+
+Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. Trocamos nome, tratamentos e colocamos as avaliações na página.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 17 · LD Odontologia — Dr. Leonardo Diniz — @ld.odontologia
+
+```
+Olá, Dr. Leonardo. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o consultório tem 76 avaliações com nota 4,7 no Google e nenhum site. Quem pesquisa dentista no Cruzeiro encontra o mapa e não vê o planejamento digital que vocês mostram no Instagram.
+
+Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. Trocamos nome, tratamentos e colocamos as avaliações na página.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 18 · Dra. Danielle Esper Kallás — @danielle_kallas
+
+```
+Olá, Dra. Danielle. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o consultório tem 61 avaliações com nota 5,0 no Google e nenhum site. Quem procura endodontia no Belvedere encontra o mapa e não tem para onde ir depois.
+
+Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. Trocamos nome, tratamentos e colocamos as avaliações na página.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 19 · Dra. Cláudia Gramiscelli — @claudiagramiscelli
+
+```
+Olá, Dra. Cláudia. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que são mais de 37 anos de clínica geral nos Funcionários, 49 avaliações com nota 5,0 no Google, e nenhum site. Quem pesquisa dentista na região não descobre nada disso.
+
+Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. Trocamos nome, tratamentos e colocamos as avaliações na página.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 20 · Dr. Danilo Reis (reenvio) — @drdaniloreisodonto
+
+```
+Olá, Dr. Danilo. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o consultório atende urgência 24 horas na Cidade Nova e não tem site. Urgência é a busca em que a pessoa mais precisa de um botão de WhatsApp na hora — e o Google hoje só mostra o mapa.
+
+Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. Trocamos nome, tratamentos e colocamos as avaliações na página.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 21 · Unique Beauty — @uniquebeautybh
+
+```
+Olá, equipe da Unique Beauty. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o salão tem 133 avaliações com nota 4,7 no Google e nenhum site. Quem pesquisa manicure no Buritis encontra o mapa e não vê o trabalho de vocês.
+
+Montamos um modelo de site para estúdio de unhas: manicure-base.vercel.app. Trocamos nome, fotos, serviços e colocamos as avaliações na página, com botão direto para o WhatsApp.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 22 · Glamour Nails — @glamournails.sac
+
+```
+Olá, equipe da Glamour Nails. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o salão tem 137 avaliações com nota 4,9 no Google e nenhum site. Quem pesquisa unhas no Buritis encontra o mapa e não tem para onde ir depois.
+
+Montamos um modelo de site para estúdio de unhas: manicure-base.vercel.app. Trocamos nome, fotos, serviços e colocamos as avaliações na página, com botão direto para o WhatsApp.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 23 · Pink Me Up — @studio_pinkmeup_
+
+```
+Olá, equipe da Pink Me Up. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o perfil tem quase 6 mil seguidores e o Google mostra 130 avaliações com nota 4,6 — mas nenhum site. Quem pesquisa esmalteria no Buritis encontra o mapa, não o trabalho de vocês.
+
+Montamos um modelo de site para estúdio de unhas: manicure-base.vercel.app. Trocamos nome, fotos, serviços e colocamos as avaliações na página, com botão direto para o WhatsApp.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 24 · Claudinha Studio Nails — @claudinhastudionail
+
+```
+Olá, equipe da Claudinha Studio Nails. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o studio tem 104 avaliações com nota 5,0 no Google e nenhum site. Quem pesquisa unhas de gel no Savassi encontra o mapa e não vê o trabalho de vocês.
+
+Montamos um modelo de site para estúdio de unhas: manicure-base.vercel.app. Trocamos nome, fotos, serviços e colocamos as avaliações na página, com botão direto para o WhatsApp.
+
+R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
+
+Se fizer sentido, respondo por aqui ou no WhatsApp: (31) 98311-2211.
+```
+
+### 25 · Estúdio Face — @estudio.face
+
+```
+Olá, equipe do Estúdio Face. Sou o Arthur, da iD — somos dois desenvolvedores aqui em BH.
+
+Vi que o perfil tem quase 1.900 seguidores e o Google mostra 19 avaliações com nota 5,0 — mas nenhum site. Quem pesquisa cílios e unhas no Savassi encontra o mapa, não o trabalho de vocês.
+
+Montamos um modelo de site para estúdio de unhas: manicure-base.vercel.app. Trocamos nome, fotos, serviços e colocamos as avaliações na página, com botão direto para o WhatsApp.
 
 R$ 300, no ar em 5 dias, preço fechado antes de começar. Sem contrato e sem mensalidade.
 
