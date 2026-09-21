@@ -2,7 +2,7 @@
 
 > Atualizado: 2026-09-21 · v1.2 — leva 1 (15 clínicas) + leva 2 (5 clínicas + 5 manicures)
 > Status leva 1: 12 entregues em 2026-09-18 (1–9, 11–13) · 10 não aceita DM · 14 conta inexistente · 15 pendente
-> Status leva 2: em envio em 2026-09-21, 5 em 5 minutos
+> Status leva 2: pausada em 2026-09-21 — 16,17,19,20 entregues · 18 recusou DM · 21-23 travaram no clique · 24-25 pendentes
 
 Mensagens de primeiro contato e as respostas mais comuns depois dele. O canal
 de envio é a DM do Instagram (`@idsolucoes.bh`); o objetivo da DM é levar a
@@ -48,7 +48,7 @@ avaliações primeiro, Instagram ativo segundo.
 | 12 | Dra. Thamiris Castro | Sagrada Família | @drathamiriscastroo | 4,8 · 19 | 2026-09-18 |
 | 13 | Instituto Camila Magalhães | Serra | @institutocamilamagalhaes | 4,8 · 18 | 2026-09-18 |
 | 14 | Núcleo Odontológico Sagrada Família | Sagrada Família | @nucleodontosf | 5,0 · 13 | @ não existe mais |
-| 15 | Dr. Danilo Reis | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | — |
+| 15 | Dr. Danilo Reis | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | reenviado como #20 |
 
 Os dados de nota e avaliações são do Google Maps em 2026-09-17. Antes de
 enviar, abrir o perfil e confirmar que o @ é o da clínica — dois nomes da
@@ -294,19 +294,34 @@ por isso esta leva foca Buritis e Savassi/Funcionários.
 
 | # | Negócio | Bairro | Instagram | Google | Envio |
 |---|---------|--------|-----------|--------|-------|
-| 16 | Suzana Silveira Odontologia | São Pedro | @dra.suzanasilveira | 5,0 · 59 | — |
-| 17 | LD Odontologia — Dr. Leonardo Diniz | Cruzeiro | @ld.odontologia | 4,7 · 76 | — |
-| 18 | Dra. Danielle Esper Kallás | Belvedere | @danielle_kallas | 5,0 · 61 | — |
-| 19 | Dra. Cláudia Gramiscelli | Funcionários | @claudiagramiscelli | 5,0 · 49 | — |
-| 20 | Dr. Danilo Reis (reenvio do #15) | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | — |
-| 21 | Unique Beauty | Buritis | @uniquebeautybh | 4,7 · 133 | — |
-| 22 | Glamour Nails | Buritis | @glamournails.sac | 4,9 · 137 | — |
-| 23 | Pink Me Up | Buritis | @studio_pinkmeup_ | 4,6 · 130 | — |
-| 24 | Claudinha Studio Nails | Savassi | @claudinhastudionail | 5,0 · 104 | — |
-| 25 | Estúdio Face (cílios e unhas) | Savassi | @estudio.face | 5,0 · 19 | — |
+| 16 | Suzana Silveira Odontologia | São Pedro | @dra.suzanasilveira | 5,0 · 59 | 2026-09-21 |
+| 17 | LD Odontologia — Dr. Leonardo Diniz | Cruzeiro | @ld.odontologia | 4,7 · 76 | 2026-09-21 |
+| 18 | Dra. Danielle Esper Kallás | Belvedere | @danielle_kallas | 5,0 · 61 | não aceita solicitação de DM |
+| 19 | Dra. Cláudia Gramiscelli | Funcionários | @claudiagramiscelli | 5,0 · 49 | 2026-09-21 |
+| 20 | Dr. Danilo Reis (reenvio do #15) | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | 2026-09-21 |
+| 21 | Unique Beauty | Buritis | @uniquebeautybh | 4,7 · 133 | travou (retentar) |
+| 22 | Glamour Nails | Buritis | @glamournails.sac | 4,9 · 137 | travou (retentar) |
+| 23 | Pink Me Up | Buritis | @studio_pinkmeup_ | 4,6 · 130 | travou (retentar) |
+| 24 | Claudinha Studio Nails | Savassi | @claudinhastudionail | 5,0 · 104 | pendente |
+| 25 | Estúdio Face (cílios e unhas) | Savassi | @estudio.face | 5,0 · 19 | pendente |
 
 O #20 é o Dr. Danilo Reis da leva 1 (#15): a tentativa anterior travou antes
 de enviar (a mensagem nunca chegou a sair), por isso reentra aqui.
+
+A Dra. Danielle Esper Kallás (#18) não aceita solicitação de mensagem de quem
+não segue. Caminho alternativo: WhatsApp `wa.me/31988836280` ou telefone
+(31) 3222-6280.
+
+**Pausa técnica (#21–23).** Depois de 10 envios seguidos (contando a leva 1
+recente + estes), o botão "Enviar mensagem" parou de abrir o painel de chat
+em três perfis consecutivos — sem erro, sem aviso, o clique simplesmente não
+fazia nada. Mesmo padrão do Danilo Reis na leva 1, que travou e só voltou a
+funcionar numa sessão seguinte. Leitura mais provável: o Instagram está
+limitando a interface de DM da conta depois de uma sequência de novas
+conversas iniciadas em pouco tempo — não é bloqueio permanente, é
+throttling temporário. Ação: parar de insistir, retomar os envios (#21 a
+#25) depois de um intervalo maior (algumas horas ou no dia seguinte), sempre
+mantendo o ritmo de poucas por dia.
 
 ### 16 · Suzana Silveira Odontologia — @dra.suzanasilveira
 
