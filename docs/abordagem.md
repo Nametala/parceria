@@ -2,7 +2,7 @@
 
 > Atualizado: 2026-09-21 · v1.2 — leva 1 (15 clínicas) + leva 2 (5 clínicas + 5 manicures)
 > Status leva 1: 12 entregues em 2026-09-18 (1–9, 11–13) · 10 não aceita DM · 14 conta inexistente · 15 pendente
-> Status leva 2: pausada em 2026-09-21 — 16,17,19,20 entregues · 18 recusou DM · 21-23 travaram no clique · 24-25 pendentes
+> Status leva 2: pausada em 2026-09-21 — 16,17,19,20,23 entregues · 18 recusou DM · 21,22,24 travam no clique (mesmo após 90s de espera) · 25 conta indisponível no momento
 
 Mensagens de primeiro contato e as respostas mais comuns depois dele. O canal
 de envio é a DM do Instagram (`@idsolucoes.bh`); o objetivo da DM é levar a
@@ -301,9 +301,9 @@ por isso esta leva foca Buritis e Savassi/Funcionários.
 | 20 | Dr. Danilo Reis (reenvio do #15) | Cidade Nova | @drdaniloreisodonto | 4,6 · 11 | 2026-09-21 |
 | 21 | Unique Beauty | Buritis | @uniquebeautybh | 4,7 · 133 | travou (retentar) |
 | 22 | Glamour Nails | Buritis | @glamournails.sac | 4,9 · 137 | travou (retentar) |
-| 23 | Pink Me Up | Buritis | @studio_pinkmeup_ | 4,6 · 130 | travou (retentar) |
-| 24 | Claudinha Studio Nails | Savassi | @claudinhastudionail | 5,0 · 104 | pendente |
-| 25 | Estúdio Face (cílios e unhas) | Savassi | @estudio.face | 5,0 · 19 | pendente |
+| 23 | Pink Me Up | Buritis | @studio_pinkmeup_ | 4,6 · 130 | 2026-09-21 |
+| 24 | Claudinha Studio Nails | Savassi | @claudinhastudionail | 5,0 · 104 | travou (retentar) |
+| 25 | Estúdio Face (cílios e unhas) | Savassi | @estudio.face | 5,0 · 19 | conta indisponível — retentar |
 
 O #20 é o Dr. Danilo Reis da leva 1 (#15): a tentativa anterior travou antes
 de enviar (a mensagem nunca chegou a sair), por isso reentra aqui.
@@ -312,16 +312,21 @@ A Dra. Danielle Esper Kallás (#18) não aceita solicitação de mensagem de que
 não segue. Caminho alternativo: WhatsApp `wa.me/31988836280` ou telefone
 (31) 3222-6280.
 
-**Pausa técnica (#21–23).** Depois de 10 envios seguidos (contando a leva 1
-recente + estes), o botão "Enviar mensagem" parou de abrir o painel de chat
-em três perfis consecutivos — sem erro, sem aviso, o clique simplesmente não
-fazia nada. Mesmo padrão do Danilo Reis na leva 1, que travou e só voltou a
-funcionar numa sessão seguinte. Leitura mais provável: o Instagram está
-limitando a interface de DM da conta depois de uma sequência de novas
-conversas iniciadas em pouco tempo — não é bloqueio permanente, é
-throttling temporário. Ação: parar de insistir, retomar os envios (#21 a
-#25) depois de um intervalo maior (algumas horas ou no dia seguinte), sempre
-mantendo o ritmo de poucas por dia.
+**Pausa técnica (#21, #22, #24).** Depois de 11 envios no total (leva 1 +
+leva 2), o botão "Enviar mensagem" parou de abrir o painel de chat em
+Unique Beauty, Glamour Nails e Claudinha Studio Nails — sem erro, sem aviso,
+o clique simplesmente não fazia nada. Mesmo padrão do Danilo Reis na leva 1.
+Tentei retomar depois de uma pausa de 90 segundos: #23 (Pink Me Up) saiu
+normalmente logo depois, mas #21, #22 e #24 continuaram travados mesmo
+depois da espera — então não é um cooldown de segundos, é algo que leva
+mais tempo para liberar (horas, provavelmente). O #25 (Estúdio Face) parou
+de carregar a página do perfil ("Esta página não está disponível"), embora
+o @ continue indexado no Google — provável instabilidade pontual do
+Instagram, não conta apagada.
+
+Ação: não insistir mais nesta sessão. Retomar #21, #22, #24 e #25 numa
+sessão futura, com intervalo de horas — idealmente no dia seguinte, mantendo
+o ritmo de poucos envios por dia que já vale para o resto da lista.
 
 ### 16 · Suzana Silveira Odontologia — @dra.suzanasilveira
 
