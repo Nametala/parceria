@@ -1,6 +1,6 @@
 # iD — Instagram
 
-> Atualizado: 2026-10-04 · v1.2 — segunda pauta (posts 10 a 24) e exportador das artes
+> Atualizado: 2026-10-05 · v1.3 — segunda pauta no ar a partir do post 10
 > Status: no ar · pendente (destaques e domínio)
 
 O Instagram da iD tem uma função só: levar quem tem um negócio em BH até o
@@ -335,9 +335,9 @@ cansam, e dois posts de nicho seguidos fazem quem não é do nicho parar de ler.
 A capa de cada carrossel alterna chapa escura e papel, para a grade do perfil
 não virar um bloco preto.
 
-| Ordem | # | Post | Arquivos | Tipo |
-|-------|---|------|----------|------|
-| 1 | 10 | Pesquise o seu negócio no Google | `p10-1` `p10-2` `p10-3` | Dor |
+| Ordem | # | Post | Arquivos | Tipo | Publicado |
+|-------|---|------|----------|------|-----------|
+| 1 | 10 | Pesquise o seu negócio no Google | `p10-1` `p10-2` `p10-3` | Dor | 2026-10-05 |
 | 2 | 19 | Clínicas em BH | `p19-1` `p19-2` `p19-3` | Nicho |
 | 3 | 11 | "Chegam por indicação." | `p11-1` `p11-2` `p11-3` | Dor |
 | 4 | 16 | O domínio no seu nome | `p16-1` … `p16-4` | Utilidade |
