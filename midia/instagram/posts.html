@@ -415,6 +415,463 @@ const slides = [
       <p class="mono azul">Link na bio · ${ARROBA}</p>
     </div>` },
 
+/* ═══════════════════════════════════════════════════════════════════
+   PAUTA 2 — posts 10 a 24. Texto e legendas em docs/instagram.md §4.1.
+   Mesma regra da pauta 1: carrossel sempre, “arraste →” em todo quadro
+   menos o ultimo, e nenhum conceito que precise de legenda.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ══ POST 10 — pesquise o seu proprio nome ══════════════════════════ */
+{ id: 'p10-1', escuro: true, arrasta: true, rotulo: 'Um teste de dez segundos', corpo: `
+    <div class="pilha">
+      <div class="display l">Pesquise o seu negócio no Google.</div>
+      <div class="regua" style="width:380px"></div>
+      <p class="corpo media">Agora, do celular, como o seu cliente faria.</p>
+    </div>` },
+
+{ id: 'p10-2', arrasta: true, rotulo: 'O que costuma aparecer', corpo: `
+    <div class="pilha">
+      <div class="display m">O mapa, o telefone e mais nada.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Nenhuma página para abrir, nenhum horário, nenhum preço.
+        O cliente volta para a lista e clica no próximo.
+      </p>
+    </div>` },
+
+{ id: 'p10-3', rotulo: 'O que deveria aparecer', corpo: `
+    <div class="pilha">
+      <div class="display m">O seu site, logo abaixo do mapa.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">Conte no direct o que você encontrou. Respondemos todas.</p>
+      <p class="mono azul">R$ 300 · no ar em 5 dias · só BH</p>
+    </div>` },
+
+/* ══ POST 11 — “Meus clientes chegam por indicação.” ════════════════ */
+{ id: 'p11-1', arrasta: true, rotulo: 'O que mais ouvimos', corpo: `
+    <div class="pilha">
+      <div class="display xl">“Chegam por indicação.”</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p11-2', escuro: true, arrasta: true, rotulo: 'O que acontece na terceira pessoa', corpo: `
+    <div class="pilha">
+      <div class="display m">A indicação é dita uma vez. Depois ela some.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Quem indicou falou o seu nome em uma conversa. Quem ouviu vai
+        procurar você três dias depois, sozinho.
+      </p>
+    </div>` },
+
+{ id: 'p11-3', rotulo: 'O que o site faz', corpo: `
+    <div class="pilha">
+      <div class="display m">O site é a indicação funcionando às 23h.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">Quando não há ninguém por perto para responder por você.</p>
+      <p class="mono azul">R$ 300 · no ar em 5 dias · link na bio</p>
+    </div>` },
+
+/* ══ POST 12 — “Pedi orçamento e nunca responderam.” ════════════════ */
+{ id: 'p12-1', escuro: true, arrasta: true, rotulo: 'O que mais ouvimos', corpo: `
+    <div class="pilha">
+      <div class="display l">“Pedi orçamento e nunca responderam.”</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p12-2', escuro: true, arrasta: true, rotulo: 'Por que isso acontece', corpo: `
+    <div class="pilha">
+      <div class="display m">Preço escondido depende de alguém lembrar de você.</div>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">
+        Formulário, “vamos conversar”, “depende de alguns fatores”.
+        Cada etapa dessas é um lugar onde o seu pedido pode parar.
+      </p>
+    </div>` },
+
+{ id: 'p12-3', rotulo: 'Aqui', corpo: `
+    <div class="pilha">
+      <div class="display l">O preço já está escrito.</div>
+      <div class="regua" style="width:340px"></div>
+      <p class="mono">Página única R$ 300 · Página + identidade R$ 500</p>
+      <p class="corpo">
+        Você não precisa pedir para saber quanto custa.
+        Precisa pedir só para começar.
+      </p>
+    </div>` },
+
+/* ══ POST 13 — “A agência cobrou mais do que eu podia pagar.” ═══════ */
+{ id: 'p13-1', arrasta: true, rotulo: 'O que mais ouvimos', corpo: `
+    <div class="pilha">
+      <div class="display l">“A agência cobrou mais do que eu podia pagar.”</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p13-2', escuro: true, arrasta: true, rotulo: 'E não é desonestidade', corpo: `
+    <div class="pilha">
+      <div class="display m">Você não estava pagando só o site.</div>
+      <div class="regua" style="width:300px"></div>
+      <div class="itens" style="font-size:34px">
+        <span class="item">Sala comercial</span>
+        <span class="item">Equipe de atendimento</span>
+        <span class="item">Gerente de projeto</span>
+        <span class="item">Reuniões de alinhamento</span>
+        <span class="item">Proposta de trinta páginas</span>
+      </div>
+    </div>` },
+
+{ id: 'p13-3', rotulo: 'Aqui', corpo: `
+    <div class="pilha">
+      <div class="display m">Somos dois, e a conta é essa.</div>
+      <div class="display xl">R$ 300</div>
+      <div class="regua" style="width:280px"></div>
+      <p class="corpo media">
+        O preço cabe porque a estrutura é pequena de propósito.
+      </p>
+    </div>` },
+
+/* ══ POST 14 — o que a gente não faz ════════════════════════════════ */
+{ id: 'p14-1', escuro: true, arrasta: true, rotulo: 'Franqueza', corpo: `
+    <div class="pilha">
+      <div class="display xl">O que a gente não faz.</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p14-2', escuro: true, arrasta: true, rotulo: 'Não fazemos', corpo: `
+    <div class="itens">
+      <span class="item cortado">Loja virtual com estoque</span>
+      <span class="item cortado">Sistema de agendamento</span>
+      <span class="item cortado">Prontuário eletrônico</span>
+      <span class="item cortado">Aplicativo de celular</span>
+      <span class="item cortado">Gestão de redes sociais</span>
+      <span class="item cortado">Tráfego pago</span>
+    </div>` },
+
+{ id: 'p14-3', rotulo: 'Fazemos uma coisa', corpo: `
+    <div class="pilha">
+      <div class="display m">A página do seu negócio, no ar em 5 dias.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Quem procura encontra, entende o que você faz e chama no WhatsApp.
+        Se você precisa de um dos itens anteriores, indicamos quem faz.
+      </p>
+    </div>` },
+
+/* ══ POST 15 — três caminhos para ter um site ═══════════════════════ */
+{ id: 'p15-1', arrasta: true, rotulo: 'Comparação honesta', corpo: `
+    <div class="pilha">
+      <div class="display l">Três caminhos para ter um site.</div>
+      <div class="regua" style="width:360px"></div>
+      <p class="corpo media">E o que cada um custa de verdade.</p>
+    </div>` },
+
+{ id: 'p15-2', escuro: true, arrasta: true, rotulo: 'Caminho 01 · Plataforma por mensalidade', corpo: `
+    <div class="pilha">
+      <div class="display m">Você paga todo mês, para sempre.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Parar de pagar é o site sair do ar. Em poucos anos, a soma das
+        mensalidades passa o valor de um site feito uma vez.
+      </p>
+    </div>` },
+
+{ id: 'p15-3', escuro: true, arrasta: true, rotulo: 'Caminho 02 · Orçamento sob consulta', corpo: `
+    <div class="pilha">
+      <div class="display m">Você descobre o preço depois de três reuniões.</div>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">
+        E ele ainda pode mudar no meio, porque nada ficou fechado no começo.
+      </p>
+    </div>` },
+
+{ id: 'p15-4', rotulo: 'Caminho 03 · Aqui', corpo: `
+    <div class="pilha">
+      <div class="display xl">R$ 300</div>
+      <div class="regua" style="width:280px"></div>
+      <p class="corpo">
+        Uma vez, dito antes de começar. Sem mensalidade, sem contrato
+        e com o site registrado no seu nome.
+      </p>
+      <p class="mono azul">Link na bio</p>
+    </div>` },
+
+/* ══ POST 16 — o domínio tem que estar no seu nome ══════════════════ */
+{ id: 'p16-1', escuro: true, arrasta: true, rotulo: 'O que ninguém conta', corpo: `
+    <div class="pilha">
+      <div class="display l">O domínio tem que estar no seu nome.</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p16-2', arrasta: true, rotulo: 'Por quê', corpo: `
+    <div class="pilha">
+      <div class="display m">Se estiver no nome de quem fez, o site não é seu.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Trocar de fornecedor vira negociação, e às vezes vira recomeçar o
+        endereço do zero — perdendo o que o Google já aprendeu sobre você.
+      </p>
+    </div>` },
+
+{ id: 'p16-3', escuro: true, arrasta: true, rotulo: 'Como conferir hoje', corpo: `
+    <div class="pilha">
+      <div class="pilha" style="gap:20px">
+        <div class="etapa"><span class="n">01</span><span class="display s">Abra registro.br</span></div>
+        <div class="etapa"><span class="n">02</span><span class="display s">Digite o seu domínio</span></div>
+        <div class="etapa"><span class="n">03</span><span class="display s">Veja o nome do titular</span></div>
+      </div>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">Leva um minuto, e vale para o site que você já tem.</p>
+    </div>` },
+
+{ id: 'p16-4', rotulo: 'Como fazemos', corpo: `
+    <div class="pilha">
+      <div class="display m">Registrado no seu nome, sempre.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        A renovação custa cerca de R$ 40 por ano e é paga por você, direto
+        no Registro.br. Não passa pela nossa mão.
+      </p>
+      <p class="mono azul">Link na bio</p>
+    </div>` },
+
+/* ══ POST 17 — só Belo Horizonte ════════════════════════════════════ */
+{ id: 'p17-1', arrasta: true, rotulo: 'Uma escolha, não uma fase', corpo: `
+    <div class="pilha">
+      <div class="display xl">Atendemos uma cidade só.</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p17-2', escuro: true, arrasta: true, rotulo: 'Por quê', corpo: `
+    <div class="pilha">
+      <div class="display m">Proximidade que não se cumpre não vale nada.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Aqui, se precisar, a gente aparece. É a cidade onde dá para cobrar
+        de perto — e isso muda o cuidado com o trabalho.
+      </p>
+    </div>` },
+
+{ id: 'p17-3', rotulo: 'E se você é de fora', corpo: `
+    <div class="pilha">
+      <div class="display m">Dizemos isso na primeira mensagem.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Em vez de aceitar e atender mal, indicamos alguém que trabalhe
+        na sua cidade.
+      </p>
+      <p class="mono azul">R$ 300 · no ar em 5 dias · só BH</p>
+    </div>` },
+
+/* ══ POST 18 — os 5 dias, um por um ═════════════════════════════════ */
+{ id: 'p18-1', escuro: true, arrasta: true, rotulo: 'O prazo, aberto', corpo: `
+    <div class="pilha">
+      <div class="display xl">5 dias, um por um.</div>
+      <div class="regua" style="width:360px"></div>
+      <p class="corpo media">O que acontece em cada um deles.</p>
+    </div>` },
+
+{ id: 'p18-2', arrasta: true, rotulo: 'Dias 1 a 3', corpo: `
+    <div class="pilha" style="gap:44px">
+      <div class="etapa"><span class="n">DIA 1</span><span class="display s">A conversa no WhatsApp</span></div>
+      <div class="etapa"><span class="n">DIA 2</span><span class="display s">Marca, texto e estrutura</span></div>
+      <div class="etapa"><span class="n">DIA 3</span><span class="display s">O site montado</span></div>
+      <div class="regua" style="width:260px"></div>
+    </div>` },
+
+{ id: 'p18-3', escuro: true, rotulo: 'Dias 4 e 5', corpo: `
+    <div class="pilha" style="gap:44px">
+      <div class="etapa"><span class="n">DIA 4</span><span class="display s">Você aprova em um link</span></div>
+      <div class="etapa"><span class="n">DIA 5</span><span class="display s">O site entra no ar</span></div>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">
+        O relógio para enquanto esperamos o seu retorno. É a única coisa
+        que atrasa, e ela é sua.
+      </p>
+    </div>` },
+
+/* ══ POST 19 — clínicas em BH ═══════════════════════════════════════ */
+{ id: 'p19-1', arrasta: true, rotulo: 'Para clínicas em Belo Horizonte', corpo: `
+    <div class="pilha">
+      <div class="display l">Nota 4,9 no Google. Nenhum site.</div>
+      <div class="regua" style="width:360px"></div>
+      <p class="corpo media">É o retrato de boa parte das clínicas daqui.</p>
+    </div>` },
+
+{ id: 'p19-2', escuro: true, arrasta: true, rotulo: 'O que acontece', corpo: `
+    <div class="pilha">
+      <div class="display m">A reputação existe e não tem onde pousar.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Quem pesquisa “dentista” mais o bairro encontra o mapa, o telefone
+        e as avaliações. Não encontra os tratamentos nem o horário.
+      </p>
+    </div>` },
+
+{ id: 'p19-3', rotulo: 'O modelo', corpo: `
+    <div class="pilha">
+      <div class="display m">Já existe um modelo pronto para clínica.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="mono azul">odonto-base-liart.vercel.app</p>
+      <p class="corpo media">
+        A clínica do modelo é fictícia. Trocamos nome, equipe, tratamentos
+        e colocamos as suas avaliações na página. R$ 300, no ar em 5 dias.
+      </p>
+    </div>` },
+
+/* ══ POST 20 — esmalterias e studios de unhas ═══════════════════════ */
+{ id: 'p20-1', escuro: true, arrasta: true, rotulo: 'Para esmalterias e studios de unhas', corpo: `
+    <div class="pilha">
+      <div class="display m">O seu trabalho está em trezentas fotos.</div>
+      <div class="display m vermelho">O preço, em nenhuma.</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p20-2', arrasta: true, rotulo: 'A primeira pergunta de toda cliente', corpo: `
+    <div class="pilha">
+      <div class="display xl">“Valores?”</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        A mesma pergunta, todo dia, respondida uma a uma no direct.
+        Uma página responde antes — e você conversa só com quem já sabe.
+      </p>
+    </div>` },
+
+{ id: 'p20-3', rotulo: 'O modelo', corpo: `
+    <div class="pilha">
+      <div class="display m">Já existe um modelo pronto para studio de unhas.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="mono azul">manicure-base.vercel.app</p>
+      <p class="corpo media">
+        O Studio Aurora é fictício. Trocamos nome, serviços, fotos e os
+        seus valores. R$ 300, no ar em 5 dias.
+      </p>
+    </div>` },
+
+/* ══ POST 21 — avaliação no Google não é site ═══════════════════════ */
+{ id: 'p21-1', arrasta: true, rotulo: 'Uma coisa não substitui a outra', corpo: `
+    <div class="pilha">
+      <div class="display l">Avaliação no Google não é site.</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p21-2', escuro: true, arrasta: true, rotulo: 'O que cada uma faz', corpo: `
+    <div class="pilha">
+      <div class="display m">A avaliação diz que confiam em você.</div>
+      <div class="display m vermelho">O site diz o que você faz.</div>
+      <div class="regua" style="width:440px"></div>
+      <p class="corpo">
+        Uma é reputação, a outra é informação. Quem só tem a primeira
+        é procurado e não é encontrado.
+      </p>
+    </div>` },
+
+{ id: 'p21-3', rotulo: 'A parte difícil já está feita', corpo: `
+    <div class="pilha">
+      <div class="display m">Nota alta leva anos. A página leva 5 dias.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">R$ 300, preço fechado, dito antes de começar.</p>
+      <p class="mono azul">Link na bio</p>
+    </div>` },
+
+/* ══ POST 22 — três perguntas antes de chamar ═══════════════════════ */
+{ id: 'p22-1', escuro: true, arrasta: true, rotulo: 'Teste o seu perfil', corpo: `
+    <div class="pilha">
+      <div class="display l">Três perguntas que o cliente faz antes de chamar.</div>
+      <div class="regua" style="width:360px"></div>
+    </div>` },
+
+{ id: 'p22-2', arrasta: true, rotulo: 'As três', corpo: `
+    <div class="pilha">
+      <div class="pilha" style="gap:20px">
+        <div class="etapa"><span class="n">01</span><span class="display s">Vocês atendem onde eu moro?</span></div>
+        <div class="etapa"><span class="n">02</span><span class="display s">Quanto custa?</span></div>
+        <div class="etapa"><span class="n">03</span><span class="display s">Como falo com vocês agora?</span></div>
+      </div>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">
+        Se o seu perfil não responde as três em dez segundos, ele pergunta
+        para outra pessoa.
+      </p>
+    </div>` },
+
+{ id: 'p22-3', rotulo: 'Onde as três respostas cabem', corpo: `
+    <div class="pilha">
+      <div class="display m">Em uma página só.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Endereço, preço e botão de WhatsApp, sem ninguém precisar percorrer
+        quarenta publicações para montar o quebra-cabeça.
+      </p>
+      <p class="mono azul">R$ 300 · no ar em 5 dias · só BH</p>
+    </div>` },
+
+/* ══ POST 23 — o que você precisa mandar para começar ═══════════════ */
+{ id: 'p23-1', arrasta: true, rotulo: 'Sem briefing', corpo: `
+    <div class="pilha">
+      <div class="display l">O que você precisa mandar para começar.</div>
+      <div class="regua" style="width:360px"></div>
+      <p class="corpo media">A lista inteira cabe no próximo quadro.</p>
+    </div>` },
+
+{ id: 'p23-2', escuro: true, arrasta: true, rotulo: 'A lista', corpo: `
+    <div class="pilha">
+      <ul class="inclui" style="font-size:34px">
+        <li>O que o seu negócio faz</li>
+        <li>Endereço e horário</li>
+        <li>O telefone do botão de WhatsApp</li>
+        <li>Os serviços e, se quiser, os preços</li>
+        <li>Fotos, as que você tiver</li>
+        <li>Logotipo, se já existir</li>
+      </ul>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">Pode mandar aos poucos.</p>
+    </div>` },
+
+{ id: 'p23-3', rotulo: 'E se você não tem nada disso', corpo: `
+    <div class="pilha">
+      <div class="display xl">A gente escreve.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Texto não precisa vir pronto. Conversamos vinte minutos e
+        escrevemos a partir daí. Foto de celular serve.
+      </p>
+      <p class="mono azul">Link na bio</p>
+    </div>` },
+
+/* ══ POST 24 — sem contrato, com tudo escrito ═══════════════════════ */
+{ id: 'p24-1', escuro: true, arrasta: true, rotulo: 'Como fechamos', corpo: `
+    <div class="pilha">
+      <div class="display xl">Sem contrato.</div>
+      <div class="display xl vermelho">Com tudo escrito.</div>
+      <div class="regua" style="width:420px"></div>
+    </div>` },
+
+{ id: 'p24-2', arrasta: true, rotulo: 'A proposta tem uma folha', corpo: `
+    <div class="pilha">
+      <ul class="inclui" style="font-size:34px">
+        <li>O preço fechado</li>
+        <li>O prazo e o que o pausa</li>
+        <li>O que está incluído</li>
+        <li>O que não está</li>
+        <li>De quem é o domínio</li>
+        <li>De quem é o site no fim</li>
+      </ul>
+      <div class="regua" style="width:260px"></div>
+      <p class="corpo media">Oito condições, antes de começar.</p>
+    </div>` },
+
+{ id: 'p24-3', escuro: true, rotulo: 'O que não está incluído', corpo: `
+    <div class="pilha">
+      <div class="display m">Manutenção contínua não entra.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo media">
+        Erro do site nos primeiros 7 dias, corrigimos sem custo. Depois
+        disso, alteração é serviço à parte, orçado na hora. Dizemos isso
+        antes, não depois.
+      </p>
+      <p class="mono azul">Link na bio</p>
+    </div>` },
+
 /* ══ STORIES — o conteudo de cada destaque, 1080x1920 ═══════════════ */
 
 /* Preço */
@@ -525,7 +982,14 @@ const slides = [
 ];
 
 /* ── render ─────────────────────────────────────────────────────────── */
-document.write(slides.map((s) => {
+
+/* `?id=p10-1` mostra um quadro so, colado na janela e sem etiqueta: e assim
+   que o scripts/artes.mjs fotografa cada arte no tamanho exato, com o Chrome
+   headless. Sem o parametro, a pagina continua sendo a folha de contato. */
+const unico = new URLSearchParams(location.search).get('id');
+if (unico) document.body.style.cssText = 'padding:0;gap:0;background:none';
+
+document.write((unico ? slides.filter((s) => s.id === unico) : slides).map((s) => {
   const dentro = s.capa
     /* capa de destaque: tudo dentro do circulo que o app recorta */
     ? `<div class="capa-destaque">
@@ -539,7 +1003,7 @@ document.write(slides.map((s) => {
        ${assina(s.escuro, s.arrasta)}`;
 
   return `<div class="quadro">
-      <span class="etiqueta">${s.id}</span>
+      ${unico ? '' : `<span class="etiqueta">${s.id}</span>`}
       <div class="slide ${s.escuro ? 'tinta' : ''} ${s.quadrado ? 'capa1x1' : ''} ${s.historia ? 'story' : ''}"
            id="${s.id}" ${s.capa ? 'style="padding:0"' : ''}>${dentro}</div>
     </div>`;

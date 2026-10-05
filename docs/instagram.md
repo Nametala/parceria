@@ -1,6 +1,6 @@
 # iD — Instagram
 
-> Atualizado: 2026-09-14 · v1.1 — legendas em registro escrito; conta criada
+> Atualizado: 2026-10-04 · v1.2 — segunda pauta (posts 10 a 24) e exportador das artes
 > Status: no ar · pendente (destaques e domínio)
 
 O Instagram da iD tem uma função só: levar quem tem um negócio em BH até o
@@ -291,8 +291,10 @@ Dois posts por semana, alternando entre três tipos:
 | **Dor** | Uma frase de cliente real e a resposta honesta | 1 a cada 2 semanas |
 | **Como funciona** | Preço, prazo, processo, o que a gente não faz | 1 a cada 2 semanas |
 
-As seis frases de `src/config/site.ts` (`dores`) são seis posts do tipo "dor"
-prontos para escrever. Duas já viraram post (2 e 4); sobram quatro.
+As seis frases de `src/config/site.ts` (`dores`) são seis posts do tipo "dor".
+Todas já viraram post: 2 e 4 no lançamento, 10 a 13 na segunda pauta. Dor nova,
+daqui em diante, vem de conversa real na DM — e entra no `site.ts` antes de
+virar arte.
 
 **Stories.** Um por dia útil é bom demais para começar e vira dívida. O
 compromisso realista é: story sempre que um site entra no ar, e story quando
@@ -321,6 +323,295 @@ Se quiser, posso indicar alguém que atenda na sua cidade.
 
 ---
 
+## 4.1 A segunda pauta — posts 10 a 24
+
+Quinze posts para os dois meses seguintes ao lançamento, no ritmo de dois por
+semana da tabela acima. As artes estão em `midia/instagram/artes/`, em
+1080 × 1350. O pedido que gerou esta pauta está em `docs/prompt-posts.md` —
+é de lá que sai a próxima.
+
+A ordem abaixo alterna os tipos de propósito: quatro posts de dor seguidos
+cansam, e dois posts de nicho seguidos fazem quem não é do nicho parar de ler.
+A capa de cada carrossel alterna chapa escura e papel, para a grade do perfil
+não virar um bloco preto.
+
+| Ordem | # | Post | Arquivos | Tipo |
+|-------|---|------|----------|------|
+| 1 | 10 | Pesquise o seu negócio no Google | `p10-1` `p10-2` `p10-3` | Dor |
+| 2 | 19 | Clínicas em BH | `p19-1` `p19-2` `p19-3` | Nicho |
+| 3 | 11 | "Chegam por indicação." | `p11-1` `p11-2` `p11-3` | Dor |
+| 4 | 16 | O domínio no seu nome | `p16-1` … `p16-4` | Utilidade |
+| 5 | 13 | "A agência cobrou mais do que eu podia pagar." | `p13-1` `p13-2` `p13-3` | Dor |
+| 6 | 22 | Três perguntas antes de chamar | `p22-1` `p22-2` `p22-3` | Utilidade |
+| 7 | 20 | Esmalterias e studios de unhas | `p20-1` `p20-2` `p20-3` | Nicho |
+| 8 | 15 | Três caminhos para ter um site | `p15-1` … `p15-4` | Transparência |
+| 9 | 12 | "Pedi orçamento e nunca responderam." | `p12-1` `p12-2` `p12-3` | Dor |
+| 10 | 24 | Sem contrato, com tudo escrito | `p24-1` `p24-2` `p24-3` | Transparência |
+| 11 | 21 | Avaliação no Google não é site | `p21-1` `p21-2` `p21-3` | Utilidade |
+| 12 | 14 | O que a gente não faz | `p14-1` `p14-2` `p14-3` | Transparência |
+| 13 | 23 | O que mandar para começar | `p23-1` `p23-2` `p23-3` | Transparência |
+| 14 | 17 | Belo Horizonte, e só | `p17-1` `p17-2` `p17-3` | Posicionamento |
+| 15 | 18 | Os 5 dias, um por um | `p18-1` `p18-2` `p18-3` | Transparência |
+
+Os posts 19 e 20 servem duas vezes: valem no feed e valem como link dentro da
+DM de prospecção (`docs/abordagem.md`) — em vez de descrever o modelo, manda-se
+o post. Nos dois, a arte diz que a clínica e o studio do modelo são fictícios.
+Isso não é detalhe de redação: apresentar modelo como cliente real é o tipo de
+coisa que derruba a confiança inteira de uma conta nova.
+
+### Post 10 — Pesquise o seu negócio no Google
+
+```
+Faça um teste antes de ler o resto: pegue o celular e pesquise o nome do seu negócio no Google, do jeito que um cliente faria.
+
+O que costuma aparecer é o mapa, o telefone e as avaliações. Nada para abrir. Nenhum horário, nenhum preço, nenhuma lista do que você faz. Quem pesquisou volta para os resultados e clica no próximo nome.
+
+Não é que o cliente tenha descartado você. É que ele não teve o que ler.
+
+Uma página resolve isso: um endereço só, com o que você faz, quanto custa, onde fica e o botão de WhatsApp. R$ 300, no ar em 5 dias, somente Belo Horizonte.
+
+Conte no direct o que você encontrou na pesquisa. Respondemos todas.
+
+#belohorizonte #bh #pequenonegocio #autonomo #googlemeunegocio
+```
+
+### Post 11 — "Chegam por indicação."
+
+```
+"Meus clientes chegam por indicação." É uma das frases que mais ouvimos, e ela quase sempre vem com orgulho — com razão. Indicação é a prova de que o trabalho é bom.
+
+O problema não é a indicação. É o que acontece depois dela.
+
+Quem indicou falou o seu nome uma vez, em uma conversa. Quem ouviu vai procurar você três dias depois, sozinho, sem ninguém por perto para perguntar de novo. Nesse momento, o seu nome precisa levar a algum lugar.
+
+É isso que o site faz: ele é a indicação funcionando às 23h, quando não há ninguém para responder por você.
+
+R$ 300, no ar em 5 dias. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 12 — "Pedi orçamento e nunca responderam."
+
+```
+"Já pedi orçamento e nunca responderam."
+
+Ouvimos isso de quase todo mundo que chega, e o motivo é simples. Quando o preço não está escrito em lugar nenhum, saber quanto custa depende de alguém do outro lado lembrar de você: o formulário que alguém precisa ler, o "vamos conversar", o "depende de alguns fatores". Cada uma dessas etapas é um lugar onde o seu pedido pode parar.
+
+Por isso o nosso preço está escrito antes de qualquer conversa.
+
+Página única: R$ 300. Página + identidade: R$ 500. Os dois no ar em 5 dias, preço fechado, sem contrato.
+
+Você não precisa pedir para saber quanto custa. Precisa pedir só para começar.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 13 — "A agência cobrou mais do que eu podia pagar."
+
+```
+"A agência cobrou mais do que eu podia pagar."
+
+Vale dizer uma coisa que raramente é dita: na maioria das vezes, isso não é desonestidade. O valor estava certo para o que estava sendo vendido.
+
+Só que o que estava sendo vendido não era apenas o site. Era a sala comercial, a equipe de atendimento, o gerente de projeto, as reuniões de alinhamento e a proposta de trinta páginas. Tudo isso existe, tudo isso custa, e tudo isso entra na conta antes da primeira linha de código.
+
+Aqui somos dois desenvolvedores, e a conta é essa: R$ 300 a página única, R$ 500 com identidade. O preço cabe porque a estrutura é pequena de propósito.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 14 — O que a gente não faz
+
+```
+Uma lista que quase ninguém publica: o que a gente não faz.
+
+Não fazemos loja virtual com controle de estoque, sistema de agendamento, prontuário eletrônico, aplicativo de celular, gestão de redes sociais nem tráfego pago.
+
+Nada disso é desprezo pelo serviço — é que não é o nosso. Se você precisa de um deles, diga: indicamos quem faz.
+
+O que fazemos é uma coisa só: a página do seu negócio, no ar em 5 dias. Quem procura encontra, entende o que você faz e chama no WhatsApp.
+
+R$ 300. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 15 — Três caminhos para ter um site
+
+```
+Existem três formas de ter um site, e cada uma cobra de um jeito diferente.
+
+A primeira é a plataforma por mensalidade. O valor inicial é baixo e nunca termina: parar de pagar é o site sair do ar. Em poucos anos, a soma das mensalidades passa o valor de um site feito uma vez.
+
+A segunda é o orçamento sob consulta. Você descobre o preço depois de algumas reuniões, e ele ainda pode mudar no meio do caminho, porque nada ficou fechado no começo.
+
+A terceira é a nossa: R$ 300, uma vez, dito antes de começar. Sem mensalidade, sem contrato, com o domínio registrado no seu nome.
+
+Nenhuma delas é errada para todo mundo. Mas vale saber qual você está escolhendo.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 16 — O domínio no seu nome
+
+```
+Um conselho que serve mesmo que você nunca nos contrate: confira de quem é o seu domínio.
+
+Se o endereço do seu site estiver registrado no nome de quem fez o site, o site não é inteiramente seu. Trocar de fornecedor vira negociação e, em alguns casos, vira recomeçar o endereço do zero — perdendo o que o Google levou anos para aprender sobre você.
+
+Dá para conferir em um minuto: abra registro.br, digite o seu domínio e veja o nome do titular.
+
+Aqui a regra é fixa: o domínio é registrado no nome do cliente, sempre. A renovação custa cerca de R$ 40 por ano e é paga por você, direto no Registro.br. Não passa pela nossa mão.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #dominio
+```
+
+### Post 17 — Belo Horizonte, e só
+
+```
+Atendemos uma cidade só, e isso não é uma fase.
+
+Vender proximidade que não se cumpre é o mesmo que não vender nada. Em Belo Horizonte, se precisar, a gente aparece. É a cidade onde dá para cobrar de perto — e isso muda o cuidado com o trabalho.
+
+Quando chega mensagem de fora, dizemos isso logo na primeira resposta e, quando é possível, indicamos alguém que trabalhe naquela cidade. É mais honesto do que aceitar e atender mal.
+
+Se o seu negócio é em BH: R$ 300, no ar em 5 dias. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #belohorizontemg
+```
+
+### Post 18 — Os 5 dias, um por um
+
+```
+"Cinco dias" só quer dizer alguma coisa se estiver claro o que acontece em cada um deles.
+
+DIA 1 — A conversa no WhatsApp. Você conta o que faz, para quem e onde fica.
+DIA 2 — Marca, texto e estrutura. No pacote com identidade, o logotipo nasce aqui.
+DIA 3 — O site montado, inteiro.
+DIA 4 — Você aprova, vendo no ar, em um link.
+DIA 5 — O site entra no ar, com domínio configurado e o botão de WhatsApp funcionando.
+
+Uma ressalva honesta: o relógio para enquanto esperamos o seu retorno. Material e aprovação são a única coisa que atrasa o prazo, e ela é sua.
+
+R$ 300. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 19 — Clínicas em BH
+
+```
+Para as clínicas de Belo Horizonte.
+
+Existe um retrato que se repete: nota 4,9 no Google, dezenas ou centenas de avaliações, perfil ativo no Instagram — e nenhum site.
+
+A reputação existe e não tem onde pousar. Quem pesquisa "dentista" mais o nome do bairro encontra o mapa, o telefone e as avaliações. Não encontra os tratamentos, o horário, quem atende nem o que esperar da primeira consulta.
+
+Montamos um modelo de site para clínica odontológica: odonto-base-liart.vercel.app. A clínica dele é fictícia, feita por nós apenas para mostrar o formato — trocamos nome, equipe e tratamentos, e colocamos as avaliações reais na página.
+
+R$ 300, no ar em 5 dias, preço fechado. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #odontologiabh
+```
+
+### Post 20 — Esmalterias e studios de unhas
+
+```
+Para as esmalterias e studios de unhas de BH.
+
+O seu trabalho está em trezentas fotos. O preço, em nenhuma.
+
+E a primeira mensagem de toda cliente nova é a mesma: "valores?". Todo dia, uma a uma, respondida no direct enquanto você está com a mão de alguém na sua.
+
+Uma página responde antes. A cliente chega sabendo quanto custa, o que você faz, onde fica e qual é o horário — e você conversa somente com quem já decidiu.
+
+Montamos um modelo para o segmento: manicure-base.vercel.app. O Studio Aurora é fictício, feito por nós para mostrar o formato. Trocamos nome, serviços, fotos e os seus valores.
+
+R$ 300, no ar em 5 dias. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #manicurebh
+```
+
+### Post 21 — Avaliação no Google não é site
+
+```
+Avaliação no Google não é site, e uma coisa não substitui a outra.
+
+A avaliação diz que confiam em você. O site diz o que você faz. Uma é reputação, a outra é informação — e quem só tem a primeira é procurado sem ser encontrado.
+
+Se você tem nota alta, já fez a parte difícil. Nota alta leva anos e depende de cada atendimento ter dado certo. A página leva 5 dias e custa R$ 300.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #googlemeunegocio
+```
+
+### Post 22 — Três perguntas antes de chamar
+
+```
+Antes de chamar alguém, o cliente faz três perguntas em silêncio:
+
+01 — Vocês atendem onde eu moro?
+02 — Quanto custa?
+03 — Como falo com vocês agora?
+
+Abra o seu perfil como se fosse a primeira vez. Se ele não responde as três em dez segundos, a pessoa não discute com você: ela pergunta para outra.
+
+As três respostas cabem em uma página só — endereço, preço e botão de WhatsApp, sem ninguém precisar percorrer quarenta publicações para montar o quebra-cabeça.
+
+R$ 300, no ar em 5 dias, somente Belo Horizonte. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 23 — O que mandar para começar
+
+```
+O que você precisa mandar para começar — a lista inteira:
+
+1. O que o seu negócio faz
+2. Endereço e horário
+3. O telefone que vai no botão de WhatsApp
+4. Os serviços e, se quiser, os preços
+5. Fotos, as que você tiver
+6. Logotipo, se já existir
+
+Pode mandar aos poucos. Não existe formulário e não existe briefing de vinte páginas.
+
+E se você não tem nada disso escrito, a gente escreve. Texto não precisa vir pronto: conversamos vinte minutos e escrevemos a partir daí. Foto de celular serve, desde que seja do seu negócio.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+### Post 24 — Sem contrato, com tudo escrito
+
+```
+"Sem contrato" não quer dizer sem combinado.
+
+Antes de começar, você recebe uma proposta de uma folha. Dentro dela estão o preço fechado, o prazo e o que o pausa, o que está incluído, o que não está, de quem é o domínio e de quem é o site no fim. Oito condições, escritas antes, sem letra miúda.
+
+A mais importante é a que quase ninguém diz na hora de vender: manutenção contínua não está inclusa. Erro do site nos primeiros 7 dias depois de entrar no ar, corrigimos sem custo. Depois disso, alteração de conteúdo ou de layout é serviço à parte, orçado na hora.
+
+Preferimos dizer isso antes, e não quando você pedir.
+
+R$ 300 a página única, R$ 500 com identidade. Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
+```
+
+---
+
 ## 5. Postar story pelo navegador
 
 O instagram.com não cria story. O **Meta Business Suite**
@@ -344,8 +635,21 @@ npm run dev
 ```
 
 e abrir `http://localhost:5173/midia/instagram/posts.html`. Cada quadro tem um
-`id` (`p1-1`, `destaque-preco`…) e é exportado em PNG no tamanho exato do
-elemento — 1080 × 1350 nos posts, 1080 × 1080 nas capas.
+`id` (`p1-1`, `destaque-preco`…), e `?id=p10-1` mostra um quadro só, colado na
+janela — é por aí que a exportação fotografa cada arte.
+
+Para gerar os PNG, com o `npm run dev` no ar:
+
+```bash
+node scripts/artes.mjs            # todas
+node scripts/artes.mjs p10 p11    # só os quadros desses posts
+node scripts/artes.mjs --folha    # refaz a folha de contato
+```
+
+O tamanho sai do próprio `id`: 1080 × 1350 nos posts, 1080 × 1920 nos stories
+(`s-`) e 1080 × 1080 nas capas (`destaque-`). O script usa o Chrome que já está
+na máquina, pelo protocolo de depuração — não pelo `--screenshot` da linha de
+comando, que no Windows conta a moldura da janela e corta a arte.
 
 O texto de cada quadro fica no array `slides`, no fim do arquivo. Mexer no texto
 é mexer ali, não no CSS.
@@ -354,7 +658,7 @@ O texto de cada quadro fica no array `slides`, no fim do arquivo. Mexer no texto
 1440 × 900. Se um cliente redesenhar o site, recapture antes de repostar.
 
 `midia/instagram/folha-de-contato.png` é a grade inteira numa imagem só, para
-conferir tudo de uma vez.
+conferir tudo de uma vez. Refazer com `node scripts/artes.mjs --folha`.
 
 ---
 

@@ -59,7 +59,8 @@ piora em toque e atrapalha acessibilidade. O ScrollTrigger funciona bem sem ele.
 |-------------|---------|
 | Textos, preços, cases, contato | `src/config/site.ts` |
 | Instagram: @, bio, posts, legendas | `docs/instagram.md` |
-| As artes do Instagram | `midia/instagram/posts.html` |
+| As artes do Instagram | `midia/instagram/posts.html` → `node scripts/artes.mjs` com o `npm run dev` no ar |
+| O pedido que gera uma pauta nova de posts | `docs/prompt-posts.md` |
 | A proposta em PDF (condições, pacotes) | `midia/proposta/proposta.html` → `node scripts/proposta.mjs --cliente "Nome" --plano identidade` com o `npm run dev` no ar |
 | Cores | `docs/brand-guidelines.md` → sync → `assets/theme.css` |
 | Escala tipográfica, espinha, base | `src/index.css` |
