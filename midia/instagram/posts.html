@@ -439,11 +439,30 @@ const slides = [
       </p>
     </div>` },
 
-{ id: 'p10-3', rotulo: 'O que deveria aparecer', corpo: `
+/* A espinha do post, e tambem a dos stories s-google-*: nao aparece no
+   Google -> porque nao tem site -> nos resolvemos. O fecho original
+   ("O seu site, logo abaixo do mapa") pulava a causa e descrevia o
+   sintoma: dois quadros de problema para uma linha de solucao. */
+{ id: 'p10-3', escuro: true, arrasta: true, rotulo: 'Por quê', corpo: `
     <div class="pilha">
-      <div class="display m">O seu site, logo abaixo do mapa.</div>
+      <div class="display l">Porque você não tem um site.</div>
+      <div class="regua" style="width:340px"></div>
+      <p class="corpo media">
+        O Google mostra o que existe. Sem uma página sua, ele mostra
+        o mapa e para por aí.
+      </p>
+    </div>` },
+
+{ id: 'p10-4', rotulo: 'Nós resolvemos', corpo: `
+    <div class="pilha">
+      <div class="display m">Uma página com as quatro respostas.</div>
       <div class="regua" style="width:300px"></div>
-      <p class="corpo">Conte no direct o que você encontrou. Respondemos todas.</p>
+      <ul class="inclui" style="font-size:34px">
+        <li>O que você faz</li>
+        <li>Onde fica e o horário</li>
+        <li>Quanto custa</li>
+        <li>Um botão que abre o WhatsApp</li>
+      </ul>
       <p class="mono azul">R$ 300 · no ar em 5 dias · só BH</p>
     </div>` },
 
@@ -966,6 +985,44 @@ const slides = [
         <div class="etapa"><span class="n">03</span><span class="display s">Se já tem logotipo ou precisa de um</span></div>
       </div>
       <p class="corpo media">O resto a gente pergunta na conversa.</p>
+    </div>` },
+
+/* Google — a mesma espinha do post 10, em tres telas: nao aparece ->
+   porque nao tem site -> nos resolvemos. Story nao tem "arraste": quem
+   assiste so toca para avancar, entao cada tela precisa fechar sozinha. */
+{ id: 's-google-1', historia: true, escuro: true, rotulo: 'Um teste de dez segundos', corpo: `
+    <div class="pilha">
+      <div class="display xl">O seu negócio não aparece no Google.</div>
+      <div class="regua" style="width:340px"></div>
+      <p class="corpo media">
+        Pesquise o nome dele agora, do celular, como o seu cliente faria.
+        O que aparece é o mapa, o telefone e mais nada.
+      </p>
+    </div>` },
+
+{ id: 's-google-2', historia: true, rotulo: 'Por quê', corpo: `
+    <div class="pilha">
+      <div class="display xl">Porque você não tem um site.</div>
+      <div class="regua" style="width:340px"></div>
+      <p class="corpo">
+        O Google mostra o que existe. Sem uma página sua para abrir,
+        ele mostra o mapa e para por aí — e quem procurou volta para
+        os resultados e clica no próximo nome.
+      </p>
+    </div>` },
+
+{ id: 's-google-3', historia: true, escuro: true, rotulo: 'Nós resolvemos', corpo: `
+    <div class="pilha">
+      <div class="display l">Uma página com as quatro respostas.</div>
+      <div class="regua" style="width:300px"></div>
+      <ul class="inclui" style="font-size:34px">
+        <li>O que você faz</li>
+        <li>Onde fica e o horário</li>
+        <li>Quanto custa</li>
+        <li>Um botão que abre o WhatsApp</li>
+      </ul>
+      <p class="mono azul">R$ 300 · no ar em 5 dias · só BH</p>
+      <p class="corpo media">Link na bio.</p>
     </div>` },
 
 /* ══ capas de destaque — 1080x1080, cortadas em círculo pelo app ═════

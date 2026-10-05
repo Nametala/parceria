@@ -28,8 +28,12 @@ exportados com `node scripts/artes.mjs`.
 2. **Carrossel, de três a quatro quadros.** É o único formato estático em que
    a pessoa age — e arrastar é o que o Instagram lê como interesse. `arraste →`
    em todo quadro menos o último.
-3. **Uma ideia por carrossel.** O primeiro quadro é a frase, o do meio é o
-   porquê, o último é o preço e para onde ir.
+3. **Uma ideia por carrossel, e a espinha é sempre a mesma:** o problema →
+   **por que ele acontece** → **nós resolvemos** → preço e para onde ir. O
+   último quadro é da solução, nunca do sintoma — descrever o problema de
+   novo no fecho foi o que derrubou a primeira versão do post 10. A conta de
+   quadros também importa: metade para o problema, metade para a solução.
+   Dois quadros de problema e uma linha de solução não fecha nada.
 4. **Nada inventado.** Preço, prazo, cases e condições saem do `site.ts` e do
    `abordagem.md`. Não invente número de mercado, estatística de conversão nem
    depoimento. Quando o dado não existir, escreva sem ele.
@@ -66,6 +70,17 @@ Para 15 posts, a mistura que funcionou foi: 4 de dor, 5 de transparência
 site-modelo é fictício) e 1 de posicionamento.
 
 Trabalho novo entra fora dessa conta: todo site que entra no ar vira post.
+
+## Story, quando o post merece
+
+Um carrossel forte vira três telas de story (`s-<assunto>-1..3`), uma por
+batida da espinha: o problema, o porquê, a solução. Story não tem "arraste" —
+quem assiste só toca para avançar —, então cada tela precisa fechar sozinha,
+e a última carrega o preço e o "link na bio".
+
+O instagram.com não cria story. A porta pelo navegador é o Meta Business
+Suite, e o passo a passo (inclusive a interceptação do `<input type=file>`,
+que só nasce no clique) está em `docs/instagram.md` §5.
 
 ## Arte
 

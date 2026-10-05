@@ -337,7 +337,7 @@ não virar um bloco preto.
 
 | Ordem | # | Post | Arquivos | Tipo | Publicado |
 |-------|---|------|----------|------|-----------|
-| 1 | 10 | Pesquise o seu negócio no Google | `p10-1` `p10-2` `p10-3` | Dor | 2026-10-05 |
+| 1 | 10 | Pesquise o seu negócio no Google | `p10-1` … `p10-4` | Dor | 2026-10-05 |
 | 2 | 19 | Clínicas em BH | `p19-1` `p19-2` `p19-3` | Nicho |
 | 3 | 11 | "Chegam por indicação." | `p11-1` `p11-2` `p11-3` | Dor |
 | 4 | 16 | O domínio no seu nome | `p16-1` … `p16-4` | Utilidade |
@@ -361,14 +361,26 @@ coisa que derruba a confiança inteira de uma conta nova.
 
 ### Post 10 — Pesquise o seu negócio no Google
 
+Quatro quadros e três histórias (`s-google-1..3`), os dois na mesma espinha:
+**não aparece no Google → porque não tem site → nós resolvemos.** A primeira
+versão, publicada e apagada em 2026-10-05, tinha três quadros e fechava em
+"o seu site, logo abaixo do mapa" — que descreve onde o site aparece, não o
+que ele resolve. Arthur apontou, e a regra virou geral: o último quadro é da
+solução, não do sintoma.
+
+No ar em `instagram.com/p/DeIbcaBDah5`.
+
+
 ```
 Faça um teste antes de ler o resto: pegue o celular e pesquise o nome do seu negócio no Google, do jeito que um cliente faria.
 
-O que costuma aparecer é o mapa, o telefone e as avaliações. Nada para abrir. Nenhum horário, nenhum preço, nenhuma lista do que você faz. Quem pesquisou volta para os resultados e clica no próximo nome.
+O que aparece é o mapa, o telefone e as avaliações. Nada para abrir. Quem pesquisou volta para os resultados e clica no próximo nome.
 
-Não é que o cliente tenha descartado você. É que ele não teve o que ler.
+Por quê? Porque você não tem um site. O Google mostra o que existe — sem uma página sua, ele mostra o mapa e para por aí.
 
-Uma página resolve isso: um endereço só, com o que você faz, quanto custa, onde fica e o botão de WhatsApp. R$ 300, no ar em 5 dias, somente Belo Horizonte.
+Nós resolvemos isso: uma página que responde as quatro coisas que o cliente procura antes de chamar. O que você faz, onde fica e o horário, quanto custa, e um botão que abre o WhatsApp.
+
+R$ 300, no ar em 5 dias. Preço fechado, sem contrato, somente Belo Horizonte.
 
 Conte no direct o que você encontrou na pesquisa. Respondemos todas.
 
