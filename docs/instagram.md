@@ -745,7 +745,12 @@ que tem, que é o link funcionando.
 
 ### Post 25 — Estúdio Raiz, modelo de interiores e paisagismo
 
-Três quadros (`p25-1` `p25-2` `p25-3`), publicado em 2026-10-15.
+Três quadros (`p25-1` `p25-2` `p25-3`), publicado em 2026-10-15 em
+`instagram.com/p/DeiWe1FDahS`.
+
+> A primeira versão saiu com "somente Belo Horizonte" no terceiro quadro e foi
+> apagada no mesmo dia. **A iD não restringe atendimento a Belo Horizonte** —
+> ver a nota no fim desta seção.
 
 ```
 Mais um modelo pronto, agora para quem faz interiores, decoração e paisagismo.
@@ -756,12 +761,36 @@ O problema do segmento é específico. Foto bonita não diz o que você faz: que
 
 A página resolve isso em um lugar só: os serviços listados, os projetos com foto, a encomenda e o botão de WhatsApp em cada seção.
 
-Trocamos nome, fotos, serviços e preços pelos seus. R$ 300, no ar em 5 dias, somente Belo Horizonte.
+Trocamos nome, fotos, serviços e preços pelos seus. R$ 300, no ar em 5 dias, com preço fechado e sem contrato.
 
 Link na bio.
 
 #belohorizonte #bh #pequenonegocio #autonomo #designdeinteriores
 ```
+
+### A iD não atende somente Belo Horizonte
+
+Em 2026-10-15 Arthur corrigiu: **"não tem nada disso, nunca teve nem vai
+ter."** Não existe restrição de praça. Belo Horizonte é onde a dupla fica,
+não um limite de quem é atendido — o `.bh` do @ é localização, não exclusão.
+
+A frase estava espalhada, porque veio do `brand-guidelines.md`. Já saiu do
+post 25. **Continua em pé nestes lugares, e todos precisam de decisão:**
+
+| Onde | O que diz | Está publicado? |
+|------|-----------|-----------------|
+| Bio do Instagram | "Belo Horizonte — e só BH" | Sim, no ar agora |
+| Post 2, quadro 3 | "R$ 300 · no ar em 5 dias · só BH" | Sim, desde 2026-09-14 |
+| Post 10, quadro 4 | "R$ 300 · no ar em 5 dias · só BH" | Sim, desde 2026-10-05 |
+| `brand-guidelines.md` §1 e §6 | "Atendemos só Belo Horizonte. É uma escolha, não uma fase" | — |
+| `proposta.html` | "Belo Horizonte — e só BH" no cabeçalho | Vai em toda proposta |
+| Post 17 inteiro | "Atendemos uma cidade só" — os três quadros | Não, ainda na fila |
+| Post 22, quadro 3 · s-google-3 | "só BH" | 22 na fila; o story expirou |
+| Resposta de DM "se for de fora" | "Atendemos somente Belo Horizonte" | Em uso |
+| Post 7 (VIA Drones) | "anterior à decisão de atender somente a capital" | Sim |
+
+O post 17 não é corrigível: ele existe só para defender essa posição.
+Ou sai da pauta, ou vira outra coisa.
 
 ---
 
