@@ -829,12 +829,19 @@ A conta existe desde 2026-09-14, com foto, nome, categoria, bio e os dois
 links. Os nove posts de lançamento subiram de uma vez, por decisão do Arthur —
 o ritmo de dois por semana da seção 2 vale a partir daqui.
 
-- **Destaques.** As 12 histórias subiram em 2026-09-14 (~23h) pelo Meta
-  Business Suite — é a porta pelo navegador para story; o instagram.com não
-  tem. Falta só agrupar em destaque e pôr as capas. Pela web isso só é possível
-  depois que as histórias expiram e caem no arquivo (~23h de 2026-09-15); pelo
-  celular é imediato: abrir a própria história → "Destacar" → nome → capa.
-  Artes das histórias em `midia/instagram/stories/`, capas em
-  `midia/instagram/artes/destaque-*.png`.
+- **Destaques.** Existem quatro no perfil — Preço, Como pedir, Trabalhos e
+  Prazo — e eles estão com a primeira história de cada um como capa, não com
+  as artes `destaque-*.png`. Faltam dois:
+
+  - **A dupla**, que nunca foi criado.
+  - **Modelos**, criado em 2026-10-15 mas vazio: as três histórias
+    (`s-modelos-1..3`) subiram às ~21h40 e, pela web, só dá para agrupá-las
+    depois que expiram e caem em Itens Arquivados — o arquivo estava vazio na
+    hora. Pelo celular é imediato: abrir a própria história → "Destacar" →
+    "Modelos" → capa.
+
+  A capa de cada um está pronta em `midia/instagram/artes/destaque-*.png`,
+  incluindo `destaque-modelos.png`. Trocar a capa é "Editar destaque" →
+  "Editar capa" → enviar a arte.
 - **Domínio próprio.** Quando existir, muda o link 1 da bio junto com os três
   lugares listados no `README.md`.
