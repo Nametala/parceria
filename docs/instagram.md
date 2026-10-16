@@ -1,6 +1,6 @@
 # iD — Instagram
 
-> Atualizado: 2026-10-05 · v1.3 — segunda pauta no ar a partir do post 10
+> Atualizado: 2026-10-15 · v1.4 — destaque Modelos e o post 25
 > Status: no ar · pendente (destaques e domínio)
 
 O Instagram da iD tem uma função só: levar quem tem um negócio em BH até o
@@ -85,15 +85,115 @@ Cinco, nesta ordem. As capas estão em `midia/instagram/artes/`.
 | Trabalhos | `destaque-trabalhos.png` | Um story por case, com o link |
 | A dupla | `destaque-dupla.png` | Quem é Arthur, quem é Gustavo |
 | Como pedir | `destaque-pedir.png` | O que mandar na primeira mensagem |
+| Modelos | `destaque-modelos.png` | Um story por site-modelo, com o link |
 
 Histórias de cada destaque (1080 × 1920, em `midia/instagram/stories/`):
-`s-preco-1..2`, `s-prazo-1..4`, `s-trabalhos-1..3`, `s-dupla-1`, `s-pedir-1..2`.
+`s-preco-1..2`, `s-prazo-1..4`, `s-trabalhos-1..3`, `s-dupla-1`, `s-pedir-1..2`,
+`s-modelos-1..3`.
 Foram publicadas nessa ordem, porque dentro de um destaque a ordem é a
 cronológica de publicação.
 
 A capa aparece com cerca de 60 px de diâmetro. Nesse tamanho nenhuma palavra
 sobrevive — e o app já escreve o nome do destaque embaixo do círculo. Por isso
-cada capa carrega um sinal só, enorme: `R$`, `5d`, `↗`, `2`, `→`.
+cada capa carrega um sinal só, enorme: `R# iD — Instagram
+
+> Atualizado: 2026-10-15 · v1.4 — destaque Modelos e o post 25
+> Status: no ar · pendente (destaques e domínio)
+
+O Instagram da iD tem uma função só: levar quem tem um negócio em BH até o
+WhatsApp. Ele não é vitrine de portfólio nem diário de bastidores — é a porta de
+entrada de quem ouviu falar da gente e foi conferir se a coisa é séria.
+
+A regra que vale para a marca vale aqui: **conceito que precisa de legenda não
+serve.** Se um post só funciona depois que alguém explica, ele está errado.
+
+---
+
+## 1. O perfil
+
+| Campo | Valor |
+|-------|-------|
+| @ (usuário) | `idsolucoes.bh` |
+| Nome (campo de busca) | `iD Soluções · Sites em BH` |
+| Categoria | Web designer — busque "web" ou "site" no campo |
+| Foto | `public/marca/marca-id-perfil.png` |
+| Tipo de conta | Comercial (libera link, estatística e botão de contato) |
+
+A categoria aparece embaixo do nome no perfil — deixe visível. Se "Web
+designer" não estiver na busca, use "Designer gráfico" e depois "Empresa de
+design". Nunca "Agência de publicidade/marketing" (a marca se posiciona contra
+agência) nem "Empresa de tecnologia/software" (registro corporativo; quem
+precisa de site não pesquisa "software").
+
+### Por que `idsolucoes.bh` e não `idsolucoes`
+
+Foi checado antes de escolher. `@idsolucoes` e `@id.solucoes` já existem, e o
+segundo é grave: chama-se "iD Soluções", tem 10,4 mil seguidores e é uma
+assistência técnica de Apple. Disputar o mesmo @ com uma conta maior e de outro
+ramo é entrar numa briga que não se ganha.
+
+O sufixo `.bh` não é enfeite para preencher um nome ocupado: atender **só Belo
+Horizonte** é posicionamento declarado no guia de marca, então a cidade no @ diz
+uma coisa verdadeira e ainda separa a iD daquela conta, que é de São Luís.
+
+O campo **Nome** é indexado pela busca do Instagram — por isso ele carrega
+"Sites" e "BH", que é o que a pessoa digita quando procura.
+
+### Bio
+
+```
+Sites para quem toca o próprio negócio
+A partir de R$ 300 · no ar em 5 dias
+Belo Horizonte — e só BH
+Veja o site e chame no zap ↓
+```
+
+129 caracteres dos 150 disponíveis. A última linha mudou em relação ao rascunho
+do guia de marca ("Orçamento no WhatsApp ↓") porque o primeiro link agora é o
+site, e a seta tem que apontar para o que está logo abaixo dela.
+
+### Links
+
+O Instagram aceita mais de um link. A ordem é intencional:
+
+1. **`https://id-site-nametala-s-projects.vercel.app`** — rótulo `Nosso site`
+2. **WhatsApp com mensagem pronta** — rótulo `Orçamento no WhatsApp`
+
+```
+https://wa.me/5531983112211?text=Oi!%20Vi%20o%20perfil%20de%20voc%C3%AAs%20no%20Instagram%20e%20queria%20um%20or%C3%A7amento%20pro%20meu%20site.
+```
+
+O site vem primeiro de propósito. Um estúdio de sites que manda a pessoa direto
+para o WhatsApp abre mão do seu melhor argumento: o próprio site, que já tem o
+preço, os trabalhos e o botão de zap dentro dele. O caminho é um clique mais
+longo e vende muito melhor.
+
+Quando existir domínio próprio, o link 1 muda aqui e nos três lugares listados no
+`README.md`.
+
+### Destaques
+
+Cinco, nesta ordem. As capas estão em `midia/instagram/artes/`.
+
+| Destaque | Capa | O que vai dentro |
+|----------|------|------------------|
+| Preço | `destaque-preco.png` | Os stories dos dois pacotes |
+| Prazo | `destaque-prazo.png` | Os 4 passos, um por story |
+| Trabalhos | `destaque-trabalhos.png` | Um story por case, com o link |
+| A dupla | `destaque-dupla.png` | Quem é Arthur, quem é Gustavo |
+| Como pedir | `destaque-pedir.png` | O que mandar na primeira mensagem |
+| Modelos | `destaque-modelos.png` | Um story por site-modelo, com o link |
+
+Histórias de cada destaque (1080 × 1920, em `midia/instagram/stories/`):
+`s-preco-1..2`, `s-prazo-1..4`, `s-trabalhos-1..3`, `s-dupla-1`, `s-pedir-1..2`,
+`s-modelos-1..3`.
+Foram publicadas nessa ordem, porque dentro de um destaque a ordem é a
+cronológica de publicação.
+
+A capa aparece com cerca de 60 px de diâmetro. Nesse tamanho nenhuma palavra
+sobrevive — e o app já escreve o nome do destaque embaixo do círculo. Por isso
+, `5d`, `↗`, `2`, `→` e, em Modelos,
+um retângulo cheio na proporção da página.
 
 ---
 
@@ -624,6 +724,47 @@ R$ 300 a página única, R$ 500 com identidade. Link na bio.
 
 ---
 
+## 4.2 Os modelos prontos
+
+Três sites de negócio **fictício**, feitos por nós para mostrar o formato a
+quem ainda não tem site. Servem em dois lugares: viram post no feed e viram
+link dentro da DM de prospecção (`docs/abordagem.md`), onde substituem a
+descrição por uma coisa que a pessoa abre.
+
+| Modelo | Segmento | Link | Post |
+|--------|----------|------|------|
+| Clínica odontológica | Tratamentos, equipe e avaliações | `odonto-base-liart.vercel.app` | 19 |
+| Studio Aurora | Esmalteria e studio de unhas | `manicure-base.vercel.app` | 20 |
+| Estúdio Raiz | Interiores, paisagismo e arte | `estudio-raiz-ten.vercel.app` | 25 |
+
+**A regra que não se negocia: modelo nunca é apresentado como cliente.** A
+arte diz "fictício" no quadro em que o nome aparece, a legenda repete, e eles
+ficam no destaque **Modelos** — nunca em **Trabalhos**, que é de cliente real
+com link que abre. Um estúdio que inventa portfólio perde o único argumento
+que tem, que é o link funcionando.
+
+### Post 25 — Estúdio Raiz, modelo de interiores e paisagismo
+
+Três quadros (`p25-1` `p25-2` `p25-3`), publicado em 2026-10-15.
+
+```
+Mais um modelo pronto, agora para quem faz interiores, decoração e paisagismo.
+
+Estúdio Raiz: estudio-raiz-ten.vercel.app. O estúdio é fictício — fizemos o site para mostrar o formato, como já tínhamos feito para clínica odontológica e para studio de unhas.
+
+O problema do segmento é específico. Foto bonita não diz o que você faz: quem procura decoração vê o feed e não sabe se você faz projeto, reforma sem quebradeira, paisagismo, marcenaria ou só vende planta. Nem por onde começar.
+
+A página resolve isso em um lugar só: os serviços listados, os projetos com foto, a encomenda e o botão de WhatsApp em cada seção.
+
+Trocamos nome, fotos, serviços e preços pelos seus. R$ 300, no ar em 5 dias, somente Belo Horizonte.
+
+Link na bio.
+
+#belohorizonte #bh #pequenonegocio #autonomo #designdeinteriores
+```
+
+---
+
 ## 5. Postar story pelo navegador
 
 O instagram.com não cria story. O **Meta Business Suite**
@@ -666,8 +807,16 @@ comando, que no Windows conta a moldura da janela e corta a arte.
 O texto de cada quadro fica no array `slides`, no fim do arquivo. Mexer no texto
 é mexer ali, não no CSS.
 
-`midia/instagram/prints/` guarda as capturas dos três sites dos clientes, em
-1440 × 900. Se um cliente redesenhar o site, recapture antes de repostar.
+`midia/instagram/prints/` guarda as capturas em 1440 × 900 — `case-*` para os
+sites de clientes, `modelo-*` para os nossos sites-modelo. Para recapturar
+qualquer um deles:
+
+```bash
+node scripts/artes.mjs --site https://exemplo.vercel.app midia/instagram/prints/case-exemplo.png
+```
+
+O 1440 × 900 não é escolha estética: o quadro `.print` da página compensa a
+barra de rolagem contando com essa largura.
 
 `midia/instagram/folha-de-contato.png` é a grade inteira numa imagem só, para
 conferir tudo de uma vez. Refazer com `node scripts/artes.mjs --folha`.

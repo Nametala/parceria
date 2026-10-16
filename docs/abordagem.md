@@ -1,6 +1,6 @@
 # iD — Abordagem de clientes
 
-> Atualizado: 2026-09-21 · v1.2 — leva 1 (15 clínicas) + leva 2 (5 clínicas + 5 manicures)
+> Atualizado: 2026-10-15 · v1.3 — terceiro site-modelo (interiores e paisagismo)
 > Status leva 1: 12 entregues em 2026-09-18 (1–9, 11–13) · 10 não aceita DM · 14 conta inexistente · 15 pendente
 > Status leva 2: pausada em 2026-09-21 — 16,17,19,20,23 entregues · 18 recusou DM · 21,22,24 travam no clique (mesmo após 90s de espera) · 25 conta indisponível no momento
 
@@ -16,6 +16,9 @@ Site de referência para clínicas: `https://odonto-base-liart.vercel.app`
 (modelo com clínica fictícia — nunca apresentar como cliente real).
 Site de referência para manicure/esmalteria: `https://manicure-base.vercel.app`
 (mesmo princípio — modelo "Studio Aurora", fictício).
+Site de referência para interiores/decoração/paisagismo:
+`https://estudio-raiz-ten.vercel.app` (modelo "Estúdio Raiz", fictício —
+abre caminho para decoradores, paisagistas e marceneiros em BH).
 Site da iD: `https://id-site-nametala-s-projects.vercel.app`.
 
 ---

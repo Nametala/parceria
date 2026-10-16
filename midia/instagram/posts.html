@@ -160,6 +160,14 @@ const assina = (escuro, arrasta) => `
    sai com metade do peso das outras. Traco 52 iguala o peso do display, e a
    terminacao e reta como manda o guia. */
 const glifo = (t) => `<span class="display" style="font-size:330px">${t}</span>`;
+/* Capa de Modelos: a propria pagina, cheia, na proporcao 4:5 do feed.
+   Em 60px de diametro nenhum desenho com detalhe sobrevive — e o app ja
+   escreve "Modelos" embaixo do circulo. */
+const pagina = `
+  <svg viewBox="0 0 240 240" style="width:470px;height:470px" aria-hidden="true">
+    <rect x="62" y="24" width="116" height="192" fill="currentColor"/>
+  </svg>`;
+
 const seta = (haste, ponta) => `
   <svg viewBox="0 0 240 240" style="width:470px;height:470px" aria-hidden="true">
     <g fill="none" stroke="currentColor" stroke-width="52">
@@ -891,6 +899,40 @@ const slides = [
       <p class="mono azul">Link na bio</p>
     </div>` },
 
+/* ══ POST 25 — modelo pronto: interiores e paisagismo ═══════════════
+   NAO e case: o Estudio Raiz e um negocio ficticio, feito por nos para
+   mostrar o formato — igual ao odonto-base e ao manicure-base. A arte diz
+   isso no quadro em que o nome aparece. Apresentar modelo como cliente
+   real e o tipo de mentira que derruba a conta inteira. */
+{ id: 'p25-1', arrasta: true, rotulo: 'Modelo pronto · Interiores, paisagismo e arte', corpo: `
+    <div class="pilha">
+      <div class="print"><img src="prints/modelo-raiz.png" alt=""></div>
+      <div class="display m">Estúdio Raiz</div>
+      <div class="regua" style="width:220px"></div>
+      <p class="mono media">Estúdio fictício, feito por nós.</p>
+    </div>` },
+
+{ id: 'p25-2', escuro: true, arrasta: true, rotulo: 'Para quem faz interiores e paisagismo', corpo: `
+    <div class="pilha">
+      <div class="display m">Foto bonita não diz o que você faz.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo media">
+        Quem procura decoração vê o seu feed e não sabe se você faz projeto,
+        reforma, paisagismo ou só vende planta. Nem por onde começar.
+      </p>
+    </div>` },
+
+{ id: 'p25-3', rotulo: 'Nós resolvemos', corpo: `
+    <div class="pilha">
+      <div class="display m">Dez serviços, uma página, um botão.</div>
+      <div class="regua" style="width:300px"></div>
+      <p class="corpo">
+        Trocamos nome, fotos, serviços e preços pelos seus.
+        R$ 300, no ar em 5 dias, somente Belo Horizonte.
+      </p>
+      <p class="mono azul">estudio-raiz-ten.vercel.app</p>
+    </div>` },
+
 /* ══ STORIES — o conteudo de cada destaque, 1080x1920 ═══════════════ */
 
 /* Preço */
@@ -987,6 +1029,27 @@ const slides = [
       <p class="corpo media">O resto a gente pergunta na conversa.</p>
     </div>` },
 
+/* Modelos — um por story. Sao sites nossos, de negocio ficticio, feitos
+   para mostrar o formato a quem ainda nao tem site. Nunca entram no
+   destaque "Trabalhos": aquele e de cliente real, com link que abre. */
+...[
+  ['raiz', 'Estúdio Raiz', 'Interiores, paisagismo e arte', 'estudio-raiz-ten.vercel.app'],
+  ['odonto', 'Clínica odontológica', 'Tratamentos, equipe e avaliações', 'odonto-base-liart.vercel.app'],
+  ['manicure', 'Studio Aurora', 'Esmalteria e studio de unhas', 'manicure-base.vercel.app'],
+].map(([f, nome, seg, url], i) => ({
+  id: 's-modelos-' + (i + 1), historia: true, escuro: i % 2 === 1,
+  rotulo: 'Modelo pronto · ' + seg, corpo: `
+    <div class="pilha">
+      <div class="print"><img src="prints/modelo-${f}.png" alt=""></div>
+      <div class="display m">${nome}</div>
+      <div class="regua" style="width:220px"></div>
+      <p class="mono azul">${url}</p>
+      <p class="corpo media">
+        Negócio fictício, feito por nós para mostrar o formato.
+        Trocamos tudo pelo seu: R$ 300, no ar em 5 dias.
+      </p>
+    </div>` })),
+
 /* Google — a mesma espinha do post 10, em tres telas: nao aparece ->
    porque nao tem site -> nos resolvemos. Story nao tem "arraste": quem
    assiste so toca para avancar, entao cada tela precisa fechar sozinha. */
@@ -1035,6 +1098,7 @@ const slides = [
   { id: 'trabalhos', sinal: seta('M52 188L184 56', 'M96 56H188V148'), escuro: true },
   { id: 'dupla',     sinal: glifo('2'),     escuro: false },
   { id: 'pedir',     sinal: seta('M18 120H196', 'M126 50L200 120L126 190'), escuro: true },
+  { id: 'modelos',   sinal: pagina,         escuro: false },
 ].map((d) => ({ id: 'destaque-' + d.id, quadrado: true, escuro: d.escuro, capa: d.sinal })),
 ];
 
@@ -1066,9 +1130,14 @@ document.write((unico ? slides.filter((s) => s.id === unico) : slides).map((s) =
     </div>`;
 }).join(''));
 
-/* Marcador para o screenshot esperar as fontes: sem isso o Playwright
+/* Marcador para o screenshot esperar as fontes: sem isso o exportador
    fotografa no fallback e a marca sai com a tipografia errada. */
 document.fonts.ready.then(() => document.documentElement.setAttribute('data-fontes', 'ok'));
+
+/* A lista de ids, para o scripts/artes.mjs ler daqui em vez de raspar este
+   arquivo com regex — que capturava `'s-prazo-'` da linha `'s-prazo-' + n`
+   e metia ids inexistentes na exportacao. Fonte unica: o array acima. */
+window.__ids = slides.map((s) => s.id);
 </script>
 </body>
 </html>
