@@ -1,6 +1,6 @@
 # iD — Guia de Marca v2.0
 
-> Atualizado: 2026-09-09 · v2.1 — mensagem principal, preço, prazo e contato
+> Atualizado: 2026-10-15 · v2.2 — sai a restrição de praça
 > Status: aprovado (símbolo, arquitetura, preço, prazo e @ do Instagram) · pendente (domínio)
 
 A tabela Quick Reference é lida por `scripts/sync-brand-to-tokens.cjs`, por isso os
@@ -50,9 +50,8 @@ texto público, os dois são "dois desenvolvedores", sem cargo. O cliente fala
 direto com quem escreve o código — não existe camada de atendimento, e essa
 ausência é argumento de venda, não limitação.
 
-Atendemos **só Belo Horizonte**. É uma escolha, não uma fase: é a cidade onde a
-gente consegue aparecer se precisar, e vender proximidade que não se cumpre é o
-mesmo que não vender nada.
+Ficamos em **Belo Horizonte**. A cidade é de onde o trabalho sai — não é um
+limite de quem a gente atende.
 
 ---
 
@@ -264,7 +263,7 @@ presença — no prazo e no preço de quem ainda está começando.
 | Seu site no ar em 5 dias. | Orçamento que some e nunca volta | VIA Drones, BL4CK GYM e Studio Rondas, com link |
 | Preço fechado, dito antes de começar. | Medo de conta que só cresce | R$ 300 e R$ 500 impressos no site |
 | Você fala com quem escreve o código. | Cansaço de atendimento que não resolve | Os dois WhatsApps na página, sem intermediário |
-| Só Belo Horizonte. | Medo de contratar alguém que some | Mesma cidade: dá pra cobrar de perto |
+| Sem contrato. | Medo de ficar preso a um fornecedor | A proposta de uma folha, sem letra miúda |
 
 A primeira linha é a mensagem principal, e é ela que vira o título da página.
 Ela mudou: a versão anterior ("Seu negócio existe, falta o mundo saber") era uma
@@ -277,7 +276,7 @@ legenda não serve.**
 ```
 Sites para quem toca o próprio negócio
 A partir de R$ 300 · no ar em 5 dias
-Belo Horizonte — e só BH
+Dois desenvolvedores em Belo Horizonte
 Veja o site e chame no zap ↓
 ```
 

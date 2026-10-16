@@ -47,7 +47,7 @@ O campo **Nome** é indexado pela busca do Instagram — por isso ele carrega
 ```
 Sites para quem toca o próprio negócio
 A partir de R$ 300 · no ar em 5 dias
-Belo Horizonte — e só BH
+Dois desenvolvedores em Belo Horizonte
 Veja o site e chame no zap ↓
 ```
 
@@ -144,7 +144,7 @@ O campo **Nome** é indexado pela busca do Instagram — por isso ele carrega
 ```
 Sites para quem toca o próprio negócio
 A partir de R$ 300 · no ar em 5 dias
-Belo Horizonte — e só BH
+Dois desenvolvedores em Belo Horizonte
 Veja o site e chame no zap ↓
 ```
 
@@ -265,7 +265,7 @@ Ela não descarta você. Ela apenas não encontra você.
 
 No Instagram, você é encontrado. No site, você é contratado: é onde estão o que você faz, quanto custa e como falar com você, sem depender de percorrer quarenta publicações para montar o quebra-cabeça.
 
-R$ 300, no ar em 5 dias, somente Belo Horizonte.
+R$ 300, no ar em 5 dias, com preço fechado.
 
 Link na bio.
 ```
@@ -328,8 +328,6 @@ No ar em studio-rondas.vercel.app — abra e veja.
 
 ```
 VIA Drones — pulverização agrícola com drone, em Medeiros, MG.
-
-É o único trabalho fora de Belo Horizonte, anterior à decisão de atender somente a capital. Está aqui porque é trabalho nosso, e não escondemos o que fizemos.
 
 O site explica a operação passo a passo, traz a ficha técnica do drone e faz o pedido de orçamento chegar direto no WhatsApp.
 
@@ -413,19 +411,11 @@ Me conte em poucas palavras: o que o seu negócio faz e onde fica?
 Para adiantar: a página única custa R$ 300, e página + identidade (logotipo, paleta, arquivos) custa R$ 500. Os dois ficam no ar em 5 dias, com preço fechado e sem contrato.
 ```
 
-Se for de fora de BH:
-
-```
-Obrigado pelo contato! Atendemos somente Belo Horizonte — não é fase, é escolha: só prometemos proximidade onde conseguimos cumprir.
-
-Se quiser, posso indicar alguém que atenda na sua cidade.
-```
-
 ---
 
 ## 4.1 A segunda pauta — posts 10 a 24
 
-Quinze posts para os dois meses seguintes ao lançamento, no ritmo de dois por
+Quatorze posts para os dois meses seguintes ao lançamento, no ritmo de dois por
 semana da tabela acima. As artes estão em `midia/instagram/artes/`, em
 1080 × 1350. O pedido que gerou esta pauta está em `docs/prompt-posts.md` —
 é de lá que sai a próxima.
@@ -450,8 +440,7 @@ não virar um bloco preto.
 | 11 | 21 | Avaliação no Google não é site | `p21-1` `p21-2` `p21-3` | Utilidade |
 | 12 | 14 | O que a gente não faz | `p14-1` `p14-2` `p14-3` | Transparência |
 | 13 | 23 | O que mandar para começar | `p23-1` `p23-2` `p23-3` | Transparência |
-| 14 | 17 | Belo Horizonte, e só | `p17-1` `p17-2` `p17-3` | Posicionamento |
-| 15 | 18 | Os 5 dias, um por um | `p18-1` `p18-2` `p18-3` | Transparência |
+| 14 | 18 | Os 5 dias, um por um | `p18-1` `p18-2` `p18-3` | Transparência |
 
 Os posts 19 e 20 servem duas vezes: valem no feed e valem como link dentro da
 DM de prospecção (`docs/abordagem.md`) — em vez de descrever o modelo, manda-se
@@ -480,7 +469,7 @@ Por quê? Porque você não tem um site. O Google mostra o que existe — sem um
 
 Nós resolvemos isso: uma página que responde as quatro coisas que o cliente procura antes de chamar. O que você faz, onde fica e o horário, quanto custa, e um botão que abre o WhatsApp.
 
-R$ 300, no ar em 5 dias. Preço fechado, sem contrato, somente Belo Horizonte.
+R$ 300, no ar em 5 dias. Preço fechado e sem contrato.
 
 Conte no direct o que você encontrou na pesquisa. Respondemos todas.
 
@@ -587,20 +576,6 @@ Link na bio.
 #belohorizonte #bh #pequenonegocio #autonomo #dominio
 ```
 
-### Post 17 — Belo Horizonte, e só
-
-```
-Atendemos uma cidade só, e isso não é uma fase.
-
-Vender proximidade que não se cumpre é o mesmo que não vender nada. Em Belo Horizonte, se precisar, a gente aparece. É a cidade onde dá para cobrar de perto — e isso muda o cuidado com o trabalho.
-
-Quando chega mensagem de fora, dizemos isso logo na primeira resposta e, quando é possível, indicamos alguém que trabalhe naquela cidade. É mais honesto do que aceitar e atender mal.
-
-Se o seu negócio é em BH: R$ 300, no ar em 5 dias. Link na bio.
-
-#belohorizonte #bh #pequenonegocio #autonomo #belohorizontemg
-```
-
 ### Post 18 — Os 5 dias, um por um
 
 ```
@@ -680,7 +655,7 @@ Abra o seu perfil como se fosse a primeira vez. Se ele não responde as três em
 
 As três respostas cabem em uma página só — endereço, preço e botão de WhatsApp, sem ninguém precisar percorrer quarenta publicações para montar o quebra-cabeça.
 
-R$ 300, no ar em 5 dias, somente Belo Horizonte. Link na bio.
+R$ 300, no ar em 5 dias, com preço fechado. Link na bio.
 
 #belohorizonte #bh #pequenonegocio #autonomo #criacaodesites
 ```
@@ -774,23 +749,23 @@ Em 2026-10-15 Arthur corrigiu: **"não tem nada disso, nunca teve nem vai
 ter."** Não existe restrição de praça. Belo Horizonte é onde a dupla fica,
 não um limite de quem é atendido — o `.bh` do @ é localização, não exclusão.
 
-A frase estava espalhada, porque veio do `brand-guidelines.md`. Já saiu do
-post 25. **Continua em pé nestes lugares, e todos precisam de decisão:**
+A frase estava em quatro arquivos, porque nasceu no `brand-guidelines.md` e
+foi copiada de lá. Saiu de todos em 2026-10-15:
 
-| Onde | O que diz | Está publicado? |
-|------|-----------|-----------------|
-| Bio do Instagram | "Belo Horizonte — e só BH" | Sim, no ar agora |
-| Post 2, quadro 3 | "R$ 300 · no ar em 5 dias · só BH" | Sim, desde 2026-09-14 |
-| Post 10, quadro 4 | "R$ 300 · no ar em 5 dias · só BH" | Sim, desde 2026-10-05 |
-| `brand-guidelines.md` §1 e §6 | "Atendemos só Belo Horizonte. É uma escolha, não uma fase" | — |
-| `proposta.html` | "Belo Horizonte — e só BH" no cabeçalho | Vai em toda proposta |
-| Post 17 inteiro | "Atendemos uma cidade só" — os três quadros | Não, ainda na fila |
-| Post 22, quadro 3 · s-google-3 | "só BH" | 22 na fila; o story expirou |
-| Resposta de DM "se for de fora" | "Atendemos somente Belo Horizonte" | Em uso |
-| Post 7 (VIA Drones) | "anterior à decisão de atender somente a capital" | Sim |
-
-O post 17 não é corrigível: ele existe só para defender essa posição.
-Ou sai da pauta, ou vira outra coisa.
+- **Guia de marca** §1 e §6 — a §6 perdeu a mensagem de apoio "Só Belo
+  Horizonte" e ganhou "Sem contrato" no lugar.
+- **Bio** — a terceira linha virou "Dois desenvolvedores em Belo Horizonte".
+- **Artes** — as cinco linhas "· só BH" viraram "· sem contrato".
+- **Post 17 ("Belo Horizonte, e só")** — retirado da pauta. Não dava para
+  corrigir: os três quadros existiam só para defender a restrição. A pauta 2
+  passou de quinze para quatorze posts.
+- **Proposta** — o cabeçalho não traz mais "e só BH".
+- **Resposta de DM para quem é de fora** — removida. Não há mais o que
+  recusar.
+- **Posts 2 e 10**, publicados com "só BH" na arte, foram apagados e
+  republicados.
+- **Post 7 (VIA Drones)** — a legenda perdeu a frase sobre "a decisão de
+  atender somente a capital", editada no próprio Instagram.
 
 ---
 

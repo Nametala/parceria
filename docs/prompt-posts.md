@@ -43,7 +43,9 @@ exportados com `node scripts/artes.mjs`.
    inclusive.
 7. **Nada de cargo** para o Arthur ou o Gustavo. São dois desenvolvedores,
    sem divisão declarada de funções.
-8. **Só Belo Horizonte**, dito como escolha e não como limitação.
+8. **Nenhuma restrição de praça.** Nunca escrever "só BH", "somente Belo
+   Horizonte" nem variante. Belo Horizonte é onde a dupla fica, não um limite
+   de quem é atendido.
 
 ## O que torna um post bom
 
@@ -64,10 +66,10 @@ chamada (post 21). Elogio genérico, não.
 
 ## Equilíbrio da pauta
 
-Para 15 posts, a mistura que funcionou foi: 4 de dor, 5 de transparência
-(preço, prazo, condições, o que não fazemos), 3 de utilidade sem venda,
+Para 14 posts, a mistura que ficou foi: 4 de dor, 5 de transparência
+(preço, prazo, condições, o que não fazemos), 3 de utilidade sem venda e
 2 de nicho (um por segmento da lista de abordagem, sempre marcando que o
-site-modelo é fictício) e 1 de posicionamento.
+site-modelo é fictício).
 
 Trabalho novo entra fora dessa conta: todo site que entra no ar vira post.
 
